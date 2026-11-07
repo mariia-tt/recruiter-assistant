@@ -16,9 +16,10 @@ flowchart TD
     C1 -->|missing slots → follow-up question| UI
     C1 -->|complete JobSpec| C3[C3 Hybrid Retriever<br/>BM25 + dense, RRF fusion → top-50]
     IDX --> C3
-    C3 --> C4[C4 Scorecard Ranker<br/>weighted criteria + knock-out + evidence]
+    C3 --> C4[C4 Scorecard Ranker<br/>7 weighted criteria + evidence<br/>optional knock-out]
     DB --> C4
-    C4 -->|top-N shortlist + explanations| UI
+    C4 -->|top-10| C4b[C4b LLM re-ranker<br/>interview-scorecard ratings + quotes]
+    C4b -->|shortlist + explanations| UI
     C4 -->|shortlist only| C2b[C2b LLM profiler<br/>detailed CandidateProfile, cached]
     C2b --> C5[C5 Outreach Writer<br/>LLM, facts-only prompt]
     C5 --> C6[C6 Grounding Checker<br/>LLM claim verification]
@@ -44,7 +45,8 @@ compared on the same gold set — this is also an ablation for the report.
 | C2a | Rule profiler | Cheap facts for every CV, offline | cleaned CV | skills, years, seniority, titles | regex + skills dictionary |
 | C2b | LLM profiler | Rich facts for shortlisted CVs, on demand | cleaned CV | `CandidateProfile` (titles, years, seniority, skills, domains, achievements) | LLM (structured output), cached |
 | C3 | Hybrid Retriever | Cheap, high-recall candidate search | `JobSpec` | top-50 resume ids | BM25 (rank_bm25), embeddings (sentence-transformers) |
-| C4 | Scorecard Ranker | Business-logic ranking with explanation | `JobSpec`, profiles | ranked `CandidateScore` list with per-criterion scores + evidence | deterministic (+ embeddings for title similarity) |
+| C4 | Scorecard Ranker | Business-logic ranking with explanation | `JobSpec`, `RuleProfile`s, CV texts | ranked `CandidateScore` list with per-criterion scores + evidence snippets | deterministic + embeddings (title, domain, semantic similarity) |
+| C4b | LLM re-ranker | Recruiter-style judgement on the top-10 (skills / experience / role fit 1–5, verbatim evidence quote, main concern) | `JobSpec`, top-10 CV excerpts (shuffled against position bias) | `LLMCandidateRating` per candidate, reordered top-10 | LLM, 1 call per search |
 | C5 | Outreach Writer | Personalised LinkedIn message | `JobSpec`, `CandidateProfile`, `CandidateScore` | `OutreachMessage` | LLM |
 | C6 | Grounding Checker | Guardrail against hallucinated facts | message + CV | claims with supported / unsupported verdicts | LLM (judge) |
 

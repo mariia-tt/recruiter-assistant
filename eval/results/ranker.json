@@ -1,0 +1,176 @@
+{
+  "component": "C4 scorecard ranker",
+  "timestamp": "2026-11-07T17:53:41.025977+00:00",
+  "config": {
+    "weights_v1": {
+      "must_have": 0.4,
+      "experience": 0.2,
+      "title": 0.15,
+      "nice_to_have": 0.1,
+      "seniority": 0.1,
+      "domain": 0.05,
+      "semantic": 0.0
+    },
+    "weights_v2": {
+      "must_have": 0.25,
+      "experience": 0.25,
+      "title": 0.1,
+      "nice_to_have": 0.05,
+      "seniority": 0.05,
+      "domain": 0.1,
+      "semantic": 0.2
+    },
+    "knockout_variant": 0.5,
+    "sim_range": [
+      0.5,
+      0.9
+    ]
+  },
+  "n": {
+    "jds": 61,
+    "candidates": 1703
+  },
+  "metrics": {
+    "random": {
+      "ndcg@10": 0.5753578657969818,
+      "p@5": 0.22295081967213115,
+      "spearman": -0.002499933814152896
+    },
+    "retrieval: hybrid/jobspec (C3)": {
+      "ndcg@10": 0.7483898181134677,
+      "p@5": 0.26557377049180325,
+      "spearman": 0.33463818526329553
+    },
+    "retrieval: dense/jobspec": {
+      "ndcg@10": 0.7550765882029841,
+      "p@5": 0.2655737704918033,
+      "spearman": 0.35710138617907455
+    },
+    "scorecard v1 (business weights)": {
+      "ndcg@10": 0.7544147678377002,
+      "p@5": 0.2852459016393443,
+      "spearman": 0.35886961662734396
+    },
+    "scorecard v1 + knock-out 0.5": {
+      "ndcg@10": 0.7505720032906923,
+      "p@5": 0.2754098360655738,
+      "spearman": 0.35886961662734396
+    },
+    "scorecard v2 (revised weights)": {
+      "ndcg@10": 0.8136600798552788,
+      "p@5": 0.2918032786885246,
+      "spearman": 0.42574496024993885
+    },
+    "ablation v2: without must_have": {
+      "ndcg@10": 0.8137876915438187,
+      "p@5": 0.2721311475409836,
+      "spearman": 0.4411006610587517
+    },
+    "ablation v2: without experience": {
+      "ndcg@10": 0.7519613655384555,
+      "p@5": 0.2721311475409836,
+      "spearman": 0.3625155886304916
+    },
+    "ablation v2: without title": {
+      "ndcg@10": 0.8026523405022723,
+      "p@5": 0.28196721311475414,
+      "spearman": 0.41853866083407476
+    },
+    "ablation v2: without nice_to_have": {
+      "ndcg@10": 0.8187470902913893,
+      "p@5": 0.298360655737705,
+      "spearman": 0.4260483350177119
+    },
+    "ablation v2: without seniority": {
+      "ndcg@10": 0.8109539298909559,
+      "p@5": 0.2950819672131148,
+      "spearman": 0.42606939959941986
+    },
+    "ablation v2: without domain": {
+      "ndcg@10": 0.8062765295479454,
+      "p@5": 0.2950819672131148,
+      "spearman": 0.41996242515868326
+    },
+    "ablation v2: without semantic": {
+      "ndcg@10": 0.7822196713399782,
+      "p@5": 0.29508196721311475,
+      "spearman": 0.3845369226384977
+    }
+  },
+  "significance": {
+    "scorecard v1 (business weights) vs retrieval: hybrid/jobspec (C3)": {
+      "mean_diff": 0.00602494972423252,
+      "ci95": [
+        -0.048054807305097993,
+        0.057716382091430804
+      ],
+      "wins_ties_losses": [
+        28,
+        8,
+        25
+      ],
+      "n": 61
+    },
+    "scorecard v2 (revised weights) vs retrieval: hybrid/jobspec (C3)": {
+      "mean_diff": 0.06527026174181097,
+      "ci95": [
+        0.017459664415728975,
+        0.1135217192256877
+      ],
+      "wins_ties_losses": [
+        28,
+        12,
+        21
+      ],
+      "n": 61
+    }
+  },
+  "knockout": {
+    "knocked_out_share_by_label": {
+      "0": 0.904,
+      "1": 0.901,
+      "2": 0.869
+    },
+    "good_fit_wrongly_rejected": 398,
+    "good_fit_total": 458
+  },
+  "tuning_cv": {
+    "all_criteria": {
+      "held_out_ndcg": [
+        0.7923524907057697,
+        0.7796019816549334
+      ],
+      "business_ndcg_same_folds": [
+        0.7553414995396703,
+        0.7534571450789979
+      ],
+      "best_weights": [
+        {
+          "must_have": 0.0,
+          "experience": 0.6,
+          "title": 0.0,
+          "nice_to_have": 0.0,
+          "seniority": 0.0,
+          "domain": 0.1,
+          "semantic": 0.3
+        },
+        {
+          "must_have": 0.0,
+          "experience": 0.4,
+          "title": 0.2,
+          "nice_to_have": 0.0,
+          "seniority": 0.1,
+          "domain": 0.0,
+          "semantic": 0.3
+        }
+      ],
+      "v2_ndcg_same_folds": [
+        0.7902940992031575,
+        0.837804926529137
+      ],
+      "mean_held_out_ndcg": 0.7859772361803516,
+      "mean_business_ndcg": 0.7543993223093342,
+      "mean_v2_ndcg": 0.8140495128661472
+    }
+  }
+}

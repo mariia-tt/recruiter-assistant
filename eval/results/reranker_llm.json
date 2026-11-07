@@ -1,0 +1,65 @@
+{
+  "component": "C4b LLM re-ranker",
+  "timestamp": "2026-11-07T18:07:29.589403+00:00",
+  "config": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt_version": "1",
+    "top_n": 10,
+    "cv_words": 450
+  },
+  "n": {
+    "jds": 61,
+    "rated_candidates": 567
+  },
+  "metrics": {
+    "scorecard v2": {
+      "ndcg@10": 0.8136600798552788,
+      "p@5": 0.2918032786885246
+    },
+    "llm overall": {
+      "ndcg@10": 0.8045016419788429,
+      "p@5": 0.28852459016393445
+    },
+    "blend 50/50": {
+      "ndcg@10": 0.8115724994314417,
+      "p@5": 0.2885245901639345
+    }
+  },
+  "significance": {
+    "llm overall vs scorecard v2": {
+      "mean_diff": -0.009158437876435844,
+      "ci95": [
+        -0.026920518589398926,
+        0.006498915601334485
+      ],
+      "wins_ties_losses": [
+        12,
+        21,
+        28
+      ],
+      "n": 61
+    },
+    "blend 50/50 vs scorecard v2": {
+      "mean_diff": -0.0020875804238369316,
+      "ci95": [
+        -0.018070316543954336,
+        0.010815638016955573
+      ],
+      "wins_ties_losses": [
+        16,
+        23,
+        22
+      ],
+      "n": 61
+    }
+  },
+  "llm_overall_vs_label_spearman": 0.37166006689095255,
+  "mean_overall_by_label": {
+    "0": 1.85,
+    "1": 2.52,
+    "2": 2.85
+  },
+  "evidence_quote_verbatim_rate": 0.9294532627865961,
+  "rating_coverage": 1.0,
+  "llm_calls_used_today": 142
+}

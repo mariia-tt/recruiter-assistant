@@ -69,3 +69,20 @@
 - **Loop-back:** corrected benchmark counts in docs: 61 (not 69) JDs have a
   non-zero label; corpus is 476 resumes after cleaning.
 - **Next step:** C4 scorecard ranker — must beat pool NDCG@10 = 0.748.
+
+### 2026-11-07 — Phase 4/5 (loop-back to Phase 1): C4 scorecard ranker + C4b LLM re-ranker
+- **What was done:** `ranker.py` (weighted criteria with evidence snippets,
+  optional knock-out), `reranker_llm.py` (prompt `llm_reranker` v1), evals with
+  ablation, 2-fold CV weight tuning, knock-out analysis, paired bootstrap.
+- **Decision & why:** (1) knock-out off by default — it rejected 87 % of Good Fit
+  vs 90 % of No Fit; (2) weights v2 with a new `semantic` criterion and higher
+  `experience` weight (ablation + CV tuning); (3) LLM re-ranker used for
+  explanations only, not ordering; unverified quotes dropped.
+- **Evidence:** NDCG@10 C3 0.748 → v1 0.754 (n.s.) → v2 0.814 (+0.065, CI
+  [+0.017, +0.114]); unbiased CV estimate 0.786. LLM reorder 0.805 (−0.009, n.s.);
+  LLM overall vs label Spearman 0.37; quotes verbatim 93 %. 61 + 2 LLM calls.
+- **Loop-back:** to Phase 1 — business rules revised (knock-out, weights v2)
+  in `docs/01_business_understanding.md`; Good Fit CVs contain only 19 % of
+  JD must-haves literally, so labels reflect holistic role fit.
+- **Next step:** C2 gold set (user verification), C1 dialog collector, C5/C6
+  outreach writer + grounding checker, pipeline + Streamlit app.

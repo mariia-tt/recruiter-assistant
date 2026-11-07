@@ -49,3 +49,39 @@ class SearchHit(BaseModel):
     score: float
     bm25_rank: int | None = None
     dense_rank: int | None = None
+
+
+class CriterionScore(BaseModel):
+    """One scorecard line: normalised score in [0, 1], its weight and the evidence."""
+
+    name: str
+    score: float
+    weight: float
+    evidence: list[str] = Field(default_factory=list)
+
+
+class CandidateScore(BaseModel):
+    """Ranked candidate produced by the Scorecard Ranker (C4)."""
+
+    id: str
+    total: float
+    knocked_out: bool
+    criteria: list[CriterionScore]
+    matched_must: list[str] = Field(default_factory=list)
+    missing_must: list[str] = Field(default_factory=list)
+
+
+class LLMCandidateRating(BaseModel):
+    """LLM re-ranker (C4b) verdict for one candidate, interview-scorecard style."""
+
+    candidate: int = Field(description="candidate number as given in the prompt")
+    skills_fit: int = Field(ge=1, le=5)
+    experience_fit: int = Field(ge=1, le=5)
+    role_fit: int = Field(ge=1, le=5)
+    overall: int = Field(ge=1, le=5)
+    evidence_quote: str = Field(description="short verbatim quote from the CV supporting the rating")
+    concern: str | None = Field(default=None, description="main gap or risk, if any")
+
+
+class LLMRerankResult(BaseModel):
+    ratings: list[LLMCandidateRating]

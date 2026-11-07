@@ -31,6 +31,26 @@ Given a conversation with a recruiter, the assistant:
   | Domain match | 0.05 | industry overlap |
   - **Knock-out rule:** candidates covering < 50 % of must-have skills are not
     shortlisted (shown separately as "near misses").
+
+  > **Revision after evaluation (2026-11-07, v2).** On the labelled benchmark the
+  > knock-out rule rejected 87 % of "Good Fit" candidates — almost as many as
+  > "No Fit" (90 %): CVs of good candidates often do not name every listed tool.
+  > A hard rule that drops good people is worse for the business than a soft
+  > signal, so the knock-out is **off by default** (recruiter can enable a strict
+  > mode); missing must-haves are shown as a warning on each candidate card.
+  > Weights v2 (used by default):
+  >
+  > | Criterion | v1 | v2 | Reason for change |
+  > |---|---|---|---|
+  > | Must-have skills | 0.40 | 0.25 | literal matching misses skills described in other words |
+  > | Relevant experience | 0.20 | 0.25 | strongest single predictor in ablation |
+  > | Role / title relevance | 0.15 | 0.10 | |
+  > | Nice-to-have skills | 0.10 | 0.05 | no measurable effect |
+  > | Seniority match | 0.10 | 0.05 | rule-derived level is a coarse signal |
+  > | Domain match | 0.05 | 0.10 | helps in ablation |
+  > | **Semantic match** (new) | — | 0.20 | overall CV ↔ vacancy similarity; catches paraphrased skills |
+  >
+  > Evidence and the unbiased (cross-validated) estimate: `docs/05_evaluation.md`.
 - Human in the loop: the recruiter reviews the shortlist and edits messages; the
   system never contacts candidates itself.
 

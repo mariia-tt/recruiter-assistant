@@ -42,3 +42,23 @@ RETRIEVE_K = 50
 
 # CVs were scraped ~2019–2020; "Current"/"Present" in a date range means this year.
 DATA_REFERENCE_YEAR = 2020
+
+# Scorecard ranker (C4). v1 = business weights from docs/01_business_understanding.md;
+# v2 = revised after evaluation (see docs/05_evaluation.md, CRISP-DM log 2026-11-07).
+SCORECARD_WEIGHTS_V1 = {
+    "must_have": 0.40, "experience": 0.20, "title": 0.15,
+    "nice_to_have": 0.10, "seniority": 0.10, "domain": 0.05, "semantic": 0.0,
+}
+SCORECARD_WEIGHTS = {
+    "must_have": 0.25, "experience": 0.25, "title": 0.10,
+    "nice_to_have": 0.05, "seniority": 0.05, "domain": 0.10, "semantic": 0.20,
+}
+# Hard knock-out on must-have coverage. Disabled by default: on the benchmark it rejects
+# Good Fit almost as often as No Fit. None = off; missing must-haves are shown as a flag.
+KNOCKOUT_MUST_COVERAGE: float | None = None
+# bge cosine similarities live roughly in [0.5, 0.9]; rescale to [0, 1].
+SIM_LOW, SIM_HIGH = 0.5, 0.9
+RERANK_TOP_N = 10
+# LLM re-ordering did not beat scorecard v2 (NDCG −0.009, n.s.): use LLM for explanations only.
+RERANK_REORDER = False
+RERANK_CV_WORDS = 450

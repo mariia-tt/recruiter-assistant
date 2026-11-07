@@ -169,12 +169,19 @@ def aliases_for(skill: str) -> list[str]:
     return aliases if c in AMBIGUOUS else [c, *aliases]
 
 
+def find_skill(skill: str, text: str) -> re.Match | None:
+    """First match of any surface form of the skill in text (position used for evidence)."""
+    for alias in aliases_for(skill):
+        m = _pattern(alias).search(text)
+        if m:
+            return m
+    return None
+
+
 def has_skill(skill: str, text: str) -> str | None:
     """Return the alias found in text (evidence) or None."""
-    for alias in aliases_for(skill):
-        if _pattern(alias).search(text):
-            return alias
-    return None
+    m = find_skill(skill, text)
+    return m.group(0).lower() if m else None
 
 
 def extract_skills(text: str) -> list[str]:
