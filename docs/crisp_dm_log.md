@@ -101,3 +101,17 @@
   30 LLM calls.
 - **Loop-back:** Modeling (C2a parser), then Evaluation of C4/C4b re-run.
 - **Next step:** Streamlit app (pipeline already wired), C1 dialog, C5/C6.
+
+### 2026-11-07 — Phase 6: Deployment — Streamlit app and C1 collector
+- **What was done:** C1 requirements collector (`collector.py`): LLM re-extracts
+  the JobSpec from the whole chat each turn, rule-based follow-up questions
+  (max 2 per turn, search after 4 turns or on "search"); `app.py` with chat,
+  JobSpec view, candidate cards (score breakdown, matched/missing must-haves,
+  CV evidence, optional LLM assessment), LLM budget counter; README.
+- **Decision & why:** follow-up policy is deterministic — predictable, testable,
+  and 1 LLM call per recruiter message on the free tier.
+- **Evidence:** 33 unit tests; end-to-end AppTest smoke run with a fake LLM
+  (dialog → follow-up → search → cards); Streamlit server health check ok.
+- **Loop-back:** none
+- **Next step:** C5 outreach writer + C6 grounding checker; C1 evaluation on
+  simulated dialogs.

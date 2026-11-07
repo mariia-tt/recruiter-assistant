@@ -62,3 +62,6 @@ RERANK_TOP_N = 10
 # LLM re-ordering did not beat scorecard v2 (NDCG −0.009, n.s.): use LLM for explanations only.
 RERANK_REORDER = False
 RERANK_CV_WORDS = 450
+
+# Requirements collector (C1): after this many recruiter turns, search with what we have.
+COLLECTOR_MAX_TURNS = 4

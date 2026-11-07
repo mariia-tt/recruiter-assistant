@@ -105,3 +105,12 @@ class CandidateProfile(BaseModel):
     )
     education: str | None = None
     domains: list[str] = Field(default_factory=list)
+
+
+class CollectorTurn(BaseModel):
+    """Output of the Requirements Collector (C1) after one recruiter message."""
+
+    spec: JobSpec
+    missing: list[str]
+    reply: str
+    done: bool
