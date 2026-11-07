@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 800" width="1180" height="800"
+ font-family="Helvetica, Arial, sans-serif">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7"
+ orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#52514e"/></marker></defs>
+<rect width="1180" height="800" fill="#fcfcfb"/>
+<rect x="12" y="14" width="1156" height="190" rx="10" fill="none" stroke="#d6d5d0" stroke-width="1"/>
+<text x="28" y="36" font-size="13" font-weight="700" fill="#52514e">OFFLINE — built once, cached</text>
+<rect x="40" y="60" width="170" height="56" rx="18" fill="#fff4dc" stroke="#c98500" stroke-width="1.5"/>
+<text x="125.0" y="82.0" text-anchor="middle" font-size="14" font-weight="600" fill="#0b0b0b">Open datasets</text>
+<text x="125.0" y="100.0" text-anchor="middle" font-size="11.5" fill="#52514e">2 481 CVs · 1 759 labelled pairs</text>
+<rect x="270" y="60" width="170" height="56" rx="8" fill="#f3f3f1" stroke="#8a8984" stroke-width="1.5"/>
+<text x="355.0" y="82.0" text-anchor="middle" font-size="14" font-weight="600" fill="#0b0b0b">C0 Data cleaning</text>
+<text x="355.0" y="100.0" text-anchor="middle" font-size="11.5" fill="#52514e">PII mask · glued words · dedupe</text>
+<rect x="500" y="44" width="190" height="56" rx="8" fill="#f3f3f1" stroke="#8a8984" stroke-width="1.5"/>
+<text x="595.0" y="66.0" text-anchor="middle" font-size="14" font-weight="600" fill="#0b0b0b">C2a Rule profiler</text>
+<text x="595.0" y="84.0" text-anchor="middle" font-size="11.5" fill="#52514e">skills dict · dates → years · level</text>
+<rect x="500" y="128" width="190" height="56" rx="8" fill="#f3f3f1" stroke="#8a8984" stroke-width="1.5"/>
+<text x="595.0" y="150.0" text-anchor="middle" font-size="14" font-weight="600" fill="#0b0b0b">Chunk + embed + BM25</text>
+<text x="595.0" y="168.0" text-anchor="middle" font-size="11.5" fill="#52514e">bge-small-en · 200-word chunks</text>
+<rect x="760" y="44" width="180" height="56" rx="18" fill="#fff4dc" stroke="#c98500" stroke-width="1.5"/>
+<text x="850.0" y="66.0" text-anchor="middle" font-size="14" font-weight="600" fill="#0b0b0b">Rule profiles</text>
+<text x="850.0" y="84.0" text-anchor="middle" font-size="11.5" fill="#52514e">for every CV</text>
+<rect x="760" y="128" width="180" height="56" rx="18" fill="#fff4dc" stroke="#c98500" stroke-width="1.5"/>
+<text x="850.0" y="150.0" text-anchor="middle" font-size="14" font-weight="600" fill="#0b0b0b">Hybrid index</text>
+<text x="850.0" y="168.0" text-anchor="middle" font-size="11.5" fill="#52514e">BM25 + dense vectors</text>
+<path d="M210,88 L268,88" fill="none" stroke="#52514e" stroke-width="1.4" marker-end="url(#arrow)"/>
+<path d="M440,80 L470,80 L470,72 L498,72" fill="none" stroke="#52514e" stroke-width="1.4" marker-end="url(#arrow)"/>
+<path d="M440,96 L470,96 L470,156 L498,156" fill="none" stroke="#52514e" stroke-width="1.4" marker-end="url(#arrow)"/>
+<path d="M690,72 L758,72" fill="none" stroke="#52514e" stroke-width="1.4" marker-end="url(#arrow)"/>
+<path d="M690,156 L758,156" fill="none" stroke="#52514e" stroke-width="1.4" marker-end="url(#arrow)"/>
+<rect x="12" y="220" width="1156" height="300" rx="10" fill="none" stroke="#d6d5d0" stroke-width="1"/>
+<text x="28" y="242" font-size="13" font-weight="700" fill="#52514e">ONLINE — search (per vacancy)</text>
+<rect x="40" y="300" width="120" height="56" rx="8" fill="#ffffff" stroke="#0b0b0b" stroke-width="1.5"/>
+<text x="100.0" y="333.0" text-anchor="middle" font-size="14" font-weight="600" fill="#0b0b0b">Recruiter</text>
+<rect x="210" y="300" width="150" height="56" rx="8" fill="#f3f3f1" stroke="#8a8984" stroke-width="1.5"/>
+<text x="285.0" y="322.0" text-anchor="middle" font-size="14" font-weight="600" fill="#0b0b0b">Streamlit UI</text>
+<text x="285.0" y="340.0" text-anchor="middle" font-size="11.5" fill="#52514e">chat · cards</text>
+<rect x="410" y="262" width="200" height="92" rx="8" fill="#e8f1fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="510.0" y="302.0" text-anchor="middle" font-size="14" font-weight="600" fill="#0b0b0b">C1 Requirements</text>
+<text x="510.0" y="320.0" text-anchor="middle" font-size="11.5" fill="#52514e">collector</text>
+<text x="510.0" y="335.0" text-anchor="middle" font-size="11.5" fill="#52514e">LLM: chat → JobSpec</text>
+<text x="510.0" y="350.0" text-anchor="middle" font-size="11.5" fill="#52514e">rules: which question next</text>
+<rect x="660" y="300" width="180" height="56" rx="8" fill="#f3f3f1" stroke="#8a8984" stroke-width="1.5"/>
+<text x="750.0" y="322.0" text-anchor="middle" font-size="14" font-weight="600" fill="#0b0b0b">C3 Hybrid retriever</text>
+<text x="750.0" y="340.0" text-anchor="middle" font-size="11.5" fill="#52514e">RRF fusion → top-50</text>
+<rect x="890" y="300" width="250" height="56" rx="8" fill="#f3f3f1" stroke="#8a8984" stroke-width="1.5"/>
+<text x="1015.0" y="322.0" text-anchor="middle" font-size="14" font-weight="600" fill="#0b0b0b">C4 Scorecard ranker</text>
+<text x="1015.0" y="340.0" text-anchor="middle" font-size="11.5" fill="#52514e">7 weighted criteria + evidence</text>
+<rect x="890" y="420" width="250" height="64" rx="8" fill="#e8f1fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="1015.0" y="446.0" text-anchor="middle" font-size="14" font-weight="600" fill="#0b0b0b">C4b LLM assessment</text>
+<text x="1015.0" y="464.0" text-anchor="middle" font-size="11.5" fill="#52514e">top-10 in one call · ratings 1–5</text>
+<text x="1015.0" y="479.0" text-anchor="middle" font-size="11.5" fill="#52514e">verified quotes</text>
+<path d="M160,328 L208,328" fill="none" stroke="#52514e" stroke-width="1.4" marker-end="url(#arrow)"/>
+<path d="M360,318 L408,318" fill="none" stroke="#52514e" stroke-width="1.4" marker-end="url(#arrow)"/>
+<text x="384.0" y="310" text-anchor="middle" font-size="11" fill="#52514e">message</text>
+<path d="M510,354 L510,390 L300,390 L300,358" fill="none" stroke="#52514e" stroke-width="1.4" marker-end="url(#arrow)"/>
+<text x="405" y="404" text-anchor="middle" font-size="11" fill="#52514e">follow-up question (≤ 2)</text>
+<path d="M610,318 L658,318" fill="none" stroke="#52514e" stroke-width="1.4" marker-end="url(#arrow)"/>
+<text x="634.0" y="310" text-anchor="middle" font-size="11" fill="#52514e">JobSpec</text>
+<path d="M840,328 L888,328" fill="none" stroke="#52514e" stroke-width="1.4" marker-end="url(#arrow)"/>
+<text x="864.0" y="320" text-anchor="middle" font-size="11" fill="#52514e">top-50</text>
+<path d="M850,184 L850,250 L750,250 L750,298" fill="none" stroke="#52514e" stroke-width="1.4" stroke-dasharray="5 4" marker-end="url(#arrow)"/>
+<path d="M940,100 L1010,100 L1010,298" fill="none" stroke="#52514e" stroke-width="1.4" stroke-dasharray="5 4" marker-end="url(#arrow)"/>
+<path d="M1015,356 L1015,418" fill="none" stroke="#52514e" stroke-width="1.4" marker-end="url(#arrow)"/>
+<text x="1045" y="392" text-anchor="middle" font-size="11" fill="#52514e">top-10</text>
+<path d="M890,452 L260,452 L260,358" fill="none" stroke="#52514e" stroke-width="1.4" marker-end="url(#arrow)"/>
+<text x="590" y="444" text-anchor="middle" font-size="11" fill="#52514e">ranked cards: score breakdown, has / missing skills, quotes</text>
+<rect x="12" y="536" width="1156" height="210" rx="10" fill="none" stroke="#d6d5d0" stroke-width="1"/>
+<text x="28" y="558" font-size="13" font-weight="700" fill="#52514e">ONLINE — outreach (per selected candidate)</text>
+<rect x="210" y="610" width="150" height="56" rx="8" fill="#f3f3f1" stroke="#8a8984" stroke-width="1.5"/>
+<text x="285.0" y="632.0" text-anchor="middle" font-size="14" font-weight="600" fill="#0b0b0b">“Write message”</text>
+<text x="285.0" y="650.0" text-anchor="middle" font-size="11.5" fill="#52514e">button on a card</text>
+<rect x="410" y="610" width="180" height="56" rx="8" fill="#e8f1fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="500.0" y="632.0" text-anchor="middle" font-size="14" font-weight="600" fill="#0b0b0b">C2b LLM profiler</text>
+<text x="500.0" y="650.0" text-anchor="middle" font-size="11.5" fill="#52514e">roles · achievements</text>
+<rect x="640" y="610" width="180" height="56" rx="8" fill="#e8f1fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="730.0" y="632.0" text-anchor="middle" font-size="14" font-weight="600" fill="#0b0b0b">C5 Outreach writer</text>
+<text x="730.0" y="650.0" text-anchor="middle" font-size="11.5" fill="#52514e">facts only · ≤ 110 words</text>
+<rect x="870" y="588" width="270" height="100" rx="8" fill="#e8f1fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="1005.0" y="632.0" text-anchor="middle" font-size="14" font-weight="600" fill="#0b0b0b">C6 Grounding checker</text>
+<text x="1005.0" y="650.0" text-anchor="middle" font-size="11.5" fill="#52514e">LLM: claims + evidence quote</text>
+<text x="1005.0" y="665.0" text-anchor="middle" font-size="11.5" fill="#52514e">code: quote must be verbatim in CV</text>
+<text x="1005.0" y="680.0" text-anchor="middle" font-size="11.5" fill="#52514e">rules: length, placeholders, CTA</text>
+<path d="M360,638 L408,638" fill="none" stroke="#52514e" stroke-width="1.4" marker-end="url(#arrow)"/>
+<path d="M590,638 L638,638" fill="none" stroke="#52514e" stroke-width="1.4" marker-end="url(#arrow)"/>
+<text x="614.0" y="630" text-anchor="middle" font-size="11" fill="#52514e">facts</text>
+<path d="M820,638 L868,638" fill="none" stroke="#52514e" stroke-width="1.4" marker-end="url(#arrow)"/>
+<text x="844.0" y="630" text-anchor="middle" font-size="11" fill="#52514e">draft</text>
+<path d="M1005,688 L1005,712 L730,712 L730,668" fill="none" stroke="#52514e" stroke-width="1.4" marker-end="url(#arrow)"/>
+<text x="870" y="727" text-anchor="middle" font-size="11" fill="#52514e">unsupported claim → rewrite once</text>
+<path d="M1005,588 L1005,572 L225,572 L225,358" fill="none" stroke="#52514e" stroke-width="1.4" marker-end="url(#arrow)"/>
+<text x="590" y="566" text-anchor="middle" font-size="11" fill="#52514e">verified message + ✓/✗ per claim</text>
+<rect x="40" y="762" width="14" height="14" rx="3" fill="#e8f1fc" stroke="#2a78d6" stroke-width="1.5"/>
+<text x="60" y="774" font-size="11.5" fill="#52514e">LLM call (Gemini, via llm.py: rate limit · cache · trace)</text>
+<rect x="437.40000000000003" y="762" width="14" height="14" rx="3" fill="#f3f3f1" stroke="#8a8984" stroke-width="1.5"/>
+<text x="457.40000000000003" y="774" font-size="11.5" fill="#52514e">deterministic code</text>
+<rect x="593.0" y="762" width="14" height="14" rx="3" fill="#fff4dc" stroke="#c98500" stroke-width="1.5"/>
+<text x="613.0" y="774" font-size="11.5" fill="#52514e">data / index</text>
+<text x="711.4" y="774" font-size="11.5" fill="#52514e">- - - reads from the offline stores</text>
+</svg>

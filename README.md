@@ -11,8 +11,14 @@ An NLP system that helps a recruiter go from a vacancy to a shortlist:
 5. **C5 Outreach writer + C6 grounding checker** — LinkedIn message that uses only facts
    from the CV; every claim is verified against the CV and failing drafts are rewritten.
 
-Every component has its own evaluation — see [`docs/05_evaluation.md`](docs/05_evaluation.md).
-Design and data flow: [`docs/architecture.md`](docs/architecture.md).
+**Final report:** [`report.ipynb`](report.ipynb) (also [`report.html`](report.html)) — task and
+business logic, data, diagram, walk-through of one input, evaluation of every component,
+CRISP-DM loop-backs, how the coding agent was managed.
+Detailed evaluation: [`docs/05_evaluation.md`](docs/05_evaluation.md) · design:
+[`docs/architecture.md`](docs/architecture.md) · diagram:
+[`docs/figures/architecture.svg`](docs/figures/architecture.svg).
+
+![Architecture](docs/figures/architecture.svg)
 
 ## Setup
 
@@ -38,6 +44,8 @@ uv run streamlit run app.py
 ```
 
 The first start builds the embedding index for 2 481 CVs (~7 min on a laptop, then cached).
+LLM tracing: every call is logged to `traces/YYYY-MM-DD.jsonl`; view the latest with
+`uv run python scripts/show_traces.py --n 10 [--full]`.
 Each recruiter message costs 1 LLM call; "Explain top-10" costs 1 call; a LinkedIn
 message costs 2–5 calls (profile, write, check, optional rewrite).
 
@@ -60,6 +68,14 @@ uv run ruff check . && uv run pytest -q          # fast, no network
 | C6 judge validation | `eval/eval_grounding_judge.py` | 0 | `eval/results/grounding_judge.json` |
 
 Benchmarks and gold sets are described in [`eval/gold/README.md`](eval/gold/README.md).
+
+Rebuild the report and diagram:
+```bash
+uv run python scripts/make_diagram.py
+uv run python scripts/build_report.py
+uv run jupyter nbconvert --to notebook --execute --inplace report.ipynb
+uv run jupyter nbconvert --to html report.ipynb
+```
 
 ## Data
 

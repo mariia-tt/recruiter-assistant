@@ -134,3 +134,15 @@
   evaluation; C1 completion metric redefined as "resolved" (2 of 3 "incomplete"
   dialogs were correct — JD has no years/level).
 - **Next step:** final report with diagrams, video plan.
+
+### 2026-11-07 — Phase 6: Deployment — final report and video plan
+- **What was done:** `report.ipynb` / `report.html` built by `scripts/build_report.py`
+  (all numbers read from `eval/results`), SVG data-flow diagram
+  (`scripts/make_diagram.py`), trace viewer `scripts/show_traces.py`, video plan in
+  Ukrainian (`docs/video_plan_uk.md`).
+- **Decision & why:** notebook report so every table is regenerated from the eval
+  outputs; ranking chart drawn as a dot plot (axis does not start at 0, bars would
+  exaggerate differences).
+- **Evidence:** notebook executes with 0 errors; 39 tests pass.
+- **Loop-back:** none
+- **Next step:** live run of the app with the real LLM before recording (quota reset).
