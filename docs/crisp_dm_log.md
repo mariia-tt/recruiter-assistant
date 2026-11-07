@@ -115,3 +115,22 @@
 - **Loop-back:** none
 - **Next step:** C5 outreach writer + C6 grounding checker; C1 evaluation on
   simulated dialogs.
+
+### 2026-11-07 — Phase 4/5: C5/C6 outreach, C1 evaluation, judge validation
+- **What was done:** C5 writer + C6 grounding checker with rewrite loop
+  (`outreach.py`), outreach button in the app; `eval_outreach.py` (20 messages +
+  fabrication injection), `eval_collector.py` (15 simulated dialogs vs independent
+  gold), `eval_grounding_judge.py` (C6 vs independent claim labels, 61 claims).
+- **Decision & why:** (1) extractor prompt v2 — never derive min_years from level
+  (it invented "5 years" and suppressed the question); (2) collector asks once for
+  more skills when < 3 must-haves and never re-asks a slot; (3) writer no longer
+  gets computed total years (unverifiable; C2b years MAE 1.3 y).
+- **Evidence:** C1 dialog: title 1.00, seniority 1.00, years 0.93, must-have F1
+  0.48 lexical / 0.52 semantic (upper bound 0.64 / 0.71), resolved 0.93, 2.3 turns.
+  C5 v1 → v2: first-draft messages with unsupported claims 20 % → 10 %, final
+  faithfulness 0.965 → 1.000, personalised 95 %. C6: accuracy 0.95, kappa 0.74,
+  20/20 injected fabrications caught. ~240 LLM calls (409/450 used today).
+- **Loop-back:** Modeling (prompt v2, collector rules, writer facts) after
+  evaluation; C1 completion metric redefined as "resolved" (2 of 3 "incomplete"
+  dialogs were correct — JD has no years/level).
+- **Next step:** final report with diagrams, video plan.

@@ -41,14 +41,14 @@ compared on the same gold set — this is also an ablation for the report.
 | ID | Component | Purpose | Input | Output | Calls |
 |---|---|---|---|---|---|
 | C0 | Data cleaning | Make CV text usable, mask PII, remove duplicates | raw parquet | `id, category, text` | — |
-| C1 | Requirements Collector | Turn a free dialog into a structured vacancy; ask follow-ups for missing mandatory slots | chat history | `JobSpec` + next question | LLM (structured output) |
+| C1 | Requirements Collector | Turn a free dialog into a structured vacancy; ask follow-ups for missing mandatory slots (max 2 per turn, each asked once; one extra question if < 3 must-haves) | chat history | `CollectorTurn` (`JobSpec`, reply, done) | LLM (structured output, 1 call per message) + rule-based question policy |
 | C2a | Rule profiler | Cheap facts for every CV, offline | cleaned CV | skills, years, seniority, titles | regex + skills dictionary |
 | C2b | LLM profiler | Rich facts for shortlisted CVs, on demand | cleaned CV | `CandidateProfile` (titles, years, seniority, skills, domains, achievements) | LLM (structured output), cached |
 | C3 | Hybrid Retriever | Cheap, high-recall candidate search | `JobSpec` | top-50 resume ids | BM25 (rank_bm25), embeddings (sentence-transformers) |
 | C4 | Scorecard Ranker | Business-logic ranking with explanation | `JobSpec`, `RuleProfile`s, CV texts | ranked `CandidateScore` list with per-criterion scores + evidence snippets | deterministic + embeddings (title, domain, semantic similarity) |
 | C4b | LLM re-ranker | Recruiter-style judgement on the top-10 (skills / experience / role fit 1–5, verbatim evidence quote, main concern) | `JobSpec`, top-10 CV excerpts (shuffled against position bias) | `LLMCandidateRating` per candidate, reordered top-10 | LLM, 1 call per search |
-| C5 | Outreach Writer | Personalised LinkedIn message | `JobSpec`, `CandidateProfile`, `CandidateScore` | `OutreachMessage` | LLM |
-| C6 | Grounding Checker | Guardrail against hallucinated facts | message + CV | claims with supported / unsupported verdicts | LLM (judge) |
+| C5 | Outreach Writer | Personalised LinkedIn message from CV facts only (no computed years) | `JobSpec`, `CandidateProfile` (C2b), `CandidateScore` | `OutreachMessage` | LLM |
+| C6 | Grounding Checker | Guardrail against hallucinated facts; claim counts as supported only if its evidence is verbatim in the CV; + deterministic rule checks; one rewrite with feedback | message + CV | `GroundingReport`, `OutreachResult` | LLM (judge) + string checks |
 
 ## Walk-through of one input
 1. Recruiter: *"Looking for a senior data engineer, Spark and Python are a must."*

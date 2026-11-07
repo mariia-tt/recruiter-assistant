@@ -14,7 +14,9 @@ QUESTIONS = {
     "must_have_skills": "Which skills or tools are must-haves for this role?",
     "min_years": "How many years of relevant experience at minimum?",
     "seniority": "What level is it: junior, mid, senior or lead?",
+    "more_skills": "Any other must-have skills, and any nice-to-haves?",
 }
+MIN_MUST_SKILLS = 3
 OPTIONAL_HINT = (
     "Optionally: nice-to-have skills, industry/domain, or location — "
     "or say 'search' to start now."
@@ -47,12 +49,20 @@ def next_turn(history: list[dict]) -> CollectorTurn:
     """Update the JobSpec from the chat and decide: ask follow-ups or start the search."""
     spec = extract_jobspec(transcript(history))
     missing = spec.missing_mandatory()
+    if spec.must_have_skills and len(spec.must_have_skills) < MIN_MUST_SKILLS:
+        missing.append("more_skills")  # soft slot: asked once, then accepted as is
+    # A slot already asked about and still empty means "no requirement" — never re-ask.
+    asked = {slot for slot, q in QUESTIONS.items()
+             for m in history if m["role"] == "assistant" and q in m["content"]}
+    to_ask = [s for s in missing if s not in asked]
     n_user = sum(m["role"] == "user" for m in history)
     wants_search = "search" in history[-1]["content"].lower()
-    if not missing or n_user >= config.COLLECTOR_MAX_TURNS or (wants_search and spec.title):
+    if not to_ask or n_user >= config.COLLECTOR_MAX_TURNS or (wants_search and spec.title):
         reply = f"Got it: {summarize(spec)}. Searching the candidate database…"
-        return CollectorTurn(spec=spec, missing=missing, reply=reply, done=True)
-    questions = " ".join(QUESTIONS[s] for s in missing[:2])
+        hard_missing = [m for m in missing if m != "more_skills"]
+        return CollectorTurn(spec=spec, missing=hard_missing, reply=reply, done=True)
+    questions = " ".join(QUESTIONS[s] for s in to_ask[:2])
     known = f"So far: {summarize(spec)}. " if spec.title else ""
-    hint = f"\n\n_{OPTIONAL_HINT}_" if len(missing) <= 2 else ""
+    show_hint = len(to_ask) <= 2 and "more_skills" not in to_ask[:2]
+    hint = f"\n\n_{OPTIONAL_HINT}_" if show_hint else ""
     return CollectorTurn(spec=spec, missing=missing, reply=known + questions + hint, done=False)

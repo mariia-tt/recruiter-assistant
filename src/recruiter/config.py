@@ -65,3 +65,7 @@ RERANK_CV_WORDS = 450
 
 # Requirements collector (C1): after this many recruiter turns, search with what we have.
 COLLECTOR_MAX_TURNS = 4
+
+# Outreach (C5) and grounding checker (C6)
+OUTREACH_MAX_WORDS = 120
+OUTREACH_MAX_ATTEMPTS = 2

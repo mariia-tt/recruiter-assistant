@@ -114,3 +114,31 @@ class CollectorTurn(BaseModel):
     missing: list[str]
     reply: str
     done: bool
+
+
+class OutreachMessage(BaseModel):
+    """LinkedIn message written by the Outreach Writer (C5)."""
+
+    text: str
+    facts_used: list[str] = Field(default_factory=list, description="CV facts the message relies on")
+
+
+class Claim(BaseModel):
+    claim: str = Field(description="one factual statement about the candidate made in the message")
+    supported: bool
+    evidence: str | None = Field(default=None, description="verbatim CV fragment, if supported")
+
+
+class GroundingReport(BaseModel):
+    """Grounding Checker (C6) verdicts for every candidate-specific claim in a message."""
+
+    claims: list[Claim]
+
+
+class OutreachResult(BaseModel):
+    message: OutreachMessage
+    report: GroundingReport
+    violations: list[str]
+    attempts: int
+    passed: bool
+    history: list[dict] = Field(default_factory=list, description="per attempt: text, unsupported, violations")

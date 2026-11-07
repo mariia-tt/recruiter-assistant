@@ -1,0 +1,67 @@
+{
+  "component": "C1 requirements collector",
+  "timestamp": "2026-11-07T19:10:22.040411+00:00",
+  "config": {
+    "model": "gemini-3.5-flash-lite",
+    "max_turns": 4,
+    "simulator_prompt": "1",
+    "extractor_prompt": "2"
+  },
+  "n_dialogs": 15,
+  "dialog": {
+    "title_acc": 1.0,
+    "seniority_acc": 1.0,
+    "min_years_acc": 0.9333333333333333,
+    "must_have_lexical": {
+      "precision": 0.6212121212121212,
+      "recall": 0.3867924528301887,
+      "f1": 0.4767441860465117
+    },
+    "nice_to_have_lexical": {
+      "precision": 0.8,
+      "recall": 0.17391304347826086,
+      "f1": 0.2857142857142857
+    },
+    "must_have_semantic": {
+      "precision": 0.6818181818181818,
+      "recall": 0.42452830188679247,
+      "f1": 0.5232558139534884
+    },
+    "nice_to_have_semantic": {
+      "precision": 0.8,
+      "recall": 0.17391304347826086,
+      "f1": 0.2857142857142857
+    },
+    "completion_rate_mandatory": 0.8,
+    "mandatory_resolved_rate": 0.9333333333333333,
+    "mean_turns": 2.2666666666666666,
+    "share_within_3_turns": 1.0,
+    "hit_turn_limit": 0.0
+  },
+  "full_jd_extraction_upper_bound": {
+    "title_acc": 1.0,
+    "seniority_acc": 0.9333333333333333,
+    "min_years_acc": 1.0,
+    "must_have_lexical": {
+      "precision": 0.66,
+      "recall": 0.6226415094339622,
+      "f1": 0.6407766990291262
+    },
+    "nice_to_have_lexical": {
+      "precision": 0.7021276595744681,
+      "recall": 0.717391304347826,
+      "f1": 0.7096774193548387
+    },
+    "must_have_semantic": {
+      "precision": 0.73,
+      "recall": 0.6886792452830188,
+      "f1": 0.7087378640776699
+    },
+    "nice_to_have_semantic": {
+      "precision": 0.7021276595744681,
+      "recall": 0.717391304347826,
+      "f1": 0.7096774193548387
+    }
+  },
+  "llm_calls_used_today": 345
+}

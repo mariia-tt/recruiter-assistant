@@ -1,0 +1,17 @@
+{
+  "component": "C6 grounding checker (judge validation)",
+  "timestamp": "2026-11-07T19:04:10.691445+00:00",
+  "n_claims": 61,
+  "gold_unsupported": 7,
+  "c6_flagged": 6,
+  "accuracy": 0.9508196721311475,
+  "unsupported_precision": 0.8333333333333334,
+  "unsupported_recall": 0.7142857142857143,
+  "cohen_kappa": 0.7418899858956275,
+  "confusion": {
+    "both_unsupported": 5,
+    "c6_only_flagged": 1,
+    "c6_missed": 2,
+    "both_supported": 53
+  }
+}

@@ -27,3 +27,24 @@
   two seniority keywords ("Assistant Manager"); the annotator applied list order.
 - **Status:** silver, not human-verified. A human spot-check of a few records is
   welcome but was not required for the reported numbers.
+
+## Vacancy requirements gold (C1 / JobSpec extraction)
+- **Files:** `jobspec_sample.jsonl` (15 benchmark JDs, random seed 7), `jobspec_gold.jsonl`
+  (labels), `jobspec_guideline.md`.
+- **Annotator:** independent LLM agent (Claude), no access to the system's code, prompts or
+  outputs; every `min_years` / `seniority` value has a verbatim evidence fragment.
+- **Ambiguities** (recorded per JD in `notes`): JDs without a title (title inferred), JDs
+  whose requirements are all "preferred" (empty must-haves), unmapped levels ("Staff",
+  "V") resolved by years.
+
+## Outreach claims gold (validates the C6 grounding checker)
+- **Files:** `claims_sample.jsonl` (61 candidate claims extracted by C6 from the 20
+  outreach messages of `eval/eval_outreach.py`, all attempts), `claims_gold.jsonl`
+  (supported true/false + verbatim evidence), `claims_guideline.md`.
+- **Annotator:** independent LLM agent (Claude) that did not see C6's verdicts.
+- **Privacy:** the CV texts given to the annotator are not stored here (one source CV
+  contains a real name the dataset did not anonymise); they are loaded by `cv_id`
+  from `data/processed/resumes.parquet`, which is not committed.
+- **Limitation:** validates C6's verdicts on the claims C6 itself extracted, not whether
+  C6 extracts every claim; the latter is covered by the fabrication-injection test in
+  `eval/eval_outreach.py` (20/20 injected fabrications caught).

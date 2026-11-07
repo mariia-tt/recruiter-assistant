@@ -8,11 +8,19 @@ from functools import lru_cache
 import pandas as pd
 
 from recruiter import config
+from recruiter.outreach import generate_outreach
+from recruiter.profiler_llm import profile_cv
 from recruiter.profiler_rules import profile
 from recruiter.ranker import rank
 from recruiter.reranker_llm import rerank
 from recruiter.retrieval import HybridIndex, build_index, query_from_spec, search
-from recruiter.schemas import CandidateScore, JobSpec, LLMCandidateRating, RuleProfile
+from recruiter.schemas import (
+    CandidateScore,
+    JobSpec,
+    LLMCandidateRating,
+    OutreachResult,
+    RuleProfile,
+)
 
 log = logging.getLogger(__name__)
 PROFILES_FILE = config.DATA_PROCESSED / "rule_profiles.json"
@@ -57,3 +65,9 @@ def explain_top(
 ) -> tuple[list[CandidateScore], dict[str, LLMCandidateRating]]:
     """One LLM call: recruiter-style ratings + verified evidence quotes for the top-N."""
     return rerank(spec, ranked, load_db().texts)
+
+
+def write_outreach(spec: JobSpec, score: CandidateScore) -> OutreachResult:
+    """C2b profile + C5 writer + C6 checker for one shortlisted candidate (2-5 LLM calls)."""
+    text = load_db().texts[score.id]
+    return generate_outreach(spec, profile_cv(text), text, score)

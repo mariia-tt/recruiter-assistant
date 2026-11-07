@@ -8,8 +8,8 @@ An NLP system that helps a recruiter go from a vacancy to a shortlist:
 3. **C4 Scorecard ranker** — transparent weighted criteria with evidence from the CV;
    **C4b** LLM gives recruiter-style ratings with verified quotes.
 4. **C2a / C2b CV profilers** — rule-based facts for every CV; LLM profile for the shortlist.
-5. *(in progress)* **C5 Outreach writer + C6 grounding checker** — LinkedIn message
-   that uses only facts from the CV.
+5. **C5 Outreach writer + C6 grounding checker** — LinkedIn message that uses only facts
+   from the CV; every claim is verified against the CV and failing drafts are rewritten.
 
 Every component has its own evaluation — see [`docs/05_evaluation.md`](docs/05_evaluation.md).
 Design and data flow: [`docs/architecture.md`](docs/architecture.md).
@@ -38,7 +38,8 @@ uv run streamlit run app.py
 ```
 
 The first start builds the embedding index for 2 481 CVs (~7 min on a laptop, then cached).
-Each recruiter message costs 1 LLM call; "Explain top-10" costs 1 call.
+Each recruiter message costs 1 LLM call; "Explain top-10" costs 1 call; a LinkedIn
+message costs 2–5 calls (profile, write, check, optional rewrite).
 
 ## Tests and evaluations
 
@@ -54,6 +55,9 @@ uv run ruff check . && uv run pytest -q          # fast, no network
 | C3 retriever | `eval/eval_retrieval.py` | 0 | `eval/results/retrieval.json` |
 | C4 ranker | `eval/eval_ranker.py` | 0 | `eval/results/ranker.json` |
 | C4b LLM re-ranker | `eval/eval_reranker_llm.py` | 61 (cached) | `eval/results/reranker_llm.json` |
+| C1 collector (simulated dialogs) | `eval/eval_collector.py` | ~90 (cached) | `eval/results/collector.json` |
+| C5 + C6 outreach | `eval/eval_outreach.py` | ~70 (cached) | `eval/results/outreach.json` |
+| C6 judge validation | `eval/eval_grounding_judge.py` | 0 | `eval/results/grounding_judge.json` |
 
 Benchmarks and gold sets are described in [`eval/gold/README.md`](eval/gold/README.md).
 

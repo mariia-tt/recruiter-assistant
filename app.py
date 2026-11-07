@@ -9,7 +9,7 @@ import streamlit as st
 
 from recruiter import config, llm
 from recruiter.collector import next_turn
-from recruiter.pipeline import explain_top, load_db, search_candidates
+from recruiter.pipeline import explain_top, load_db, search_candidates, write_outreach
 from recruiter.schemas import JobSpec
 
 st.set_page_config(page_title="Recruiter Assistant", page_icon="🧭", layout="wide")
@@ -32,7 +32,7 @@ def db():
 
 def init_state() -> None:
     defaults = {"messages": [{"role": "assistant", "content": GREETING}], "spec": None,
-                "results": None, "ratings": {}}
+                "results": None, "ratings": {}, "outreach": {}}
     for k, v in defaults.items():
         st.session_state.setdefault(k, v)
 
@@ -48,7 +48,7 @@ def sidebar() -> float | None:
     st.sidebar.metric("LLM calls today", f"{used} / {config.LLM_RPD}")
     st.sidebar.caption(f"Model: `{config.LLM_MODEL}` · CVs in DB: {len(db().texts)}")
     if st.sidebar.button("New search"):
-        for k in ("messages", "spec", "results", "ratings"):
+        for k in ("messages", "spec", "results", "ratings", "outreach"):
             st.session_state.pop(k, None)
         st.rerun()
     return 0.5 if strict else None
@@ -121,6 +121,31 @@ def candidate_card(rank: int, c, spec: JobSpec) -> None:
                 st.caption(f"Concern: {r.concern}")
         with st.popover("Show CV text"):
             st.text(d.texts[c.id][:4000])
+        outreach_section(c, spec)
+
+
+def outreach_section(c, spec: JobSpec) -> None:
+    """C5 + C6: grounded LinkedIn message with a per-claim fact check."""
+    res = st.session_state.outreach.get(c.id)
+    if res is None:
+        if st.button("✉️ Write LinkedIn message (2–5 LLM calls)", key=f"msg_{c.id}"):
+            with st.spinner("Profiling CV, writing and fact-checking the message…"):
+                try:
+                    st.session_state.outreach[c.id] = write_outreach(spec, c)
+                except llm.QuotaExhaustedError as e:
+                    st.error(str(e))
+            st.rerun()
+        return
+    st.markdown("**LinkedIn message**")
+    st.text_area("Message", res.message.text, height=180, key=f"txt_{c.id}",
+                 label_visibility="collapsed")
+    status = "✅ all claims verified in the CV" if res.passed else "⚠️ review before sending"
+    st.caption(f"{status} · attempts: {res.attempts} · {len(res.message.text.split())} words")
+    for cl in res.report.claims:
+        mark = "✓" if cl.supported else "✗"
+        st.caption(f"{mark} {cl.claim}" + (f" — “{cl.evidence}”" if cl.evidence else ""))
+    for v in res.violations:
+        st.caption(f"✗ {v}")
 
 
 def results_panel() -> None:

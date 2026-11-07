@@ -1,0 +1,30 @@
+{
+  "component": "C5 outreach writer + C6 grounding checker",
+  "timestamp": "2026-11-07T19:16:03.918708+00:00",
+  "config": {
+    "model": "gemini-3.5-flash-lite",
+    "writer_prompt": "1",
+    "checker_prompt": "1",
+    "max_words": 120
+  },
+  "metrics": {
+    "n_messages": 20,
+    "first_draft": {
+      "faithfulness_claim_level": 0.9591836734693877,
+      "messages_with_unsupported_claim": 0.1,
+      "constraint_compliance": 1.0
+    },
+    "final": {
+      "faithfulness_claim_level": 1.0,
+      "messages_with_unsupported_claim": 0.0,
+      "constraint_compliance": 1.0,
+      "passed_all_checks": 1.0,
+      "personalised_>=2_supported_facts": 0.95,
+      "mean_supported_facts": 2.55,
+      "mean_words": 64.85
+    },
+    "mean_attempts": 1.1,
+    "c6_fabrication_detection_rate": 1.0
+  },
+  "llm_calls_used_today": 409
+}

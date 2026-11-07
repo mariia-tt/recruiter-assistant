@@ -8,6 +8,54 @@ See `eval/results/data_cleaning.json` and the Phase 3 entry in
 false positives — licence numbers), duplicates 2 → 0, glued words removed
 (verified by unit tests).
 
+## C1 Requirements collector
+**Script:** `eval/eval_collector.py` → `eval/results/collector.json`,
+`collector_dialogs.jsonl` · **Gold:** `eval/gold/jobspec_gold.jsonl` — 15 benchmark JDs
+annotated by an independent LLM annotator (Claude) with verbatim evidence.
+**Setup:** a simulator LLM (`prompts/recruiter_simulator.md`) plays a recruiter who holds
+the JD: first message = role + 1–2 skills, then answers only what is asked, says
+"no specific requirement" when the JD is silent. The collector runs unchanged.
+Upper bound: the extractor applied to the full JD text (no dialog).
+
+**Why these metrics.** The collector's job is to end the dialog with a correct
+`JobSpec` quickly: per-slot accuracy for scalar slots, P/R/F1 for skill lists, number
+of recruiter turns, and whether every mandatory slot is resolved (filled, or correctly
+left empty because the JD does not state it).
+
+| Metric | Dialog (C1) | Full JD (upper bound) | Target |
+|---|---|---|---|
+| Title accuracy | **1.00** | 1.00 | |
+| Seniority accuracy | **1.00** | 0.93 | |
+| Min years accuracy (±0.5) | **0.93** | 1.00 | |
+| Must-have F1 — lexical (P / R) | 0.48 (0.62 / 0.39) | 0.64 (0.66 / 0.62) | ≥ 0.80 |
+| Must-have F1 — semantic (P / R) | 0.52 (0.68 / 0.42) | 0.71 (0.73 / 0.69) | |
+| Nice-to-have F1 — semantic | 0.29 | 0.71 | |
+| Mandatory slots resolved | **0.93** | — | |
+| Mean recruiter turns | **2.3** (100 % ≤ 3) | — | ≥ 80 % ≤ 4 |
+
+Skill matching: *lexical* = same canonical skill or token Jaccard ≥ 0.5;
+*semantic* additionally accepts bge-small cosine ≥ 0.8 ("restful apis" ~ "restful api design").
+Both are reported because the choice changes F1 by 0.04–0.07.
+
+**Iterations (prompt `jobspec_extractor` v1 → v2, collector rules).**
+1. First 2 dialogs ended after one turn: the extractor *invented* `min_years: 5` from the
+   word "Senior", so the collector never asked, and the JD's real "3–7 years" was lost.
+   Prompt v2: years only when a number is written; never derived from the level.
+2. Recruiters named only 1–2 skills and were never asked for more → collector now asks
+   once "Any other must-have skills, and any nice-to-haves?" when < 3 must-haves.
+3. A slot already asked and still empty is treated as "no requirement" and never re-asked.
+Benchmark JobSpecs used by C3/C4 were extracted with v1; in full JDs years are written
+explicitly, so v2 would not change them materially (not re-run to save quota).
+
+**Error analysis.** Scalar slots are nearly solved. The gap is skill *recall*: in a chat
+the recruiter mentions far fewer requirements than the JD lists (e.g. the BI analyst
+dialog never mentioned Power BI), and the extractor sometimes adds soft skills that are
+not requirements ("business acumen"), lowering precision. The single remaining slot
+error: "3 to 7 years is ideal" was not captured in one dialog. "Completion rate" counted
+literally is 0.80, but 2 of the 3 "incomplete" dialogs are correct — the JD has no years
+or level — hence the *resolved* metric. **Next fix:** propose typical skills for the role
+and ask the recruiter to confirm (one extra question), and filter soft skills.
+
 ## C2a rule profiler / C2b LLM profiler
 **Script:** `eval/eval_profiler.py` → `eval/results/profiler.json` · **Gold:**
 `eval/gold/cv_profiles.jsonl` — 30 CVs (15 categories × 2, seed 42), **silver
@@ -194,3 +242,55 @@ already well-ordered top-10 there is little headroom, and the model sees only a
 candidate cards; quotes that are not found verbatim in the CV (7 %) are dropped
 before display. Possible next fix: give the LLM the full CV or the evidence
 snippets from the scorecard instead of the CV head.
+
+## C5 Outreach writer (+ C6 in the loop)
+**Script:** `eval/eval_outreach.py` → `eval/results/outreach.json` (v2), `outreach_v1.json`,
+`outreach_messages*.jsonl` · **Data:** 10 benchmark JobSpecs (seed 42) × top-2 candidates
+retrieved and ranked from the candidate DB = 20 messages · `gemini-3.5-flash-lite`,
+prompts `outreach_writer` v1, `grounding_checker` v1.
+
+**Why these metrics.** A first-contact message must (1) contain no invented facts —
+*faithfulness* = supported / all candidate claims (C6, verbatim evidence required) and the
+share of messages with any unsupported claim; (2) be personal — ≥ 2 CV-specific facts that
+C6 verified; (3) follow business rules — ≤ 120 words, no "Company Name"/[placeholder],
+a question/call to action (deterministic checks). First draft vs final shows what the
+check-and-rewrite loop adds. C6 itself is validated in the next section.
+
+| Metric | v1 first draft | v1 final | v2 first draft | **v2 final** | Target |
+|---|---|---|---|---|---|
+| Faithfulness (claim level) | 0.926 | 0.965 | 0.959 | **1.000** | ≥ 0.95 |
+| Messages with an unsupported claim | 20 % | 5 % | 10 % | **0 %** | |
+| Constraint compliance | 100 % | 100 % | 100 % | **100 %** | |
+| ≥ 2 verified CV facts (personalised) | — | 100 % | — | **95 %** | ≥ 90 % |
+| Mean words | — | 68 | — | 65 | ≤ 120 |
+| Mean attempts | — | 1.20 | — | 1.10 | |
+
+**Loop-back v1 → v2.** In v1, 2 of the 5 flagged claims were the *computed* total years
+("about 21.4 years of experience"): the number came from the C2b profile, is never stated
+in the CV, and C2b's years MAE is 1.3 y. v2 no longer gives computed years to the writer.
+First-draft problems halved (20 % → 10 %) and all final messages passed.
+Remaining first-draft issues are overstatements ("utilizing … Angular, and Azure" when
+the CV says "basic understanding"), which C6 caught and the rewrite removed.
+
+## C6 Grounding checker — validation of the LLM judge
+**Script:** `eval/eval_grounding_judge.py` → `eval/results/grounding_judge.json` ·
+**Gold:** `eval/gold/claims_gold.jsonl` — 61 candidate claims from the v1 outreach
+messages, labelled by an independent LLM annotator (Claude) that did not see C6 verdicts.
+
+| Metric (positive class = "unsupported") | Value | Target |
+|---|---|---|
+| Accuracy | **0.95** | |
+| Cohen's kappa | **0.74** | ≥ 0.6 |
+| Precision (flags that are real problems) | 0.83 (5 / 6) | |
+| Recall (real problems flagged) | 0.71 (5 / 7) | |
+| Injected fabrications caught (perturbation test, n = 20) | **1.00** | |
+
+- High vs low: C6 reliably catches **invented facts** (20/20 injected claims such as
+  "seven years as an airline pilot") and **numbers not in the CV** ("about 21.4 years").
+- Its one false alarm: "Software Engineering Manager and Principal Software Engineer" —
+  both titles are in the CV; the verbatim-evidence rule rejected a combined claim.
+- Its two misses are *overstatements*: "hands-on expertise with Java" (Java only in a
+  skills list) and "an MBA" (degree still in progress). Subtle intensity is the hardest
+  case for both the writer and the judge.
+- Agreement is measured against another LLM, not humans; n = 61 claims, 7 negatives,
+  so the recall estimate is coarse.
