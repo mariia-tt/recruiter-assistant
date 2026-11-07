@@ -12,7 +12,7 @@ import time
 from datetime import UTC, datetime
 from zoneinfo import ZoneInfo
 
-from openai import APIStatusError, OpenAI
+from openai import APIConnectionError, APIStatusError, OpenAI
 from pydantic import BaseModel
 
 from recruiter import config
@@ -153,6 +153,13 @@ def _call(payload: dict, component: str, max_retries: int = 3) -> str:
             delay = _retry_delay(e) or 30 * 2**attempt
             log.warning("LLM %s on %s, retry %d/%d in %.0fs",
                         e.status_code, model, attempt + 1, max_retries, delay)
+            time.sleep(delay)
+        except APIConnectionError:  # includes timeouts; the request still counts as used
+            if attempt == max_retries:
+                raise
+            delay = 30 * 2**attempt
+            log.warning("LLM timeout/connection error on %s, retry %d/%d in %.0fs",
+                        model, attempt + 1, max_retries, delay)
             time.sleep(delay)
 
     config.CACHE_DIR.mkdir(parents=True, exist_ok=True)

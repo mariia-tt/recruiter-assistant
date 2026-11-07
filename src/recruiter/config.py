@@ -31,6 +31,7 @@ USAGE_FILE = CACHE_DIR / "_usage.json"
 # Data preparation
 MIN_CV_WORDS = 50
 LLM_MAX_CV_WORDS = 2000
+LLM_MAX_JD_WORDS = 1500
 # Retrieval (C3)
 EMBED_MODEL = "BAAI/bge-small-en-v1.5"
 EMBED_QUERY_PREFIX = "Represent this sentence for searching relevant passages: "

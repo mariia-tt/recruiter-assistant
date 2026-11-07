@@ -1,8 +1,8 @@
-mode,jd_id,ndcg@10,recall@50,n_good,pool,jd_start
-bm25,j0109ae6c95,0.5264282969545138,,0,56,"Our client is looking for experienced professional with a strong background in healthcare, including Pharmacy Benefit Ma"
-bm25,j0e494b4c06,0.5206178632166883,0.10526315789473684,19,63,"Company Overview
+method,jd_id,ndcg@10,recall@50,n_good,pool,jd_start
+bm25/raw_jd,j0109ae6c95,0.5264282969545138,,0,56,"Our client is looking for experienced professional with a strong background in healthcare, including Pharmacy Benefit Ma"
+bm25/raw_jd,j0e494b4c06,0.5206178632166883,0.10526315789473684,19,63,"Company Overview
 DocuSign helps organizations connect and automate how they agree. Our flagship product, eSignature, is "
-bm25,j0ecf6a4401,0.9305687780632227,0.24,25,39,"Position Type
+bm25/raw_jd,j0ecf6a4401,0.9305687780632227,0.24,25,39,"Position Type
 
 Full time
 
@@ -13,9 +13,9 @@ Experienced (relevant combo of work and education)
 Education Desired
 
 Bachelor "
-bm25,j1a465bd243,0.933745776545611,0.47058823529411764,17,21,"Title: Sr. Data EngineerLocation: Austin, TxDuration: 6 MonthsPay Rate: $65HR - $70HR on W2
+bm25/raw_jd,j1a465bd243,0.933745776545611,0.47058823529411764,17,21,"Title: Sr. Data EngineerLocation: Austin, TxDuration: 6 MonthsPay Rate: $65HR - $70HR on W2
 Requirements:Bachelors degre"
-bm25,j203d2c3d86,0.5822986463816614,0.5,2,13,"Assignment Detail
+bm25/raw_jd,j203d2c3d86,0.5822986463816614,0.5,2,13,"Assignment Detail
 
 Industry:IT ConsultingServices
 
@@ -26,109 +26,109 @@ Business Analyst-Level III
 Job Number: 23-02173
 
 Dr"
-bm25,j21399292f2,0.6136525857537392,,0,58,You're ready to gain the skills and experience needed to grow within your role and advance your career - and we have the
-bm25,j2400afad4e,0.7799082337019198,,0,22,"Job Description: Staff AccountantJob Status: Full-Time, M-F 8am-4:30pmLocation: Dyersville, IA - This is an in office jo"
-bm25,j256405cf04,0.28088150105118154,,0,58,"Position: Business Analyst IVLocation: St. Louis, MO (Onsite from day one)Duration: 6+ Month Contract to Hire Job Descri"
-bm25,j26a56fcf76,0.43067655807339306,,0,7,"Role Business Analyst (AI ML)Location Remote Duration - 6+ months
+bm25/raw_jd,j21399292f2,0.6136525857537392,,0,58,You're ready to gain the skills and experience needed to grow within your role and advance your career - and we have the
+bm25/raw_jd,j2400afad4e,0.7799082337019198,,0,22,"Job Description: Staff AccountantJob Status: Full-Time, M-F 8am-4:30pmLocation: Dyersville, IA - This is an in office jo"
+bm25/raw_jd,j256405cf04,0.28088150105118154,,0,58,"Position: Business Analyst IVLocation: St. Louis, MO (Onsite from day one)Duration: 6+ Month Contract to Hire Job Descri"
+bm25/raw_jd,j26a56fcf76,0.43067655807339306,,0,7,"Role Business Analyst (AI ML)Location Remote Duration - 6+ months
 Job Summary: The Jr. Business Analyst (AI ML) will be "
-bm25,j275571d46c,0.971476156593264,,0,9,We are dedicated to pushing the boundaries of innovation and creating solutions that redefine our field. As we continue 
-bm25,j2865e733ae,0.578141609194583,,0,15,"Who We Are
+bm25/raw_jd,j275571d46c,0.971476156593264,,0,9,We are dedicated to pushing the boundaries of innovation and creating solutions that redefine our field. As we continue 
+bm25/raw_jd,j2865e733ae,0.578141609194583,,0,15,"Who We Are
 Invitation Homes is a fast-paced evolving publicly traded REIT that is pioneering a new industry with over 80"
-bm25,j2e245f2456,0.46713399489248086,0.2,10,34,"Job Title: Software DeveloperLocation: Cleveland, OHDuration: 6+ MonthsPosition Type Only W2 Role (No Corp to Corp)Job D"
-bm25,j31b356641d,0.914856882358379,,0,19,"Primary Location: Macon, Georgia
+bm25/raw_jd,j2e245f2456,0.46713399489248086,0.2,10,34,"Job Title: Software DeveloperLocation: Cleveland, OHDuration: 6+ MonthsPosition Type Only W2 Role (No Corp to Corp)Job D"
+bm25/raw_jd,j31b356641d,0.914856882358379,,0,19,"Primary Location: Macon, Georgia
 Relocation offered: Yes
 Employment status: Full-Time
 Travel: 10%
 Non-compete: No
 The es"
-bm25,j31e0450484,0.06625422345438904,0.43478260869565216,23,64,"Role: Lead Data EngineerLocation: RemoteDuration: Long Term 8 to 10 years of experience working in data engineering, bus"
-bm25,j32478442dc,0.5706417189553201,0.0,2,10,"Description
+bm25/raw_jd,j31e0450484,0.06625422345438904,0.43478260869565216,23,64,"Role: Lead Data EngineerLocation: RemoteDuration: Long Term 8 to 10 years of experience working in data engineering, bus"
+bm25/raw_jd,j32478442dc,0.5706417189553201,0.0,2,10,"Description
 This is a Software Development Engineer role in Amazon Pharmacy.
 Amazon Pharmacy is looking for a Software D"
-bm25,j325915d97e,0.6809047493604335,,0,89,"Primary Location: Melbourne, Florida
+bm25/raw_jd,j325915d97e,0.6809047493604335,,0,89,"Primary Location: Melbourne, Florida
 V-Soft Consulting is currently hiring for an Application Software Engineering V for"
-bm25,j3d2c5b8d9b,0.5931729515195114,0.0,3,7,"The Qualtrics XM Platform is a system of action that helps businesses to attract customers who stay longer and buy more,"
-bm25,j3d67e4f8c4,0.5983950669742498,,0,21,"Job Summary
+bm25/raw_jd,j3d2c5b8d9b,0.5931729515195114,0.0,3,7,"The Qualtrics XM Platform is a system of action that helps businesses to attract customers who stay longer and buy more,"
+bm25/raw_jd,j3d67e4f8c4,0.5983950669742498,,0,21,"Job Summary
 Manage both strategic and daily developmental activities and personnel to ensure that the business system an"
-bm25,j4341f588ce,1.0,,0,8,"Sr. Accountant-Accounting
+bm25/raw_jd,j4341f588ce,1.0,,0,8,"Sr. Accountant-Accounting
 Dallas, Texas
 As a Sr. Accountant in the Accounting department at Childrens Health, youll cont"
-bm25,j51b2967b98,0.7280855459907165,,0,17,"Description:Compiles, analyzes and formats data to provided documentation that assists internal customers in the develop"
-bm25,j53f4b169e7,0.5,0.0,1,7,"The Senior Tax Accountant is responsible for performing complex tax preparation, tax research and tax planning with mini"
-bm25,j549068f98e,0.8493901714678299,0.0,2,11,"10627 Software Engineer II (Heroku Architect)
+bm25/raw_jd,j51b2967b98,0.7280855459907165,,0,17,"Description:Compiles, analyzes and formats data to provided documentation that assists internal customers in the develop"
+bm25/raw_jd,j53f4b169e7,0.5,0.0,1,7,"The Senior Tax Accountant is responsible for performing complex tax preparation, tax research and tax planning with mini"
+bm25/raw_jd,j549068f98e,0.8493901714678299,0.0,2,11,"10627 Software Engineer II (Heroku Architect)
 Purpose:
 The Heroku Software Engineer II is responsible for analyzing, des"
-bm25,j57014089ad,0.7136540102475307,0.0967741935483871,31,44,X is Alphabets moonshot factory. We are a diverse group of inventors and entrepreneurs who build and launch technologies
-bm25,j57944b8e65,0.17630010660342912,0.125,48,87,"Who we are?For the past 20 years, we have powered many Digital Experiences for the Fortune 500. Since 1999, we have grow"
-bm25,j607c49860d,1.0,1.0,1,5,A leading insurance services company in Irvine is looking for a talented Staff Accountant to join the team! This is an e
-bm25,j636488fee1,0.7687770203078366,0.375,8,25,"Qualifications:Accounting degreeCPA license required4+ years professional accounting experience, public accounting prefe"
-bm25,j63f6a8ea32,0.8579809428223729,,0,27,"One of our clients is looking for someone with a strong emphasis in digital electronics microprocessor FPGA design, embe"
-bm25,j64167269fb,0.7928654229965443,0.0,3,7,Goliath Partners has been retained by a Prop Trading Firm in commodities off Wall St in New York. They have just opened 
-bm25,j670ab9f66c,1.0,,0,23,"Purpose and ScopeWorks with the Finance division in day-to-day activities. Assists in design, development, and preparati"
-bm25,j6776858677,0.5727555047321237,0.17857142857142858,28,55,"Location: Tampa, FL
+bm25/raw_jd,j57014089ad,0.7136540102475307,0.0967741935483871,31,44,X is Alphabets moonshot factory. We are a diverse group of inventors and entrepreneurs who build and launch technologies
+bm25/raw_jd,j57944b8e65,0.17630010660342912,0.125,48,87,"Who we are?For the past 20 years, we have powered many Digital Experiences for the Fortune 500. Since 1999, we have grow"
+bm25/raw_jd,j607c49860d,1.0,1.0,1,5,A leading insurance services company in Irvine is looking for a talented Staff Accountant to join the team! This is an e
+bm25/raw_jd,j636488fee1,0.7687770203078366,0.375,8,25,"Qualifications:Accounting degreeCPA license required4+ years professional accounting experience, public accounting prefe"
+bm25/raw_jd,j63f6a8ea32,0.8579809428223729,,0,27,"One of our clients is looking for someone with a strong emphasis in digital electronics microprocessor FPGA design, embe"
+bm25/raw_jd,j64167269fb,0.7928654229965443,0.0,3,7,Goliath Partners has been retained by a Prop Trading Firm in commodities off Wall St in New York. They have just opened 
+bm25/raw_jd,j670ab9f66c,1.0,,0,23,"Purpose and ScopeWorks with the Finance division in day-to-day activities. Assists in design, development, and preparati"
+bm25/raw_jd,j6776858677,0.5727555047321237,0.17857142857142858,28,55,"Location: Tampa, FL
 Exp: 7-10 Yrs
 SPOC: Tushar Kshirsagar
 Key Skills: Angular 10 or above, JavaScript and HTML5 and work"
-bm25,j6a51d79412,1.0,0.3333333333333333,3,7,"ABOUT THE COMPANYFounded in 1888, Lee Kum Kee, a Hong Kong-based global food company, specializes in creating condiments"
-bm25,j74fd52df8f,0.7510916729774053,,0,24,Key Responsibilities:Create intricate wiring networks and electrical subcomponents for both prototype systems and their 
-bm25,j79ab29338d,0.2874476364692017,,0,22,Responsibilities: Design and develop software using design patterns and best practices Assists in development of high-le
-bm25,j79f8900893,0.491526182307598,,0,23,"Additional Job Description
+bm25/raw_jd,j6a51d79412,1.0,0.3333333333333333,3,7,"ABOUT THE COMPANYFounded in 1888, Lee Kum Kee, a Hong Kong-based global food company, specializes in creating condiments"
+bm25/raw_jd,j74fd52df8f,0.7510916729774053,,0,24,Key Responsibilities:Create intricate wiring networks and electrical subcomponents for both prototype systems and their 
+bm25/raw_jd,j79ab29338d,0.2874476364692017,,0,22,Responsibilities: Design and develop software using design patterns and best practices Assists in development of high-le
+bm25/raw_jd,j79f8900893,0.491526182307598,,0,23,"Additional Job Description
 Job Title: Business Analyst (with Pega OR Rule Engine tool experience)
 Location: St. Louis, M"
-bm25,j7c5bc1878d,0.0,,0,83,"Role: Java Developer Duration: 12 months Required Skills Developed web application using Java, J2EE, HTML, CSS, JavaScri"
-bm25,j7c71d1f769,0.5936996889067496,0.25,20,27,Novi Labs delivers world-class Oil & Gas forecasts via an end-to-end platform that leverages machine learning and data s
-bm25,j809bc6c80f,0.3333333333333333,,0,8,"Shifts: Mon Fri 8-5 (HYBRID onsite)3 month contract (No extensions)Start Date: 952023
+bm25/raw_jd,j7c5bc1878d,0.0,,0,83,"Role: Java Developer Duration: 12 months Required Skills Developed web application using Java, J2EE, HTML, CSS, JavaScri"
+bm25/raw_jd,j7c71d1f769,0.5936996889067496,0.25,20,27,Novi Labs delivers world-class Oil & Gas forecasts via an end-to-end platform that leverages machine learning and data s
+bm25/raw_jd,j809bc6c80f,0.3333333333333333,,0,8,"Shifts: Mon Fri 8-5 (HYBRID onsite)3 month contract (No extensions)Start Date: 952023
 Day-to-Day:Reviews, analyzes, reco"
-bm25,j81c4585636,0.5,,0,9,The ideal candidate will be responsible for developing high-quality applications. They will also be responsible for desi
-bm25,j8ddfc98318,0.7097402150304354,,0,24,"We are looking for the candidates who is willing to work on our payroll.
+bm25/raw_jd,j81c4585636,0.5,,0,9,The ideal candidate will be responsible for developing high-quality applications. They will also be responsible for desi
+bm25/raw_jd,j8ddfc98318,0.7097402150304354,,0,24,"We are looking for the candidates who is willing to work on our payroll.
 Job Title: Data AnalystLocation: Plano, TX (Day"
-bm25,j915a85b702,0.8532721558012799,0.375,24,35,"Allergan Data Labs is on a mission to transform the Allergan Aesthetics beauty business at AbbVie, one of the largest ph"
-bm25,j97ab8bab65,1.0,0.0,1,5,"Minimum qualifications:
+bm25/raw_jd,j915a85b702,0.8532721558012799,0.375,24,35,"Allergan Data Labs is on a mission to transform the Allergan Aesthetics beauty business at AbbVie, one of the largest ph"
+bm25/raw_jd,j97ab8bab65,1.0,0.0,1,5,"Minimum qualifications:
 
 Bachelor's degree in Computer Science, a related technical field, or equivalent practical exper"
-bm25,j9f63681758,0.4710361549625274,,0,31,A mid-sized telecom company is looking for a Sr Data Engineer to join their Business Intelligence Insights team. This te
-bm25,j9fa38d8795,1.0,,0,8,"Want to learn more about this role and Jobot? Click our Jobot logo and follow our LinkedIn page!
+bm25/raw_jd,j9f63681758,0.4710361549625274,,0,31,A mid-sized telecom company is looking for a Sr Data Engineer to join their Business Intelligence Insights team. This te
+bm25/raw_jd,j9fa38d8795,1.0,,0,8,"Want to learn more about this role and Jobot? Click our Jobot logo and follow our LinkedIn page!
 Job details
 Hybrid Sche"
-bm25,jadc72a8b5e,0.8357804136936718,0.43478260869565216,23,33,"Position Type: Full-Time, W2 Direct Hire. (Must be a US Citizen or Green Card holder, eligible to work without sponsorsh"
-bm25,jaffdccbb0d,0.8874699304014749,0.2857142857142857,21,27,"About Grainger
+bm25/raw_jd,jadc72a8b5e,0.8357804136936718,0.43478260869565216,23,33,"Position Type: Full-Time, W2 Direct Hire. (Must be a US Citizen or Green Card holder, eligible to work without sponsorsh"
+bm25/raw_jd,jaffdccbb0d,0.8874699304014749,0.2857142857142857,21,27,"About Grainger
 Grainger is a leading broad line distributor with operations primarily in North America, Japan and the Un"
-bm25,jb19dcd6acb,0.8922108454754891,,0,11,"Want to learn more about this role and Jobot? Click our Jobot logo and follow our LinkedIn page!
+bm25/raw_jd,jb19dcd6acb,0.8922108454754891,,0,11,"Want to learn more about this role and Jobot? Click our Jobot logo and follow our LinkedIn page!
 Job details
 Join this g"
-bm25,jb54e25043c,0.6717589890736099,,0,23,"Gaming Business Analyst
+bm25/raw_jd,jb54e25043c,0.6717589890736099,,0,23,"Gaming Business Analyst
 Experience: 5+ yrs
 Location: Bellevue, USA
 
 Responsibilities:
 Ability to understand vast amounts"
-bm25,jb6bdf0d5b1,0.8899541168509599,0.0,27,35,"Description
+bm25/raw_jd,jb6bdf0d5b1,0.8899541168509599,0.0,27,35,"Description
 
 What were looking for
 
 At AppFolio, we paddle as one. We ride and make waves together, with a relentless fo"
-bm25,jba23ab1d98,1.0,,0,9,Great opportunity for an experienced staff accountant to work for an established and growing company headquartered in Br
-bm25,jbd1f94111d,0.914856882358379,,0,17,"A fast growing, private equity backed, healthcare company in Suffolk County is looking for a Financial Reporting Analyst"
-bm25,jbf60dc6936,0.38685280723454163,,0,5,"Were Aspire, a ServiceTitan Company
+bm25/raw_jd,jba23ab1d98,1.0,,0,9,Great opportunity for an experienced staff accountant to work for an established and growing company headquartered in Br
+bm25/raw_jd,jbd1f94111d,0.914856882358379,,0,17,"A fast growing, private equity backed, healthcare company in Suffolk County is looking for a Financial Reporting Analyst"
+bm25/raw_jd,jbf60dc6936,0.38685280723454163,,0,5,"Were Aspire, a ServiceTitan Company
 Were Aspire, the leading SaaS provider for commercial landscaping, snow and ice remo"
-bm25,jc9fb002526,0.39879515011560607,0.0,17,49,"Who we are:Founded in 2017, Gatik is the leader in autonomous middle mile logistics. We deliver goods safely and efficie"
-bm25,jd2c3517f34,0.6689724521168845,0.1,30,57,"Who we are:Founded in 2017, Gatik is the leader in autonomous middle mile logistics. We deliver goods safely and efficie"
-bm25,je1c28623aa,0.6214011939609387,,0,20,"Job Description:
+bm25/raw_jd,jc9fb002526,0.39879515011560607,0.0,17,49,"Who we are:Founded in 2017, Gatik is the leader in autonomous middle mile logistics. We deliver goods safely and efficie"
+bm25/raw_jd,jd2c3517f34,0.6689724521168845,0.1,30,57,"Who we are:Founded in 2017, Gatik is the leader in autonomous middle mile logistics. We deliver goods safely and efficie"
+bm25/raw_jd,je1c28623aa,0.6214011939609387,,0,20,"Job Description:
 The ElectricalResident Engineer-Electrification (RE) is a highly visible technical, product & systems e"
-bm25,je4168b9d21,0.7500059677816915,,0,12,CORPORATE SENIOR STAFF ACCOUNTANT (REMOTE) POSITION SUMMARY: We are seeking a Corporate Senior Staff Accountant to join 
-bm25,je450375972,0.46712235974543204,0.11428571428571428,35,69,"ServiceNow BA perspective, here are some of the requirements: Years of experience: 8+ yrs as a Business Analyst. Scrum M"
-bm25,jec09be5a33,0.34181895781690264,,0,37,"The Opportunity
+bm25/raw_jd,je4168b9d21,0.7500059677816915,,0,12,CORPORATE SENIOR STAFF ACCOUNTANT (REMOTE) POSITION SUMMARY: We are seeking a Corporate Senior Staff Accountant to join 
+bm25/raw_jd,je450375972,0.46712235974543204,0.11428571428571428,35,69,"ServiceNow BA perspective, here are some of the requirements: Years of experience: 8+ yrs as a Business Analyst. Scrum M"
+bm25/raw_jd,jec09be5a33,0.34181895781690264,,0,37,"The Opportunity
 QuidelOrtho unites the strengths of Quidel Corporation and Ortho Clinical Diagnostics, creating a world-"
-bm25,jef1cf852d0,0.6689626151170586,0.3,10,24,"Job Title: Data architectData analyst Location: Juno Beach, FLJob description:We are looking to get a Data ArchitectData"
-bm25,jf9ddf265f2,0.5508095940041026,,0,11,"JOB TITLE: Business Analyst
+bm25/raw_jd,jef1cf852d0,0.6689626151170586,0.3,10,24,"Job Title: Data architectData analyst Location: Juno Beach, FLJob description:We are looking to get a Data ArchitectData"
+bm25/raw_jd,jf9ddf265f2,0.5508095940041026,,0,11,"JOB TITLE: Business Analyst
 
 Does using data science to solve business problems sound intriguing? Enjoy working collabor"
-bm25,jface874c7a,0.9069212362975007,0.5416666666666666,24,31,"Backed by a leading growth equity firm, an LA based CPGFood & Bev company is looking for a strong accounting professiona"
-bm25,jfce9576462,1.0,,0,6,experience building ELT infrastructure and big data (KafkaFlinkSparkAirflowDBT).We are looking for someone who can take 
-dense,j0109ae6c95,0.5428183923453893,,0,56,"Our client is looking for experienced professional with a strong background in healthcare, including Pharmacy Benefit Ma"
-dense,j0e494b4c06,0.45222411216352115,0.2631578947368421,19,63,"Company Overview
+bm25/raw_jd,jface874c7a,0.9069212362975007,0.5416666666666666,24,31,"Backed by a leading growth equity firm, an LA based CPGFood & Bev company is looking for a strong accounting professiona"
+bm25/raw_jd,jfce9576462,1.0,,0,6,experience building ELT infrastructure and big data (KafkaFlinkSparkAirflowDBT).We are looking for someone who can take 
+dense/raw_jd,j0109ae6c95,0.5428183923453893,,0,56,"Our client is looking for experienced professional with a strong background in healthcare, including Pharmacy Benefit Ma"
+dense/raw_jd,j0e494b4c06,0.45222411216352115,0.2631578947368421,19,63,"Company Overview
 DocuSign helps organizations connect and automate how they agree. Our flagship product, eSignature, is "
-dense,j0ecf6a4401,0.8165901947515999,0.2,25,39,"Position Type
+dense/raw_jd,j0ecf6a4401,0.8165901947515999,0.2,25,39,"Position Type
 
 Full time
 
@@ -139,9 +139,9 @@ Experienced (relevant combo of work and education)
 Education Desired
 
 Bachelor "
-dense,j1a465bd243,1.0,0.4117647058823529,17,21,"Title: Sr. Data EngineerLocation: Austin, TxDuration: 6 MonthsPay Rate: $65HR - $70HR on W2
+dense/raw_jd,j1a465bd243,1.0,0.4117647058823529,17,21,"Title: Sr. Data EngineerLocation: Austin, TxDuration: 6 MonthsPay Rate: $65HR - $70HR on W2
 Requirements:Bachelors degre"
-dense,j203d2c3d86,0.9128781396400242,0.5,2,13,"Assignment Detail
+dense/raw_jd,j203d2c3d86,0.9128781396400242,0.5,2,13,"Assignment Detail
 
 Industry:IT ConsultingServices
 
@@ -152,109 +152,109 @@ Business Analyst-Level III
 Job Number: 23-02173
 
 Dr"
-dense,j21399292f2,0.696938354998433,,0,58,You're ready to gain the skills and experience needed to grow within your role and advance your career - and we have the
-dense,j2400afad4e,0.933745776545611,,0,22,"Job Description: Staff AccountantJob Status: Full-Time, M-F 8am-4:30pmLocation: Dyersville, IA - This is an in office jo"
-dense,j256405cf04,0.22212782793993274,,0,58,"Position: Business Analyst IVLocation: St. Louis, MO (Onsite from day one)Duration: 6+ Month Contract to Hire Job Descri"
-dense,j26a56fcf76,0.6309297535714575,,0,7,"Role Business Analyst (AI ML)Location Remote Duration - 6+ months
+dense/raw_jd,j21399292f2,0.696938354998433,,0,58,You're ready to gain the skills and experience needed to grow within your role and advance your career - and we have the
+dense/raw_jd,j2400afad4e,0.933745776545611,,0,22,"Job Description: Staff AccountantJob Status: Full-Time, M-F 8am-4:30pmLocation: Dyersville, IA - This is an in office jo"
+dense/raw_jd,j256405cf04,0.22212782793993274,,0,58,"Position: Business Analyst IVLocation: St. Louis, MO (Onsite from day one)Duration: 6+ Month Contract to Hire Job Descri"
+dense/raw_jd,j26a56fcf76,0.6309297535714575,,0,7,"Role Business Analyst (AI ML)Location Remote Duration - 6+ months
 Job Summary: The Jr. Business Analyst (AI ML) will be "
-dense,j275571d46c,0.9147029315959612,,0,9,We are dedicated to pushing the boundaries of innovation and creating solutions that redefine our field. As we continue 
-dense,j2865e733ae,0.7859363362324141,,0,15,"Who We Are
+dense/raw_jd,j275571d46c,0.9147029315959612,,0,9,We are dedicated to pushing the boundaries of innovation and creating solutions that redefine our field. As we continue 
+dense/raw_jd,j2865e733ae,0.7859363362324141,,0,15,"Who We Are
 Invitation Homes is a fast-paced evolving publicly traded REIT that is pioneering a new industry with over 80"
-dense,j2e245f2456,0.3797309096853887,0.4,10,34,"Job Title: Software DeveloperLocation: Cleveland, OHDuration: 6+ MonthsPosition Type Only W2 Role (No Corp to Corp)Job D"
-dense,j31b356641d,1.0,,0,19,"Primary Location: Macon, Georgia
+dense/raw_jd,j2e245f2456,0.3797309096853887,0.4,10,34,"Job Title: Software DeveloperLocation: Cleveland, OHDuration: 6+ MonthsPosition Type Only W2 Role (No Corp to Corp)Job D"
+dense/raw_jd,j31b356641d,1.0,,0,19,"Primary Location: Macon, Georgia
 Relocation offered: Yes
 Employment status: Full-Time
 Travel: 10%
 Non-compete: No
 The es"
-dense,j31e0450484,0.2465505554475862,0.43478260869565216,23,64,"Role: Lead Data EngineerLocation: RemoteDuration: Long Term 8 to 10 years of experience working in data engineering, bus"
-dense,j32478442dc,0.6934264036172708,0.0,2,10,"Description
+dense/raw_jd,j31e0450484,0.2465505554475862,0.43478260869565216,23,64,"Role: Lead Data EngineerLocation: RemoteDuration: Long Term 8 to 10 years of experience working in data engineering, bus"
+dense/raw_jd,j32478442dc,0.6934264036172708,0.0,2,10,"Description
 This is a Software Development Engineer role in Amazon Pharmacy.
 Amazon Pharmacy is looking for a Software D"
-dense,j325915d97e,0.5637884576902256,,0,89,"Primary Location: Melbourne, Florida
+dense/raw_jd,j325915d97e,0.5637884576902256,,0,89,"Primary Location: Melbourne, Florida
 V-Soft Consulting is currently hiring for an Application Software Engineering V for"
-dense,j3d2c5b8d9b,0.5582260599851661,0.0,3,7,"The Qualtrics XM Platform is a system of action that helps businesses to attract customers who stay longer and buy more,"
-dense,j3d67e4f8c4,0.643121141594021,,0,21,"Job Summary
+dense/raw_jd,j3d2c5b8d9b,0.5582260599851661,0.0,3,7,"The Qualtrics XM Platform is a system of action that helps businesses to attract customers who stay longer and buy more,"
+dense/raw_jd,j3d67e4f8c4,0.643121141594021,,0,21,"Job Summary
 Manage both strategic and daily developmental activities and personnel to ensure that the business system an"
-dense,j4341f588ce,1.0,,0,8,"Sr. Accountant-Accounting
+dense/raw_jd,j4341f588ce,1.0,,0,8,"Sr. Accountant-Accounting
 Dallas, Texas
 As a Sr. Accountant in the Accounting department at Childrens Health, youll cont"
-dense,j51b2967b98,0.8603818544462508,,0,17,"Description:Compiles, analyzes and formats data to provided documentation that assists internal customers in the develop"
-dense,j53f4b169e7,1.0,1.0,1,7,"The Senior Tax Accountant is responsible for performing complex tax preparation, tax research and tax planning with mini"
-dense,j549068f98e,0.8044726423602091,0.5,2,11,"10627 Software Engineer II (Heroku Architect)
+dense/raw_jd,j51b2967b98,0.8603818544462508,,0,17,"Description:Compiles, analyzes and formats data to provided documentation that assists internal customers in the develop"
+dense/raw_jd,j53f4b169e7,1.0,1.0,1,7,"The Senior Tax Accountant is responsible for performing complex tax preparation, tax research and tax planning with mini"
+dense/raw_jd,j549068f98e,0.8044726423602091,0.5,2,11,"10627 Software Engineer II (Heroku Architect)
 Purpose:
 The Heroku Software Engineer II is responsible for analyzing, des"
-dense,j57014089ad,0.43265672121911125,0.03225806451612903,31,44,X is Alphabets moonshot factory. We are a diverse group of inventors and entrepreneurs who build and launch technologies
-dense,j57944b8e65,0.23944085680261518,0.14583333333333334,48,87,"Who we are?For the past 20 years, we have powered many Digital Experiences for the Fortune 500. Since 1999, we have grow"
-dense,j607c49860d,1.0,1.0,1,5,A leading insurance services company in Irvine is looking for a talented Staff Accountant to join the team! This is an e
-dense,j636488fee1,0.7947792481681454,0.5,8,25,"Qualifications:Accounting degreeCPA license required4+ years professional accounting experience, public accounting prefe"
-dense,j63f6a8ea32,0.7015099647232445,,0,27,"One of our clients is looking for someone with a strong emphasis in digital electronics microprocessor FPGA design, embe"
-dense,j64167269fb,1.0,0.3333333333333333,3,7,Goliath Partners has been retained by a Prop Trading Firm in commodities off Wall St in New York. They have just opened 
-dense,j670ab9f66c,0.9216017310213246,,0,23,"Purpose and ScopeWorks with the Finance division in day-to-day activities. Assists in design, development, and preparati"
-dense,j6776858677,0.5937163005201299,0.2857142857142857,28,55,"Location: Tampa, FL
+dense/raw_jd,j57014089ad,0.43265672121911125,0.03225806451612903,31,44,X is Alphabets moonshot factory. We are a diverse group of inventors and entrepreneurs who build and launch technologies
+dense/raw_jd,j57944b8e65,0.23944085680261518,0.14583333333333334,48,87,"Who we are?For the past 20 years, we have powered many Digital Experiences for the Fortune 500. Since 1999, we have grow"
+dense/raw_jd,j607c49860d,1.0,1.0,1,5,A leading insurance services company in Irvine is looking for a talented Staff Accountant to join the team! This is an e
+dense/raw_jd,j636488fee1,0.7947792481681454,0.5,8,25,"Qualifications:Accounting degreeCPA license required4+ years professional accounting experience, public accounting prefe"
+dense/raw_jd,j63f6a8ea32,0.7015099647232445,,0,27,"One of our clients is looking for someone with a strong emphasis in digital electronics microprocessor FPGA design, embe"
+dense/raw_jd,j64167269fb,1.0,0.3333333333333333,3,7,Goliath Partners has been retained by a Prop Trading Firm in commodities off Wall St in New York. They have just opened 
+dense/raw_jd,j670ab9f66c,0.9216017310213246,,0,23,"Purpose and ScopeWorks with the Finance division in day-to-day activities. Assists in design, development, and preparati"
+dense/raw_jd,j6776858677,0.5937163005201299,0.2857142857142857,28,55,"Location: Tampa, FL
 Exp: 7-10 Yrs
 SPOC: Tushar Kshirsagar
 Key Skills: Angular 10 or above, JavaScript and HTML5 and work"
-dense,j6a51d79412,1.0,0.3333333333333333,3,7,"ABOUT THE COMPANYFounded in 1888, Lee Kum Kee, a Hong Kong-based global food company, specializes in creating condiments"
-dense,j74fd52df8f,0.5676818677290052,,0,24,Key Responsibilities:Create intricate wiring networks and electrical subcomponents for both prototype systems and their 
-dense,j79ab29338d,0.36995731885538535,,0,22,Responsibilities: Design and develop software using design patterns and best practices Assists in development of high-le
-dense,j79f8900893,0.6067216003536936,,0,23,"Additional Job Description
+dense/raw_jd,j6a51d79412,1.0,0.3333333333333333,3,7,"ABOUT THE COMPANYFounded in 1888, Lee Kum Kee, a Hong Kong-based global food company, specializes in creating condiments"
+dense/raw_jd,j74fd52df8f,0.5676818677290052,,0,24,Key Responsibilities:Create intricate wiring networks and electrical subcomponents for both prototype systems and their 
+dense/raw_jd,j79ab29338d,0.36995731885538535,,0,22,Responsibilities: Design and develop software using design patterns and best practices Assists in development of high-le
+dense/raw_jd,j79f8900893,0.6067216003536936,,0,23,"Additional Job Description
 Job Title: Business Analyst (with Pega OR Rule Engine tool experience)
 Location: St. Louis, M"
-dense,j7c5bc1878d,0.2992268320114626,,0,83,"Role: Java Developer Duration: 12 months Required Skills Developed web application using Java, J2EE, HTML, CSS, JavaScri"
-dense,j7c71d1f769,0.6602166575861632,0.3,20,27,Novi Labs delivers world-class Oil & Gas forecasts via an end-to-end platform that leverages machine learning and data s
-dense,j809bc6c80f,0.43067655807339306,,0,8,"Shifts: Mon Fri 8-5 (HYBRID onsite)3 month contract (No extensions)Start Date: 952023
+dense/raw_jd,j7c5bc1878d,0.2992268320114626,,0,83,"Role: Java Developer Duration: 12 months Required Skills Developed web application using Java, J2EE, HTML, CSS, JavaScri"
+dense/raw_jd,j7c71d1f769,0.6602166575861632,0.3,20,27,Novi Labs delivers world-class Oil & Gas forecasts via an end-to-end platform that leverages machine learning and data s
+dense/raw_jd,j809bc6c80f,0.43067655807339306,,0,8,"Shifts: Mon Fri 8-5 (HYBRID onsite)3 month contract (No extensions)Start Date: 952023
 Day-to-Day:Reviews, analyzes, reco"
-dense,j81c4585636,0.6309297535714575,,0,9,The ideal candidate will be responsible for developing high-quality applications. They will also be responsible for desi
-dense,j8ddfc98318,0.6281460426238844,,0,24,"We are looking for the candidates who is willing to work on our payroll.
+dense/raw_jd,j81c4585636,0.6309297535714575,,0,9,The ideal candidate will be responsible for developing high-quality applications. They will also be responsible for desi
+dense/raw_jd,j8ddfc98318,0.6281460426238844,,0,24,"We are looking for the candidates who is willing to work on our payroll.
 Job Title: Data AnalystLocation: Plano, TX (Day"
-dense,j915a85b702,0.8436666355597751,0.375,24,35,"Allergan Data Labs is on a mission to transform the Allergan Aesthetics beauty business at AbbVie, one of the largest ph"
-dense,j97ab8bab65,1.0,1.0,1,5,"Minimum qualifications:
+dense/raw_jd,j915a85b702,0.8436666355597751,0.375,24,35,"Allergan Data Labs is on a mission to transform the Allergan Aesthetics beauty business at AbbVie, one of the largest ph"
+dense/raw_jd,j97ab8bab65,1.0,1.0,1,5,"Minimum qualifications:
 
 Bachelor's degree in Computer Science, a related technical field, or equivalent practical exper"
-dense,j9f63681758,0.37185395737611554,,0,31,A mid-sized telecom company is looking for a Sr Data Engineer to join their Business Intelligence Insights team. This te
-dense,j9fa38d8795,1.0,,0,8,"Want to learn more about this role and Jobot? Click our Jobot logo and follow our LinkedIn page!
+dense/raw_jd,j9f63681758,0.37185395737611554,,0,31,A mid-sized telecom company is looking for a Sr Data Engineer to join their Business Intelligence Insights team. This te
+dense/raw_jd,j9fa38d8795,1.0,,0,8,"Want to learn more about this role and Jobot? Click our Jobot logo and follow our LinkedIn page!
 Job details
 Hybrid Sche"
-dense,jadc72a8b5e,0.914856882358379,0.43478260869565216,23,33,"Position Type: Full-Time, W2 Direct Hire. (Must be a US Citizen or Green Card holder, eligible to work without sponsorsh"
-dense,jaffdccbb0d,0.9510907186004267,0.047619047619047616,21,27,"About Grainger
+dense/raw_jd,jadc72a8b5e,0.914856882358379,0.43478260869565216,23,33,"Position Type: Full-Time, W2 Direct Hire. (Must be a US Citizen or Green Card holder, eligible to work without sponsorsh"
+dense/raw_jd,jaffdccbb0d,0.9510907186004267,0.047619047619047616,21,27,"About Grainger
 Grainger is a leading broad line distributor with operations primarily in North America, Japan and the Un"
-dense,jb19dcd6acb,1.0,,0,11,"Want to learn more about this role and Jobot? Click our Jobot logo and follow our LinkedIn page!
+dense/raw_jd,jb19dcd6acb,1.0,,0,11,"Want to learn more about this role and Jobot? Click our Jobot logo and follow our LinkedIn page!
 Job details
 Join this g"
-dense,jb54e25043c,0.6253338941235216,,0,23,"Gaming Business Analyst
+dense/raw_jd,jb54e25043c,0.6253338941235216,,0,23,"Gaming Business Analyst
 Experience: 5+ yrs
 Location: Bellevue, USA
 
 Responsibilities:
 Ability to understand vast amounts"
-dense,jb6bdf0d5b1,1.0,0.14814814814814814,27,35,"Description
+dense/raw_jd,jb6bdf0d5b1,1.0,0.14814814814814814,27,35,"Description
 
 What were looking for
 
 At AppFolio, we paddle as one. We ride and make waves together, with a relentless fo"
-dense,jba23ab1d98,1.0,,0,9,Great opportunity for an experienced staff accountant to work for an established and growing company headquartered in Br
-dense,jbd1f94111d,0.725452110735279,,0,17,"A fast growing, private equity backed, healthcare company in Suffolk County is looking for a Financial Reporting Analyst"
-dense,jbf60dc6936,0.6309297535714575,,0,5,"Were Aspire, a ServiceTitan Company
+dense/raw_jd,jba23ab1d98,1.0,,0,9,Great opportunity for an experienced staff accountant to work for an established and growing company headquartered in Br
+dense/raw_jd,jbd1f94111d,0.725452110735279,,0,17,"A fast growing, private equity backed, healthcare company in Suffolk County is looking for a Financial Reporting Analyst"
+dense/raw_jd,jbf60dc6936,0.6309297535714575,,0,5,"Were Aspire, a ServiceTitan Company
 Were Aspire, the leading SaaS provider for commercial landscaping, snow and ice remo"
-dense,jc9fb002526,0.27609275308343534,0.058823529411764705,17,49,"Who we are:Founded in 2017, Gatik is the leader in autonomous middle mile logistics. We deliver goods safely and efficie"
-dense,jd2c3517f34,0.5551599995964439,0.23333333333333334,30,57,"Who we are:Founded in 2017, Gatik is the leader in autonomous middle mile logistics. We deliver goods safely and efficie"
-dense,je1c28623aa,0.6410457898283652,,0,20,"Job Description:
+dense/raw_jd,jc9fb002526,0.27609275308343534,0.058823529411764705,17,49,"Who we are:Founded in 2017, Gatik is the leader in autonomous middle mile logistics. We deliver goods safely and efficie"
+dense/raw_jd,jd2c3517f34,0.5551599995964439,0.23333333333333334,30,57,"Who we are:Founded in 2017, Gatik is the leader in autonomous middle mile logistics. We deliver goods safely and efficie"
+dense/raw_jd,je1c28623aa,0.6410457898283652,,0,20,"Job Description:
 The ElectricalResident Engineer-Electrification (RE) is a highly visible technical, product & systems e"
-dense,je4168b9d21,0.9099466049873366,,0,12,CORPORATE SENIOR STAFF ACCOUNTANT (REMOTE) POSITION SUMMARY: We are seeking a Corporate Senior Staff Accountant to join 
-dense,je450375972,0.6843830725976618,0.2,35,69,"ServiceNow BA perspective, here are some of the requirements: Years of experience: 8+ yrs as a Business Analyst. Scrum M"
-dense,jec09be5a33,0.17993148201117176,,0,37,"The Opportunity
+dense/raw_jd,je4168b9d21,0.9099466049873366,,0,12,CORPORATE SENIOR STAFF ACCOUNTANT (REMOTE) POSITION SUMMARY: We are seeking a Corporate Senior Staff Accountant to join 
+dense/raw_jd,je450375972,0.6843830725976618,0.2,35,69,"ServiceNow BA perspective, here are some of the requirements: Years of experience: 8+ yrs as a Business Analyst. Scrum M"
+dense/raw_jd,jec09be5a33,0.17993148201117176,,0,37,"The Opportunity
 QuidelOrtho unites the strengths of Quidel Corporation and Ortho Clinical Diagnostics, creating a world-"
-dense,jef1cf852d0,0.43921608790660044,0.4,10,24,"Job Title: Data architectData analyst Location: Juno Beach, FLJob description:We are looking to get a Data ArchitectData"
-dense,jf9ddf265f2,1.0,,0,11,"JOB TITLE: Business Analyst
+dense/raw_jd,jef1cf852d0,0.43921608790660044,0.4,10,24,"Job Title: Data architectData analyst Location: Juno Beach, FLJob description:We are looking to get a Data ArchitectData"
+dense/raw_jd,jf9ddf265f2,1.0,,0,11,"JOB TITLE: Business Analyst
 
 Does using data science to solve business problems sound intriguing? Enjoy working collabor"
-dense,jface874c7a,0.9575861412006988,0.5833333333333334,24,31,"Backed by a leading growth equity firm, an LA based CPGFood & Bev company is looking for a strong accounting professiona"
-dense,jfce9576462,1.0,,0,6,experience building ELT infrastructure and big data (KafkaFlinkSparkAirflowDBT).We are looking for someone who can take 
-hybrid,j0109ae6c95,0.4330549290057019,,0,56,"Our client is looking for experienced professional with a strong background in healthcare, including Pharmacy Benefit Ma"
-hybrid,j0e494b4c06,0.6013884445060621,0.21052631578947367,19,63,"Company Overview
+dense/raw_jd,jface874c7a,0.9575861412006988,0.5833333333333334,24,31,"Backed by a leading growth equity firm, an LA based CPGFood & Bev company is looking for a strong accounting professiona"
+dense/raw_jd,jfce9576462,1.0,,0,6,experience building ELT infrastructure and big data (KafkaFlinkSparkAirflowDBT).We are looking for someone who can take 
+hybrid/raw_jd,j0109ae6c95,0.4330549290057019,,0,56,"Our client is looking for experienced professional with a strong background in healthcare, including Pharmacy Benefit Ma"
+hybrid/raw_jd,j0e494b4c06,0.6013884445060621,0.21052631578947367,19,63,"Company Overview
 DocuSign helps organizations connect and automate how they agree. Our flagship product, eSignature, is "
-hybrid,j0ecf6a4401,0.92663607790064,0.24,25,39,"Position Type
+hybrid/raw_jd,j0ecf6a4401,0.92663607790064,0.24,25,39,"Position Type
 
 Full time
 
@@ -265,9 +265,9 @@ Experienced (relevant combo of work and education)
 Education Desired
 
 Bachelor "
-hybrid,j1a465bd243,0.933745776545611,0.47058823529411764,17,21,"Title: Sr. Data EngineerLocation: Austin, TxDuration: 6 MonthsPay Rate: $65HR - $70HR on W2
+hybrid/raw_jd,j1a465bd243,0.933745776545611,0.47058823529411764,17,21,"Title: Sr. Data EngineerLocation: Austin, TxDuration: 6 MonthsPay Rate: $65HR - $70HR on W2
 Requirements:Bachelors degre"
-hybrid,j203d2c3d86,0.8642203869628404,0.5,2,13,"Assignment Detail
+hybrid/raw_jd,j203d2c3d86,0.8642203869628404,0.5,2,13,"Assignment Detail
 
 Industry:IT ConsultingServices
 
@@ -278,102 +278,480 @@ Business Analyst-Level III
 Job Number: 23-02173
 
 Dr"
-hybrid,j21399292f2,0.636658712740428,,0,58,You're ready to gain the skills and experience needed to grow within your role and advance your career - and we have the
-hybrid,j2400afad4e,0.8611375561264454,,0,22,"Job Description: Staff AccountantJob Status: Full-Time, M-F 8am-4:30pmLocation: Dyersville, IA - This is an in office jo"
-hybrid,j256405cf04,0.0,,0,58,"Position: Business Analyst IVLocation: St. Louis, MO (Onsite from day one)Duration: 6+ Month Contract to Hire Job Descri"
-hybrid,j26a56fcf76,0.6309297535714575,,0,7,"Role Business Analyst (AI ML)Location Remote Duration - 6+ months
+hybrid/raw_jd,j21399292f2,0.636658712740428,,0,58,You're ready to gain the skills and experience needed to grow within your role and advance your career - and we have the
+hybrid/raw_jd,j2400afad4e,0.8611375561264454,,0,22,"Job Description: Staff AccountantJob Status: Full-Time, M-F 8am-4:30pmLocation: Dyersville, IA - This is an in office jo"
+hybrid/raw_jd,j256405cf04,0.0,,0,58,"Position: Business Analyst IVLocation: St. Louis, MO (Onsite from day one)Duration: 6+ Month Contract to Hire Job Descri"
+hybrid/raw_jd,j26a56fcf76,0.6309297535714575,,0,7,"Role Business Analyst (AI ML)Location Remote Duration - 6+ months
 Job Summary: The Jr. Business Analyst (AI ML) will be "
-hybrid,j275571d46c,0.971476156593264,,0,9,We are dedicated to pushing the boundaries of innovation and creating solutions that redefine our field. As we continue 
-hybrid,j2865e733ae,0.724035777867186,,0,15,"Who We Are
+hybrid/raw_jd,j275571d46c,0.971476156593264,,0,9,We are dedicated to pushing the boundaries of innovation and creating solutions that redefine our field. As we continue 
+hybrid/raw_jd,j2865e733ae,0.724035777867186,,0,15,"Who We Are
 Invitation Homes is a fast-paced evolving publicly traded REIT that is pioneering a new industry with over 80"
-hybrid,j2e245f2456,0.3329943849674024,0.2,10,34,"Job Title: Software DeveloperLocation: Cleveland, OHDuration: 6+ MonthsPosition Type Only W2 Role (No Corp to Corp)Job D"
-hybrid,j31b356641d,1.0,,0,19,"Primary Location: Macon, Georgia
+hybrid/raw_jd,j2e245f2456,0.3329943849674024,0.2,10,34,"Job Title: Software DeveloperLocation: Cleveland, OHDuration: 6+ MonthsPosition Type Only W2 Role (No Corp to Corp)Job D"
+hybrid/raw_jd,j31b356641d,1.0,,0,19,"Primary Location: Macon, Georgia
 Relocation offered: Yes
 Employment status: Full-Time
 Travel: 10%
 Non-compete: No
 The es"
-hybrid,j31e0450484,0.07839826897867534,0.4782608695652174,23,64,"Role: Lead Data EngineerLocation: RemoteDuration: Long Term 8 to 10 years of experience working in data engineering, bus"
-hybrid,j32478442dc,0.8772153153380493,0.0,2,10,"Description
+hybrid/raw_jd,j31e0450484,0.07839826897867534,0.4782608695652174,23,64,"Role: Lead Data EngineerLocation: RemoteDuration: Long Term 8 to 10 years of experience working in data engineering, bus"
+hybrid/raw_jd,j32478442dc,0.8772153153380493,0.0,2,10,"Description
 This is a Software Development Engineer role in Amazon Pharmacy.
 Amazon Pharmacy is looking for a Software D"
-hybrid,j325915d97e,0.7000949683025056,,0,89,"Primary Location: Melbourne, Florida
+hybrid/raw_jd,j325915d97e,0.7000949683025056,,0,89,"Primary Location: Melbourne, Florida
 V-Soft Consulting is currently hiring for an Application Software Engineering V for"
-hybrid,j3d2c5b8d9b,0.6039071644781282,0.0,3,7,"The Qualtrics XM Platform is a system of action that helps businesses to attract customers who stay longer and buy more,"
-hybrid,j3d67e4f8c4,0.6601585067762745,,0,21,"Job Summary
+hybrid/raw_jd,j3d2c5b8d9b,0.6039071644781282,0.0,3,7,"The Qualtrics XM Platform is a system of action that helps businesses to attract customers who stay longer and buy more,"
+hybrid/raw_jd,j3d67e4f8c4,0.6601585067762745,,0,21,"Job Summary
 Manage both strategic and daily developmental activities and personnel to ensure that the business system an"
-hybrid,j4341f588ce,1.0,,0,8,"Sr. Accountant-Accounting
+hybrid/raw_jd,j4341f588ce,1.0,,0,8,"Sr. Accountant-Accounting
 Dallas, Texas
 As a Sr. Accountant in the Accounting department at Childrens Health, youll cont"
-hybrid,j51b2967b98,0.8486026589039899,,0,17,"Description:Compiles, analyzes and formats data to provided documentation that assists internal customers in the develop"
-hybrid,j53f4b169e7,1.0,0.0,1,7,"The Senior Tax Accountant is responsible for performing complex tax preparation, tax research and tax planning with mini"
-hybrid,j549068f98e,0.7818965241846031,0.5,2,11,"10627 Software Engineer II (Heroku Architect)
+hybrid/raw_jd,j51b2967b98,0.8486026589039899,,0,17,"Description:Compiles, analyzes and formats data to provided documentation that assists internal customers in the develop"
+hybrid/raw_jd,j53f4b169e7,1.0,0.0,1,7,"The Senior Tax Accountant is responsible for performing complex tax preparation, tax research and tax planning with mini"
+hybrid/raw_jd,j549068f98e,0.7818965241846031,0.5,2,11,"10627 Software Engineer II (Heroku Architect)
 Purpose:
 The Heroku Software Engineer II is responsible for analyzing, des"
-hybrid,j57014089ad,0.5014276442746162,0.03225806451612903,31,44,X is Alphabets moonshot factory. We are a diverse group of inventors and entrepreneurs who build and launch technologies
-hybrid,j57944b8e65,0.15850703974098104,0.10416666666666667,48,87,"Who we are?For the past 20 years, we have powered many Digital Experiences for the Fortune 500. Since 1999, we have grow"
-hybrid,j607c49860d,1.0,1.0,1,5,A leading insurance services company in Irvine is looking for a talented Staff Accountant to join the team! This is an e
-hybrid,j636488fee1,0.747642783259396,0.625,8,25,"Qualifications:Accounting degreeCPA license required4+ years professional accounting experience, public accounting prefe"
-hybrid,j63f6a8ea32,0.8205228949141826,,0,27,"One of our clients is looking for someone with a strong emphasis in digital electronics microprocessor FPGA design, embe"
-hybrid,j64167269fb,0.9674679834891694,0.0,3,7,Goliath Partners has been retained by a Prop Trading Firm in commodities off Wall St in New York. They have just opened 
-hybrid,j670ab9f66c,1.0,,0,23,"Purpose and ScopeWorks with the Finance division in day-to-day activities. Assists in design, development, and preparati"
-hybrid,j6776858677,0.5868720866710774,0.32142857142857145,28,55,"Location: Tampa, FL
+hybrid/raw_jd,j57014089ad,0.5014276442746162,0.03225806451612903,31,44,X is Alphabets moonshot factory. We are a diverse group of inventors and entrepreneurs who build and launch technologies
+hybrid/raw_jd,j57944b8e65,0.15850703974098104,0.10416666666666667,48,87,"Who we are?For the past 20 years, we have powered many Digital Experiences for the Fortune 500. Since 1999, we have grow"
+hybrid/raw_jd,j607c49860d,1.0,1.0,1,5,A leading insurance services company in Irvine is looking for a talented Staff Accountant to join the team! This is an e
+hybrid/raw_jd,j636488fee1,0.747642783259396,0.625,8,25,"Qualifications:Accounting degreeCPA license required4+ years professional accounting experience, public accounting prefe"
+hybrid/raw_jd,j63f6a8ea32,0.8205228949141826,,0,27,"One of our clients is looking for someone with a strong emphasis in digital electronics microprocessor FPGA design, embe"
+hybrid/raw_jd,j64167269fb,0.9674679834891694,0.0,3,7,Goliath Partners has been retained by a Prop Trading Firm in commodities off Wall St in New York. They have just opened 
+hybrid/raw_jd,j670ab9f66c,1.0,,0,23,"Purpose and ScopeWorks with the Finance division in day-to-day activities. Assists in design, development, and preparati"
+hybrid/raw_jd,j6776858677,0.5868720866710774,0.32142857142857145,28,55,"Location: Tampa, FL
 Exp: 7-10 Yrs
 SPOC: Tushar Kshirsagar
 Key Skills: Angular 10 or above, JavaScript and HTML5 and work"
-hybrid,j6a51d79412,1.0,0.3333333333333333,3,7,"ABOUT THE COMPANYFounded in 1888, Lee Kum Kee, a Hong Kong-based global food company, specializes in creating condiments"
-hybrid,j74fd52df8f,0.5716145678915879,,0,24,Key Responsibilities:Create intricate wiring networks and electrical subcomponents for both prototype systems and their 
-hybrid,j79ab29338d,0.2816372027313761,,0,22,Responsibilities: Design and develop software using design patterns and best practices Assists in development of high-le
-hybrid,j79f8900893,0.5618918191694954,,0,23,"Additional Job Description
+hybrid/raw_jd,j6a51d79412,1.0,0.3333333333333333,3,7,"ABOUT THE COMPANYFounded in 1888, Lee Kum Kee, a Hong Kong-based global food company, specializes in creating condiments"
+hybrid/raw_jd,j74fd52df8f,0.5716145678915879,,0,24,Key Responsibilities:Create intricate wiring networks and electrical subcomponents for both prototype systems and their 
+hybrid/raw_jd,j79ab29338d,0.2816372027313761,,0,22,Responsibilities: Design and develop software using design patterns and best practices Assists in development of high-le
+hybrid/raw_jd,j79f8900893,0.5618918191694954,,0,23,"Additional Job Description
 Job Title: Business Analyst (with Pega OR Rule Engine tool experience)
 Location: St. Louis, M"
-hybrid,j7c5bc1878d,0.06625422345438903,,0,83,"Role: Java Developer Duration: 12 months Required Skills Developed web application using Java, J2EE, HTML, CSS, JavaScri"
-hybrid,j7c71d1f769,0.5940026068569858,0.35,20,27,Novi Labs delivers world-class Oil & Gas forecasts via an end-to-end platform that leverages machine learning and data s
-hybrid,j809bc6c80f,0.38685280723454163,,0,8,"Shifts: Mon Fri 8-5 (HYBRID onsite)3 month contract (No extensions)Start Date: 952023
+hybrid/raw_jd,j7c5bc1878d,0.06625422345438903,,0,83,"Role: Java Developer Duration: 12 months Required Skills Developed web application using Java, J2EE, HTML, CSS, JavaScri"
+hybrid/raw_jd,j7c71d1f769,0.5940026068569858,0.35,20,27,Novi Labs delivers world-class Oil & Gas forecasts via an end-to-end platform that leverages machine learning and data s
+hybrid/raw_jd,j809bc6c80f,0.38685280723454163,,0,8,"Shifts: Mon Fri 8-5 (HYBRID onsite)3 month contract (No extensions)Start Date: 952023
 Day-to-Day:Reviews, analyzes, reco"
-hybrid,j81c4585636,0.5,,0,9,The ideal candidate will be responsible for developing high-quality applications. They will also be responsible for desi
-hybrid,j8ddfc98318,0.6281460426238844,,0,24,"We are looking for the candidates who is willing to work on our payroll.
+hybrid/raw_jd,j81c4585636,0.5,,0,9,The ideal candidate will be responsible for developing high-quality applications. They will also be responsible for desi
+hybrid/raw_jd,j8ddfc98318,0.6281460426238844,,0,24,"We are looking for the candidates who is willing to work on our payroll.
 Job Title: Data AnalystLocation: Plano, TX (Day"
-hybrid,j915a85b702,0.8410448354513865,0.3333333333333333,24,35,"Allergan Data Labs is on a mission to transform the Allergan Aesthetics beauty business at AbbVie, one of the largest ph"
-hybrid,j97ab8bab65,1.0,1.0,1,5,"Minimum qualifications:
+hybrid/raw_jd,j915a85b702,0.8410448354513865,0.3333333333333333,24,35,"Allergan Data Labs is on a mission to transform the Allergan Aesthetics beauty business at AbbVie, one of the largest ph"
+hybrid/raw_jd,j97ab8bab65,1.0,1.0,1,5,"Minimum qualifications:
 
 Bachelor's degree in Computer Science, a related technical field, or equivalent practical exper"
-hybrid,j9f63681758,0.4505655760587972,,0,31,A mid-sized telecom company is looking for a Sr Data Engineer to join their Business Intelligence Insights team. This te
-hybrid,j9fa38d8795,1.0,,0,8,"Want to learn more about this role and Jobot? Click our Jobot logo and follow our LinkedIn page!
+hybrid/raw_jd,j9f63681758,0.4505655760587972,,0,31,A mid-sized telecom company is looking for a Sr Data Engineer to join their Business Intelligence Insights team. This te
+hybrid/raw_jd,j9fa38d8795,1.0,,0,8,"Want to learn more about this role and Jobot? Click our Jobot logo and follow our LinkedIn page!
 Job details
 Hybrid Sche"
-hybrid,jadc72a8b5e,0.914856882358379,0.4782608695652174,23,33,"Position Type: Full-Time, W2 Direct Hire. (Must be a US Citizen or Green Card holder, eligible to work without sponsorsh"
-hybrid,jaffdccbb0d,0.9510907186004267,0.23809523809523808,21,27,"About Grainger
+hybrid/raw_jd,jadc72a8b5e,0.914856882358379,0.4782608695652174,23,33,"Position Type: Full-Time, W2 Direct Hire. (Must be a US Citizen or Green Card holder, eligible to work without sponsorsh"
+hybrid/raw_jd,jaffdccbb0d,0.9510907186004267,0.23809523809523808,21,27,"About Grainger
 Grainger is a leading broad line distributor with operations primarily in North America, Japan and the Un"
-hybrid,jb19dcd6acb,0.9876712785649565,,0,11,"Want to learn more about this role and Jobot? Click our Jobot logo and follow our LinkedIn page!
+hybrid/raw_jd,jb19dcd6acb,0.9876712785649565,,0,11,"Want to learn more about this role and Jobot? Click our Jobot logo and follow our LinkedIn page!
 Job details
 Join this g"
-hybrid,jb54e25043c,0.7034066032439746,,0,23,"Gaming Business Analyst
+hybrid/raw_jd,jb54e25043c,0.7034066032439746,,0,23,"Gaming Business Analyst
 Experience: 5+ yrs
 Location: Bellevue, USA
 
 Responsibilities:
 Ability to understand vast amounts"
-hybrid,jb6bdf0d5b1,0.914856882358379,0.07407407407407407,27,35,"Description
+hybrid/raw_jd,jb6bdf0d5b1,0.914856882358379,0.07407407407407407,27,35,"Description
 
 What were looking for
 
 At AppFolio, we paddle as one. We ride and make waves together, with a relentless fo"
-hybrid,jba23ab1d98,1.0,,0,9,Great opportunity for an experienced staff accountant to work for an established and growing company headquartered in Br
-hybrid,jbd1f94111d,0.8414929602590189,,0,17,"A fast growing, private equity backed, healthcare company in Suffolk County is looking for a Financial Reporting Analyst"
-hybrid,jbf60dc6936,0.6309297535714575,,0,5,"Were Aspire, a ServiceTitan Company
+hybrid/raw_jd,jba23ab1d98,1.0,,0,9,Great opportunity for an experienced staff accountant to work for an established and growing company headquartered in Br
+hybrid/raw_jd,jbd1f94111d,0.8414929602590189,,0,17,"A fast growing, private equity backed, healthcare company in Suffolk County is looking for a Financial Reporting Analyst"
+hybrid/raw_jd,jbf60dc6936,0.6309297535714575,,0,5,"Were Aspire, a ServiceTitan Company
 Were Aspire, the leading SaaS provider for commercial landscaping, snow and ice remo"
-hybrid,jc9fb002526,0.2818613294960705,0.058823529411764705,17,49,"Who we are:Founded in 2017, Gatik is the leader in autonomous middle mile logistics. We deliver goods safely and efficie"
-hybrid,jd2c3517f34,0.6683063269107928,0.2,30,57,"Who we are:Founded in 2017, Gatik is the leader in autonomous middle mile logistics. We deliver goods safely and efficie"
-hybrid,je1c28623aa,0.7065443116025597,,0,20,"Job Description:
+hybrid/raw_jd,jc9fb002526,0.2818613294960705,0.058823529411764705,17,49,"Who we are:Founded in 2017, Gatik is the leader in autonomous middle mile logistics. We deliver goods safely and efficie"
+hybrid/raw_jd,jd2c3517f34,0.6683063269107928,0.2,30,57,"Who we are:Founded in 2017, Gatik is the leader in autonomous middle mile logistics. We deliver goods safely and efficie"
+hybrid/raw_jd,je1c28623aa,0.7065443116025597,,0,20,"Job Description:
 The ElectricalResident Engineer-Electrification (RE) is a highly visible technical, product & systems e"
-hybrid,je4168b9d21,0.9045395669105327,,0,12,CORPORATE SENIOR STAFF ACCOUNTANT (REMOTE) POSITION SUMMARY: We are seeking a Corporate Senior Staff Accountant to join 
-hybrid,je450375972,0.5271064966405455,0.14285714285714285,35,69,"ServiceNow BA perspective, here are some of the requirements: Years of experience: 8+ yrs as a Business Analyst. Scrum M"
-hybrid,jec09be5a33,0.2489083270225946,,0,37,"The Opportunity
+hybrid/raw_jd,je4168b9d21,0.9045395669105327,,0,12,CORPORATE SENIOR STAFF ACCOUNTANT (REMOTE) POSITION SUMMARY: We are seeking a Corporate Senior Staff Accountant to join 
+hybrid/raw_jd,je450375972,0.5271064966405455,0.14285714285714285,35,69,"ServiceNow BA perspective, here are some of the requirements: Years of experience: 8+ yrs as a Business Analyst. Scrum M"
+hybrid/raw_jd,jec09be5a33,0.2489083270225946,,0,37,"The Opportunity
 QuidelOrtho unites the strengths of Quidel Corporation and Ortho Clinical Diagnostics, creating a world-"
-hybrid,jef1cf852d0,0.6150298519490138,0.3,10,24,"Job Title: Data architectData analyst Location: Juno Beach, FLJob description:We are looking to get a Data ArchitectData"
-hybrid,jf9ddf265f2,0.7328286204777911,,0,11,"JOB TITLE: Business Analyst
+hybrid/raw_jd,jef1cf852d0,0.6150298519490138,0.3,10,24,"Job Title: Data architectData analyst Location: Juno Beach, FLJob description:We are looking to get a Data ArchitectData"
+hybrid/raw_jd,jf9ddf265f2,0.7328286204777911,,0,11,"JOB TITLE: Business Analyst
 
 Does using data science to solve business problems sound intriguing? Enjoy working collabor"
-hybrid,jface874c7a,0.9095430364058891,0.6666666666666666,24,31,"Backed by a leading growth equity firm, an LA based CPGFood & Bev company is looking for a strong accounting professiona"
-hybrid,jfce9576462,1.0,,0,6,experience building ELT infrastructure and big data (KafkaFlinkSparkAirflowDBT).We are looking for someone who can take 
+hybrid/raw_jd,jface874c7a,0.9095430364058891,0.6666666666666666,24,31,"Backed by a leading growth equity firm, an LA based CPGFood & Bev company is looking for a strong accounting professiona"
+hybrid/raw_jd,jfce9576462,1.0,,0,6,experience building ELT infrastructure and big data (KafkaFlinkSparkAirflowDBT).We are looking for someone who can take 
+bm25/jobspec,j0109ae6c95,0.5360735436824435,,0,56,"Our client is looking for experienced professional with a strong background in healthcare, including Pharmacy Benefit Ma"
+bm25/jobspec,j0e494b4c06,0.4971689112887525,0.3157894736842105,19,63,"Company Overview
+DocuSign helps organizations connect and automate how they agree. Our flagship product, eSignature, is "
+bm25/jobspec,j0ecf6a4401,0.8551595247651801,0.32,25,39,"Position Type
+
+Full time
+
+Type Of Hire
+
+Experienced (relevant combo of work and education)
+
+Education Desired
+
+Bachelor "
+bm25/jobspec,j1a465bd243,0.9305687780632227,0.4117647058823529,17,21,"Title: Sr. Data EngineerLocation: Austin, TxDuration: 6 MonthsPay Rate: $65HR - $70HR on W2
+Requirements:Bachelors degre"
+bm25/jobspec,j203d2c3d86,0.8885994691336017,0.5,2,13,"Assignment Detail
+
+Industry:IT ConsultingServices
+
+Job Description
+
+Business Analyst-Level III
+
+Job Number: 23-02173
+
+Dr"
+bm25/jobspec,j21399292f2,0.2973694836145356,,0,58,You're ready to gain the skills and experience needed to grow within your role and advance your career - and we have the
+bm25/jobspec,j2400afad4e,1.0,,0,22,"Job Description: Staff AccountantJob Status: Full-Time, M-F 8am-4:30pmLocation: Dyersville, IA - This is an in office jo"
+bm25/jobspec,j256405cf04,0.21726071285222986,,0,58,"Position: Business Analyst IVLocation: St. Louis, MO (Onsite from day one)Duration: 6+ Month Contract to Hire Job Descri"
+bm25/jobspec,j26a56fcf76,1.0,,0,7,"Role Business Analyst (AI ML)Location Remote Duration - 6+ months
+Job Summary: The Jr. Business Analyst (AI ML) will be "
+bm25/jobspec,j275571d46c,0.7859363362324141,,0,9,We are dedicated to pushing the boundaries of innovation and creating solutions that redefine our field. As we continue 
+bm25/jobspec,j2865e733ae,0.8503978018773212,,0,15,"Who We Are
+Invitation Homes is a fast-paced evolving publicly traded REIT that is pioneering a new industry with over 80"
+bm25/jobspec,j2e245f2456,0.4215125975182552,0.4,10,34,"Job Title: Software DeveloperLocation: Cleveland, OHDuration: 6+ MonthsPosition Type Only W2 Role (No Corp to Corp)Job D"
+bm25/jobspec,j31b356641d,0.8611375561264454,,0,19,"Primary Location: Macon, Georgia
+Relocation offered: Yes
+Employment status: Full-Time
+Travel: 10%
+Non-compete: No
+The es"
+bm25/jobspec,j31e0450484,0.3741530876430468,0.391304347826087,23,64,"Role: Lead Data EngineerLocation: RemoteDuration: Long Term 8 to 10 years of experience working in data engineering, bus"
+bm25/jobspec,j32478442dc,0.6934264036172708,0.5,2,10,"Description
+This is a Software Development Engineer role in Amazon Pharmacy.
+Amazon Pharmacy is looking for a Software D"
+bm25/jobspec,j325915d97e,0.5116508161747901,,0,89,"Primary Location: Melbourne, Florida
+V-Soft Consulting is currently hiring for an Application Software Engineering V for"
+bm25/jobspec,j3d2c5b8d9b,0.9674679834891694,0.6666666666666666,3,7,"The Qualtrics XM Platform is a system of action that helps businesses to attract customers who stay longer and buy more,"
+bm25/jobspec,j3d67e4f8c4,0.41939799988819815,,0,21,"Job Summary
+Manage both strategic and daily developmental activities and personnel to ensure that the business system an"
+bm25/jobspec,j4341f588ce,1.0,,0,8,"Sr. Accountant-Accounting
+Dallas, Texas
+As a Sr. Accountant in the Accounting department at Childrens Health, youll cont"
+bm25/jobspec,j51b2967b98,0.5152880109744815,,0,17,"Description:Compiles, analyzes and formats data to provided documentation that assists internal customers in the develop"
+bm25/jobspec,j53f4b169e7,1.0,0.0,1,7,"The Senior Tax Accountant is responsible for performing complex tax preparation, tax research and tax planning with mini"
+bm25/jobspec,j549068f98e,0.880029464940728,0.5,2,11,"10627 Software Engineer II (Heroku Architect)
+Purpose:
+The Heroku Software Engineer II is responsible for analyzing, des"
+bm25/jobspec,j57014089ad,0.6947651160602988,0.22580645161290322,31,44,X is Alphabets moonshot factory. We are a diverse group of inventors and entrepreneurs who build and launch technologies
+bm25/jobspec,j57944b8e65,0.26462022272743835,0.125,48,87,"Who we are?For the past 20 years, we have powered many Digital Experiences for the Fortune 500. Since 1999, we have grow"
+bm25/jobspec,j607c49860d,1.0,1.0,1,5,A leading insurance services company in Irvine is looking for a talented Staff Accountant to join the team! This is an e
+bm25/jobspec,j636488fee1,0.8018903759727448,0.625,8,25,"Qualifications:Accounting degreeCPA license required4+ years professional accounting experience, public accounting prefe"
+bm25/jobspec,j63f6a8ea32,0.8611375561264454,,0,27,"One of our clients is looking for someone with a strong emphasis in digital electronics microprocessor FPGA design, embe"
+bm25/jobspec,j64167269fb,0.7122630665145961,0.0,3,7,Goliath Partners has been retained by a Prop Trading Firm in commodities off Wall St in New York. They have just opened 
+bm25/jobspec,j670ab9f66c,1.0,,0,23,"Purpose and ScopeWorks with the Finance division in day-to-day activities. Assists in design, development, and preparati"
+bm25/jobspec,j6776858677,0.6067216003536937,0.42857142857142855,28,55,"Location: Tampa, FL
+Exp: 7-10 Yrs
+SPOC: Tushar Kshirsagar
+Key Skills: Angular 10 or above, JavaScript and HTML5 and work"
+bm25/jobspec,j6a51d79412,1.0,0.3333333333333333,3,7,"ABOUT THE COMPANYFounded in 1888, Lee Kum Kee, a Hong Kong-based global food company, specializes in creating condiments"
+bm25/jobspec,j74fd52df8f,0.7759944384848244,,0,24,Key Responsibilities:Create intricate wiring networks and electrical subcomponents for both prototype systems and their 
+bm25/jobspec,j79ab29338d,0.5014276442746162,,0,22,Responsibilities: Design and develop software using design patterns and best practices Assists in development of high-le
+bm25/jobspec,j79f8900893,0.6117748521784964,,0,23,"Additional Job Description
+Job Title: Business Analyst (with Pega OR Rule Engine tool experience)
+Location: St. Louis, M"
+bm25/jobspec,j7c5bc1878d,0.06625422345438903,,0,83,"Role: Java Developer Duration: 12 months Required Skills Developed web application using Java, J2EE, HTML, CSS, JavaScri"
+bm25/jobspec,j7c71d1f769,0.8634438349876061,0.35,20,27,Novi Labs delivers world-class Oil & Gas forecasts via an end-to-end platform that leverages machine learning and data s
+bm25/jobspec,j809bc6c80f,1.0,,0,8,"Shifts: Mon Fri 8-5 (HYBRID onsite)3 month contract (No extensions)Start Date: 952023
+Day-to-Day:Reviews, analyzes, reco"
+bm25/jobspec,j81c4585636,0.5,,0,9,The ideal candidate will be responsible for developing high-quality applications. They will also be responsible for desi
+bm25/jobspec,j8ddfc98318,0.7663491917568945,,0,24,"We are looking for the candidates who is willing to work on our payroll.
+Job Title: Data AnalystLocation: Plano, TX (Day"
+bm25/jobspec,j915a85b702,0.8532721558012799,0.4166666666666667,24,35,"Allergan Data Labs is on a mission to transform the Allergan Aesthetics beauty business at AbbVie, one of the largest ph"
+bm25/jobspec,j97ab8bab65,1.0,1.0,1,5,"Minimum qualifications:
+
+Bachelor's degree in Computer Science, a related technical field, or equivalent practical exper"
+bm25/jobspec,j9f63681758,0.5579780239524,,0,31,A mid-sized telecom company is looking for a Sr Data Engineer to join their Business Intelligence Insights team. This te
+bm25/jobspec,j9fa38d8795,0.6309297535714575,,0,8,"Want to learn more about this role and Jobot? Click our Jobot logo and follow our LinkedIn page!
+Job details
+Hybrid Sche"
+bm25/jobspec,jadc72a8b5e,0.933745776545611,0.4782608695652174,23,33,"Position Type: Full-Time, W2 Direct Hire. (Must be a US Citizen or Green Card holder, eligible to work without sponsorsh"
+bm25/jobspec,jaffdccbb0d,0.9035650050446238,0.2857142857142857,21,27,"About Grainger
+Grainger is a leading broad line distributor with operations primarily in North America, Japan and the Un"
+bm25/jobspec,jb19dcd6acb,0.9930783166417602,,0,11,"Want to learn more about this role and Jobot? Click our Jobot logo and follow our LinkedIn page!
+Job details
+Join this g"
+bm25/jobspec,jb54e25043c,0.42331179510529354,,0,23,"Gaming Business Analyst
+Experience: 5+ yrs
+Location: Bellevue, USA
+
+Responsibilities:
+Ability to understand vast amounts"
+bm25/jobspec,jb6bdf0d5b1,0.92663607790064,0.25925925925925924,27,35,"Description
+
+What were looking for
+
+At AppFolio, we paddle as one. We ride and make waves together, with a relentless fo"
+bm25/jobspec,jba23ab1d98,1.0,,0,9,Great opportunity for an experienced staff accountant to work for an established and growing company headquartered in Br
+bm25/jobspec,jbd1f94111d,0.8454256604216017,,0,17,"A fast growing, private equity backed, healthcare company in Suffolk County is looking for a Financial Reporting Analyst"
+bm25/jobspec,jbf60dc6936,1.0,,0,5,"Were Aspire, a ServiceTitan Company
+Were Aspire, the leading SaaS provider for commercial landscaping, snow and ice remo"
+bm25/jobspec,jc9fb002526,0.47084817216077185,0.29411764705882354,17,49,"Who we are:Founded in 2017, Gatik is the leader in autonomous middle mile logistics. We deliver goods safely and efficie"
+bm25/jobspec,jd2c3517f34,0.6848374495230163,0.2,30,57,"Who we are:Founded in 2017, Gatik is the leader in autonomous middle mile logistics. We deliver goods safely and efficie"
+bm25/jobspec,je1c28623aa,0.4899308685417079,,0,20,"Job Description:
+The ElectricalResident Engineer-Electrification (RE) is a highly visible technical, product & systems e"
+bm25/jobspec,je4168b9d21,0.7815683063664048,,0,12,CORPORATE SENIOR STAFF ACCOUNTANT (REMOTE) POSITION SUMMARY: We are seeking a Corporate Senior Staff Accountant to join 
+bm25/jobspec,je450375972,0.4936790360674166,0.11428571428571428,35,69,"ServiceNow BA perspective, here are some of the requirements: Years of experience: 8+ yrs as a Business Analyst. Scrum M"
+bm25/jobspec,jec09be5a33,0.47338717040861195,,0,37,"The Opportunity
+QuidelOrtho unites the strengths of Quidel Corporation and Ortho Clinical Diagnostics, creating a world-"
+bm25/jobspec,jef1cf852d0,0.6666350657201918,0.3,10,24,"Job Title: Data architectData analyst Location: Juno Beach, FLJob description:We are looking to get a Data ArchitectData"
+bm25/jobspec,jf9ddf265f2,0.8529278650606567,,0,11,"JOB TITLE: Business Analyst
+
+Does using data science to solve business problems sound intriguing? Enjoy working collabor"
+bm25/jobspec,jface874c7a,0.9134166588977729,0.6666666666666666,24,31,"Backed by a leading growth equity firm, an LA based CPGFood & Bev company is looking for a strong accounting professiona"
+bm25/jobspec,jfce9576462,1.0,,0,6,experience building ELT infrastructure and big data (KafkaFlinkSparkAirflowDBT).We are looking for someone who can take 
+dense/jobspec,j0109ae6c95,0.6505132600483446,,0,56,"Our client is looking for experienced professional with a strong background in healthcare, including Pharmacy Benefit Ma"
+dense/jobspec,j0e494b4c06,0.6354151806094245,0.3684210526315789,19,63,"Company Overview
+DocuSign helps organizations connect and automate how they agree. Our flagship product, eSignature, is "
+dense/jobspec,j0ecf6a4401,0.8188458073987622,0.28,25,39,"Position Type
+
+Full time
+
+Type Of Hire
+
+Experienced (relevant combo of work and education)
+
+Education Desired
+
+Bachelor "
+dense/jobspec,j1a465bd243,0.933745776545611,0.47058823529411764,17,21,"Title: Sr. Data EngineerLocation: Austin, TxDuration: 6 MonthsPay Rate: $65HR - $70HR on W2
+Requirements:Bachelors degre"
+dense/jobspec,j203d2c3d86,0.9061827879747687,0.5,2,13,"Assignment Detail
+
+Industry:IT ConsultingServices
+
+Job Description
+
+Business Analyst-Level III
+
+Job Number: 23-02173
+
+Dr"
+dense/jobspec,j21399292f2,0.4760705018418427,,0,58,You're ready to gain the skills and experience needed to grow within your role and advance your career - and we have the
+dense/jobspec,j2400afad4e,1.0,,0,22,"Job Description: Staff AccountantJob Status: Full-Time, M-F 8am-4:30pmLocation: Dyersville, IA - This is an in office jo"
+dense/jobspec,j256405cf04,0.06362078819895171,,0,58,"Position: Business Analyst IVLocation: St. Louis, MO (Onsite from day one)Duration: 6+ Month Contract to Hire Job Descri"
+dense/jobspec,j26a56fcf76,1.0,,0,7,"Role Business Analyst (AI ML)Location Remote Duration - 6+ months
+Job Summary: The Jr. Business Analyst (AI ML) will be "
+dense/jobspec,j275571d46c,0.897617883552293,,0,9,We are dedicated to pushing the boundaries of innovation and creating solutions that redefine our field. As we continue 
+dense/jobspec,j2865e733ae,0.7257275327064654,,0,15,"Who We Are
+Invitation Homes is a fast-paced evolving publicly traded REIT that is pioneering a new industry with over 80"
+dense/jobspec,j2e245f2456,0.49709332276299817,0.3,10,34,"Job Title: Software DeveloperLocation: Cleveland, OHDuration: 6+ MonthsPosition Type Only W2 Role (No Corp to Corp)Job D"
+dense/jobspec,j31b356641d,1.0,,0,19,"Primary Location: Macon, Georgia
+Relocation offered: Yes
+Employment status: Full-Time
+Travel: 10%
+Non-compete: No
+The es"
+dense/jobspec,j31e0450484,0.27099889449887704,0.391304347826087,23,64,"Role: Lead Data EngineerLocation: RemoteDuration: Long Term 8 to 10 years of experience working in data engineering, bus"
+dense/jobspec,j32478442dc,1.0,0.5,2,10,"Description
+This is a Software Development Engineer role in Amazon Pharmacy.
+Amazon Pharmacy is looking for a Software D"
+dense/jobspec,j325915d97e,0.6332196796270029,,0,89,"Primary Location: Melbourne, Florida
+V-Soft Consulting is currently hiring for an Application Software Engineering V for"
+dense/jobspec,j3d2c5b8d9b,1.0,1.0,3,7,"The Qualtrics XM Platform is a system of action that helps businesses to attract customers who stay longer and buy more,"
+dense/jobspec,j3d67e4f8c4,0.7948833326720564,,0,21,"Job Summary
+Manage both strategic and daily developmental activities and personnel to ensure that the business system an"
+dense/jobspec,j4341f588ce,1.0,,0,8,"Sr. Accountant-Accounting
+Dallas, Texas
+As a Sr. Accountant in the Accounting department at Childrens Health, youll cont"
+dense/jobspec,j51b2967b98,0.5079937796926363,,0,17,"Description:Compiles, analyzes and formats data to provided documentation that assists internal customers in the develop"
+dense/jobspec,j53f4b169e7,1.0,1.0,1,7,"The Senior Tax Accountant is responsible for performing complex tax preparation, tax research and tax planning with mini"
+dense/jobspec,j549068f98e,1.0,0.5,2,11,"10627 Software Engineer II (Heroku Architect)
+Purpose:
+The Heroku Software Engineer II is responsible for analyzing, des"
+dense/jobspec,j57014089ad,0.611755947233009,0.0967741935483871,31,44,X is Alphabets moonshot factory. We are a diverse group of inventors and entrepreneurs who build and launch technologies
+dense/jobspec,j57944b8e65,0.42791692212246385,0.22916666666666666,48,87,"Who we are?For the past 20 years, we have powered many Digital Experiences for the Fortune 500. Since 1999, we have grow"
+dense/jobspec,j607c49860d,1.0,1.0,1,5,A leading insurance services company in Irvine is looking for a talented Staff Accountant to join the team! This is an e
+dense/jobspec,j636488fee1,0.8481808245450746,0.875,8,25,"Qualifications:Accounting degreeCPA license required4+ years professional accounting experience, public accounting prefe"
+dense/jobspec,j63f6a8ea32,0.7503359712972107,,0,27,"One of our clients is looking for someone with a strong emphasis in digital electronics microprocessor FPGA design, embe"
+dense/jobspec,j64167269fb,1.0,0.0,3,7,Goliath Partners has been retained by a Prop Trading Firm in commodities off Wall St in New York. They have just opened 
+dense/jobspec,j670ab9f66c,0.8482378089219645,,0,23,"Purpose and ScopeWorks with the Finance division in day-to-day activities. Assists in design, development, and preparati"
+dense/jobspec,j6776858677,0.6350120821546027,0.35714285714285715,28,55,"Location: Tampa, FL
+Exp: 7-10 Yrs
+SPOC: Tushar Kshirsagar
+Key Skills: Angular 10 or above, JavaScript and HTML5 and work"
+dense/jobspec,j6a51d79412,0.9674679834891694,0.6666666666666666,3,7,"ABOUT THE COMPANYFounded in 1888, Lee Kum Kee, a Hong Kong-based global food company, specializes in creating condiments"
+dense/jobspec,j74fd52df8f,0.681660451040628,,0,24,Key Responsibilities:Create intricate wiring networks and electrical subcomponents for both prototype systems and their 
+dense/jobspec,j79ab29338d,0.6371130896657825,,0,22,Responsibilities: Design and develop software using design patterns and best practices Assists in development of high-le
+dense/jobspec,j79f8900893,0.7503359712972107,,0,23,"Additional Job Description
+Job Title: Business Analyst (with Pega OR Rule Engine tool experience)
+Location: St. Louis, M"
+dense/jobspec,j7c5bc1878d,0.11004588314904008,,0,83,"Role: Java Developer Duration: 12 months Required Skills Developed web application using Java, J2EE, HTML, CSS, JavaScri"
+dense/jobspec,j7c71d1f769,0.7407546894997464,0.4,20,27,Novi Labs delivers world-class Oil & Gas forecasts via an end-to-end platform that leverages machine learning and data s
+dense/jobspec,j809bc6c80f,1.0,,0,8,"Shifts: Mon Fri 8-5 (HYBRID onsite)3 month contract (No extensions)Start Date: 952023
+Day-to-Day:Reviews, analyzes, reco"
+dense/jobspec,j81c4585636,0.5,,0,9,The ideal candidate will be responsible for developing high-quality applications. They will also be responsible for desi
+dense/jobspec,j8ddfc98318,0.7506372960520509,,0,24,"We are looking for the candidates who is willing to work on our payroll.
+Job Title: Data AnalystLocation: Plano, TX (Day"
+dense/jobspec,j915a85b702,0.9510907186004267,0.4166666666666667,24,35,"Allergan Data Labs is on a mission to transform the Allergan Aesthetics beauty business at AbbVie, one of the largest ph"
+dense/jobspec,j97ab8bab65,1.0,1.0,1,5,"Minimum qualifications:
+
+Bachelor's degree in Computer Science, a related technical field, or equivalent practical exper"
+dense/jobspec,j9f63681758,0.5370079586075637,,0,31,A mid-sized telecom company is looking for a Sr Data Engineer to join their Business Intelligence Insights team. This te
+dense/jobspec,j9fa38d8795,1.0,,0,8,"Want to learn more about this role and Jobot? Click our Jobot logo and follow our LinkedIn page!
+Job details
+Hybrid Sche"
+dense/jobspec,jadc72a8b5e,0.9052116356304492,0.4782608695652174,23,33,"Position Type: Full-Time, W2 Direct Hire. (Must be a US Citizen or Green Card holder, eligible to work without sponsorsh"
+dense/jobspec,jaffdccbb0d,0.9477344873475498,0.09523809523809523,21,27,"About Grainger
+Grainger is a leading broad line distributor with operations primarily in North America, Japan and the Un"
+dense/jobspec,jb19dcd6acb,0.9876712785649565,,0,11,"Want to learn more about this role and Jobot? Click our Jobot logo and follow our LinkedIn page!
+Job details
+Join this g"
+dense/jobspec,jb54e25043c,0.41628452663299514,,0,23,"Gaming Business Analyst
+Experience: 5+ yrs
+Location: Bellevue, USA
+
+Responsibilities:
+Ability to understand vast amounts"
+dense/jobspec,jb6bdf0d5b1,0.8512360941594272,0.2962962962962963,27,35,"Description
+
+What were looking for
+
+At AppFolio, we paddle as one. We ride and make waves together, with a relentless fo"
+dense/jobspec,jba23ab1d98,1.0,,0,9,Great opportunity for an experienced staff accountant to work for an established and growing company headquartered in Br
+dense/jobspec,jbd1f94111d,0.8236998933965708,,0,17,"A fast growing, private equity backed, healthcare company in Suffolk County is looking for a Financial Reporting Analyst"
+dense/jobspec,jbf60dc6936,1.0,,0,5,"Were Aspire, a ServiceTitan Company
+Were Aspire, the leading SaaS provider for commercial landscaping, snow and ice remo"
+dense/jobspec,jc9fb002526,0.28103167671794427,0.058823529411764705,17,49,"Who we are:Founded in 2017, Gatik is the leader in autonomous middle mile logistics. We deliver goods safely and efficie"
+dense/jobspec,jd2c3517f34,0.4710361549625274,0.16666666666666666,30,57,"Who we are:Founded in 2017, Gatik is the leader in autonomous middle mile logistics. We deliver goods safely and efficie"
+dense/jobspec,je1c28623aa,0.6410457898283652,,0,20,"Job Description:
+The ElectricalResident Engineer-Electrification (RE) is a highly visible technical, product & systems e"
+dense/jobspec,je4168b9d21,0.7928580195906539,,0,12,CORPORATE SENIOR STAFF ACCOUNTANT (REMOTE) POSITION SUMMARY: We are seeking a Corporate Senior Staff Accountant to join 
+dense/jobspec,je450375972,0.6336482249129207,0.08571428571428572,35,69,"ServiceNow BA perspective, here are some of the requirements: Years of experience: 8+ yrs as a Business Analyst. Scrum M"
+dense/jobspec,jec09be5a33,0.38775038571783343,,0,37,"The Opportunity
+QuidelOrtho unites the strengths of Quidel Corporation and Ortho Clinical Diagnostics, creating a world-"
+dense/jobspec,jef1cf852d0,0.6046264191673333,0.3,10,24,"Job Title: Data architectData analyst Location: Juno Beach, FLJob description:We are looking to get a Data ArchitectData"
+dense/jobspec,jf9ddf265f2,1.0,,0,11,"JOB TITLE: Business Analyst
+
+Does using data science to solve business problems sound intriguing? Enjoy working collabor"
+dense/jobspec,jface874c7a,0.8590331472570638,0.625,24,31,"Backed by a leading growth equity firm, an LA based CPGFood & Bev company is looking for a strong accounting professiona"
+dense/jobspec,jfce9576462,1.0,,0,6,experience building ELT infrastructure and big data (KafkaFlinkSparkAirflowDBT).We are looking for someone who can take 
+hybrid/jobspec,j0109ae6c95,0.5513310624619329,,0,56,"Our client is looking for experienced professional with a strong background in healthcare, including Pharmacy Benefit Ma"
+hybrid/jobspec,j0e494b4c06,0.7393817438665189,0.3157894736842105,19,63,"Company Overview
+DocuSign helps organizations connect and automate how they agree. Our flagship product, eSignature, is "
+hybrid/jobspec,j0ecf6a4401,0.8572048559638626,0.28,25,39,"Position Type
+
+Full time
+
+Type Of Hire
+
+Experienced (relevant combo of work and education)
+
+Education Desired
+
+Bachelor "
+hybrid/jobspec,j1a465bd243,0.933745776545611,0.47058823529411764,17,21,"Title: Sr. Data EngineerLocation: Austin, TxDuration: 6 MonthsPay Rate: $65HR - $70HR on W2
+Requirements:Bachelors degre"
+hybrid/jobspec,j203d2c3d86,0.9061827879747687,0.5,2,13,"Assignment Detail
+
+Industry:IT ConsultingServices
+
+Job Description
+
+Business Analyst-Level III
+
+Job Number: 23-02173
+
+Dr"
+hybrid/jobspec,j21399292f2,0.3430184917061137,,0,58,You're ready to gain the skills and experience needed to grow within your role and advance your career - and we have the
+hybrid/jobspec,j2400afad4e,0.9363792118010481,,0,22,"Job Description: Staff AccountantJob Status: Full-Time, M-F 8am-4:30pmLocation: Dyersville, IA - This is an in office jo"
+hybrid/jobspec,j256405cf04,0.06362078819895171,,0,58,"Position: Business Analyst IVLocation: St. Louis, MO (Onsite from day one)Duration: 6+ Month Contract to Hire Job Descri"
+hybrid/jobspec,j26a56fcf76,1.0,,0,7,"Role Business Analyst (AI ML)Location Remote Duration - 6+ months
+Job Summary: The Jr. Business Analyst (AI ML) will be "
+hybrid/jobspec,j275571d46c,0.8750832721664332,,0,9,We are dedicated to pushing the boundaries of innovation and creating solutions that redefine our field. As we continue 
+hybrid/jobspec,j2865e733ae,0.857319485235561,,0,15,"Who We Are
+Invitation Homes is a fast-paced evolving publicly traded REIT that is pioneering a new industry with over 80"
+hybrid/jobspec,j2e245f2456,0.4953004472703398,0.3,10,34,"Job Title: Software DeveloperLocation: Cleveland, OHDuration: 6+ MonthsPosition Type Only W2 Role (No Corp to Corp)Job D"
+hybrid/jobspec,j31b356641d,0.9266360779006398,,0,19,"Primary Location: Macon, Georgia
+Relocation offered: Yes
+Employment status: Full-Time
+Travel: 10%
+Non-compete: No
+The es"
+hybrid/jobspec,j31e0450484,0.2647025964364664,0.4782608695652174,23,64,"Role: Lead Data EngineerLocation: RemoteDuration: Long Term 8 to 10 years of experience working in data engineering, bus"
+hybrid/jobspec,j32478442dc,0.9197207891481876,0.5,2,10,"Description
+This is a Software Development Engineer role in Amazon Pharmacy.
+Amazon Pharmacy is looking for a Software D"
+hybrid/jobspec,j325915d97e,0.5142842514302275,,0,89,"Primary Location: Melbourne, Florida
+V-Soft Consulting is currently hiring for an Application Software Engineering V for"
+hybrid/jobspec,j3d2c5b8d9b,1.0,1.0,3,7,"The Qualtrics XM Platform is a system of action that helps businesses to attract customers who stay longer and buy more,"
+hybrid/jobspec,j3d67e4f8c4,0.6563033086078545,,0,21,"Job Summary
+Manage both strategic and daily developmental activities and personnel to ensure that the business system an"
+hybrid/jobspec,j4341f588ce,1.0,,0,8,"Sr. Accountant-Accounting
+Dallas, Texas
+As a Sr. Accountant in the Accounting department at Childrens Health, youll cont"
+hybrid/jobspec,j51b2967b98,0.61886564587798,,0,17,"Description:Compiles, analyzes and formats data to provided documentation that assists internal customers in the develop"
+hybrid/jobspec,j53f4b169e7,1.0,1.0,1,7,"The Senior Tax Accountant is responsible for performing complex tax preparation, tax research and tax planning with mini"
+hybrid/jobspec,j549068f98e,0.9550337350142764,0.5,2,11,"10627 Software Engineer II (Heroku Architect)
+Purpose:
+The Heroku Software Engineer II is responsible for analyzing, des"
+hybrid/jobspec,j57014089ad,0.6036081270984907,0.12903225806451613,31,44,X is Alphabets moonshot factory. We are a diverse group of inventors and entrepreneurs who build and launch technologies
+hybrid/jobspec,j57944b8e65,0.2393454540036929,0.1875,48,87,"Who we are?For the past 20 years, we have powered many Digital Experiences for the Fortune 500. Since 1999, we have grow"
+hybrid/jobspec,j607c49860d,1.0,1.0,1,5,A leading insurance services company in Irvine is looking for a talented Staff Accountant to join the team! This is an e
+hybrid/jobspec,j636488fee1,0.889103563971671,0.75,8,25,"Qualifications:Accounting degreeCPA license required4+ years professional accounting experience, public accounting prefe"
+hybrid/jobspec,j63f6a8ea32,0.7162874455029681,,0,27,"One of our clients is looking for someone with a strong emphasis in digital electronics microprocessor FPGA design, embe"
+hybrid/jobspec,j64167269fb,0.7328286204777912,0.0,3,7,Goliath Partners has been retained by a Prop Trading Firm in commodities off Wall St in New York. They have just opened 
+hybrid/jobspec,j670ab9f66c,1.0,,0,23,"Purpose and ScopeWorks with the Finance division in day-to-day activities. Assists in design, development, and preparati"
+hybrid/jobspec,j6776858677,0.575073986183329,0.4642857142857143,28,55,"Location: Tampa, FL
+Exp: 7-10 Yrs
+SPOC: Tushar Kshirsagar
+Key Skills: Angular 10 or above, JavaScript and HTML5 and work"
+hybrid/jobspec,j6a51d79412,1.0,0.6666666666666666,3,7,"ABOUT THE COMPANYFounded in 1888, Lee Kum Kee, a Hong Kong-based global food company, specializes in creating condiments"
+hybrid/jobspec,j74fd52df8f,0.7264127302306636,,0,24,Key Responsibilities:Create intricate wiring networks and electrical subcomponents for both prototype systems and their 
+hybrid/jobspec,j79ab29338d,0.539987338899539,,0,22,Responsibilities: Design and develop software using design patterns and best practices Assists in development of high-le
+hybrid/jobspec,j79f8900893,0.6434035614033737,,0,23,"Additional Job Description
+Job Title: Business Analyst (with Pega OR Rule Engine tool experience)
+Location: St. Louis, M"
+hybrid/jobspec,j7c5bc1878d,0.08514311764162098,,0,83,"Role: Java Developer Duration: 12 months Required Skills Developed web application using Java, J2EE, HTML, CSS, JavaScri"
+hybrid/jobspec,j7c71d1f769,0.8584094881082909,0.35,20,27,Novi Labs delivers world-class Oil & Gas forecasts via an end-to-end platform that leverages machine learning and data s
+hybrid/jobspec,j809bc6c80f,1.0,,0,8,"Shifts: Mon Fri 8-5 (HYBRID onsite)3 month contract (No extensions)Start Date: 952023
+Day-to-Day:Reviews, analyzes, reco"
+hybrid/jobspec,j81c4585636,0.5,,0,9,The ideal candidate will be responsible for developing high-quality applications. They will also be responsible for desi
+hybrid/jobspec,j8ddfc98318,0.681660451040628,,0,24,"We are looking for the candidates who is willing to work on our payroll.
+Job Title: Data AnalystLocation: Plano, TX (Day"
+hybrid/jobspec,j915a85b702,0.92663607790064,0.4583333333333333,24,35,"Allergan Data Labs is on a mission to transform the Allergan Aesthetics beauty business at AbbVie, one of the largest ph"
+hybrid/jobspec,j97ab8bab65,1.0,1.0,1,5,"Minimum qualifications:
+
+Bachelor's degree in Computer Science, a related technical field, or equivalent practical exper"
+hybrid/jobspec,j9f63681758,0.5263304097820353,,0,31,A mid-sized telecom company is looking for a Sr Data Engineer to join their Business Intelligence Insights team. This te
+hybrid/jobspec,j9fa38d8795,1.0,,0,8,"Want to learn more about this role and Jobot? Click our Jobot logo and follow our LinkedIn page!
+Job details
+Hybrid Sche"
+hybrid/jobspec,jadc72a8b5e,0.92663607790064,0.4782608695652174,23,33,"Position Type: Full-Time, W2 Direct Hire. (Must be a US Citizen or Green Card holder, eligible to work without sponsorsh"
+hybrid/jobspec,jaffdccbb0d,0.9477344873475498,0.23809523809523808,21,27,"About Grainger
+Grainger is a leading broad line distributor with operations primarily in North America, Japan and the Un"
+hybrid/jobspec,jb19dcd6acb,0.9930783166417602,,0,11,"Want to learn more about this role and Jobot? Click our Jobot logo and follow our LinkedIn page!
+Job details
+Join this g"
+hybrid/jobspec,jb54e25043c,0.4165669464423479,,0,23,"Gaming Business Analyst
+Experience: 5+ yrs
+Location: Bellevue, USA
+
+Responsibilities:
+Ability to understand vast amounts"
+hybrid/jobspec,jb6bdf0d5b1,0.8899541168509599,0.3333333333333333,27,35,"Description
+
+What were looking for
+
+At AppFolio, we paddle as one. We ride and make waves together, with a relentless fo"
+hybrid/jobspec,jba23ab1d98,1.0,,0,9,Great opportunity for an experienced staff accountant to work for an established and growing company headquartered in Br
+hybrid/jobspec,jbd1f94111d,0.8486026589039899,,0,17,"A fast growing, private equity backed, healthcare company in Suffolk County is looking for a Financial Reporting Analyst"
+hybrid/jobspec,jbf60dc6936,1.0,,0,5,"Were Aspire, a ServiceTitan Company
+Were Aspire, the leading SaaS provider for commercial landscaping, snow and ice remo"
+hybrid/jobspec,jc9fb002526,0.3670809945219002,0.17647058823529413,17,49,"Who we are:Founded in 2017, Gatik is the leader in autonomous middle mile logistics. We deliver goods safely and efficie"
+hybrid/jobspec,jd2c3517f34,0.7779040852522006,0.16666666666666666,30,57,"Who we are:Founded in 2017, Gatik is the leader in autonomous middle mile logistics. We deliver goods safely and efficie"
+hybrid/jobspec,je1c28623aa,0.5964984284535196,,0,20,"Job Description:
+The ElectricalResident Engineer-Electrification (RE) is a highly visible technical, product & systems e"
+hybrid/jobspec,je4168b9d21,0.7884899897246446,,0,12,CORPORATE SENIOR STAFF ACCOUNTANT (REMOTE) POSITION SUMMARY: We are seeking a Corporate Senior Staff Accountant to join 
+hybrid/jobspec,je450375972,0.538431315257452,0.11428571428571428,35,69,"ServiceNow BA perspective, here are some of the requirements: Years of experience: 8+ yrs as a Business Analyst. Scrum M"
+hybrid/jobspec,jec09be5a33,0.382414714083678,,0,37,"The Opportunity
+QuidelOrtho unites the strengths of Quidel Corporation and Ortho Clinical Diagnostics, creating a world-"
+hybrid/jobspec,jef1cf852d0,0.6597229852656338,0.3,10,24,"Job Title: Data architectData analyst Location: Juno Beach, FLJob description:We are looking to get a Data ArchitectData"
+hybrid/jobspec,jf9ddf265f2,0.9469024295259745,,0,11,"JOB TITLE: Business Analyst
+
+Does using data science to solve business problems sound intriguing? Enjoy working collabor"
+hybrid/jobspec,jface874c7a,0.9134166588977729,0.5833333333333334,24,31,"Backed by a leading growth equity firm, an LA based CPGFood & Bev company is looking for a strong accounting professiona"
+hybrid/jobspec,jfce9576462,1.0,,0,6,experience building ELT infrastructure and big data (KafkaFlinkSparkAirflowDBT).We are looking for someone who can take 

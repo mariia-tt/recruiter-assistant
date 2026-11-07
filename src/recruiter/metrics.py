@@ -2,6 +2,8 @@
 
 import math
 
+import numpy as np
+
 
 def recall_at_k(ranked: list[str], relevant: set[str], k: int) -> float:
     """Share of relevant items that appear in the top-k."""
@@ -29,3 +31,16 @@ def ndcg_at_k(ranked: list[str], gains: dict[str, float], k: int) -> float:
 def precision_at_k(ranked: list[str], relevant: set[str], k: int) -> float:
     """Share of the top-k that is relevant."""
     return len(set(ranked[:k]) & relevant) / k
+
+
+def paired_bootstrap(a: list[float], b: list[float], n: int = 5000, seed: int = 42) -> dict:
+    """Mean paired difference a - b with a 95 % bootstrap CI and win/tie/loss counts."""
+    diff = np.asarray(a, dtype=float) - np.asarray(b, dtype=float)
+    rng = np.random.default_rng(seed)
+    means = [rng.choice(diff, len(diff)).mean() for _ in range(n)]
+    return {
+        "mean_diff": float(diff.mean()),
+        "ci95": [float(np.percentile(means, 2.5)), float(np.percentile(means, 97.5))],
+        "wins_ties_losses": [int((diff > 0).sum()), int((diff == 0).sum()), int((diff < 0).sum())],
+        "n": len(diff),
+    }

@@ -55,3 +55,17 @@
   queries from LLM-extracted JobSpec instead of raw JD text.
 - **Next step:** JD → JobSpec extraction (71 LLM calls, needs user approval),
   re-run C3 eval with structured queries.
+
+### 2026-11-07 — Phase 4/5: Modeling + Evaluation — JobSpec queries for C3
+- **What was done:** JobSpec extractor (`src/recruiter/jobspec.py`, prompt
+  `jobspec_extractor` v1) — shared by C1; extracted JobSpecs for all 71
+  benchmark JDs; retrieval eval now compares raw-JD vs JobSpec queries.
+- **Decision & why:** default retrieval = hybrid with JobSpec query (best
+  Recall@50 and MRR). Timeouts made retryable in `llm.py` after one run crashed
+  on a 90 s timeout (44/71 saved, resumed from cache).
+- **Evidence:** hybrid Recall@50 0.316 → 0.455 (+0.139, 95 % CI [+0.052,
+  +0.248]); MRR 0.236 → 0.322; pool NDCG@10 0.700 → 0.748 (CI [+0.010, +0.088]).
+  76 LLM calls used.
+- **Loop-back:** corrected benchmark counts in docs: 61 (not 69) JDs have a
+  non-zero label; corpus is 476 resumes after cleaning.
+- **Next step:** C4 scorecard ranker — must beat pool NDCG@10 = 0.748.

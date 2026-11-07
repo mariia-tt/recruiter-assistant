@@ -48,6 +48,9 @@ SKILL_ALIASES: dict[str, list[str]] = {
     "active directory": ["active directory"],
     "windows server": ["windows server"],
     "git": ["git", "github", "gitlab", "version control"],
+    "oop": ["oop", "object-oriented", "object oriented"],
+    "rest api": ["rest api", "rest apis", "restful", "restful api", "restful services"],
+    "microservices": ["microservices", "micro-services", "microservice architecture"],
     "ci/cd": ["ci/cd", "jenkins", "continuous integration"],
     "cybersecurity": ["cybersecurity", "information security", "network security", "firewall"],
     "technical support": ["technical support", "help desk", "helpdesk", "troubleshooting", "desktop support"],
@@ -136,6 +139,13 @@ SKILL_ALIASES: dict[str, list[str]] = {
 }
 
 ALIAS_TO_CANONICAL = {a: c for c, aliases in SKILL_ALIASES.items() for a in [c, *aliases]}
+# LLM spellings mapped to a canonical name, but NOT searched in CV text
+# (e.g. "net" would match "net income").
+ALIAS_TO_CANONICAL |= {
+    "net": ".net", "apache spark": "spark", "object-oriented programming": "oop",
+    "object oriented programming": "oop", "amazon aws": "aws", "ms excel": "excel",
+    "microsoft excel": "excel", "golang": "go", "k8s": "kubernetes",
+}
 # Canonical names that are ordinary words/letters: match only via their aliases.
 AMBIGUOUS = {"go", "r"}
 
