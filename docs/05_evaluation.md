@@ -8,6 +8,51 @@ See `eval/results/data_cleaning.json` and the Phase 3 entry in
 false positives — licence numbers), duplicates 2 → 0, glued words removed
 (verified by unit tests).
 
+## C2a rule profiler / C2b LLM profiler
+**Script:** `eval/eval_profiler.py` → `eval/results/profiler.json` · **Gold:**
+`eval/gold/cv_profiles.jsonl` — 30 CVs (15 categories × 2, seed 42), **silver
+standard** annotated by an independent LLM annotator (Claude, a different model
+family from the Gemini model under test) following
+`eval/gold/cv_profiles_guideline.md`, without access to the system's code or
+prompts. All 30 records passed automatic checks (every evidence fragment is a
+verbatim substring of the CV; all skills from the vocabulary); every
+`years_experience` value lists the date ranges used, so it can be audited.
+
+**Why these metrics.** Profiles feed the ranker: skills → micro P/R/F1 over the
+119-skill vocabulary; years → MAE and share within ±1 year (the experience
+criterion is linear in years); seniority → accuracy; headline → exact match.
+
+| Metric | C2a rules (all CVs, offline) | C2b LLM (`gemini-3.5-flash-lite`, prompt v1) | Target |
+|---|---|---|---|
+| Skills F1 (P / R) | **0.71** (0.64 / 0.78) | 0.52 (**0.86** / 0.37) | ≥ 0.75 |
+| Years MAE | **0.39** y | 1.32 y | ≤ 1.5 y |
+| Years within ±1 y | **97 %** | 60 % | |
+| Seniority accuracy | **0.90** (0.96 on 28 unambiguous) | 0.70 (0.75) | ≥ 0.70 |
+| Headline exact | 0.87 | **0.97** | |
+| Achievements supported by CV text | — | **100 %** (120 facts) | |
+
+**Iteration.** The first C2a run had years MAE **1.69**. Error analysis of the
+five worst CVs found two generic bugs: (1) date ranges written with a fullwidth
+hyphen "－" or a soft hyphen (present in **1 205 of 2 481** DB CVs) were not
+parsed — one CV got 0 years instead of 16.2; (2) study periods in the Education
+section were counted as work. After the fix MAE = 0.39 and the share of DB CVs
+with 0 years fell from 2.5 % to 1.3 %. Because the fix was found on the same 30
+CVs, the DB-wide change is the evidence that it generalises. Remaining largest
+error: "Honor Roll 1996-2009" (an award period) is read as a job.
+
+**Interpretation.** The LLM is *not* better at everything: it is precise but
+lists far fewer skills (recall 0.37) and is worse at date arithmetic; rules are
+better for structured, countable facts. The LLM is better at headlines and is the
+only source of grounded achievements. **Design decision:** ranking uses C2a for
+all CVs; C2b is used only for shortlisted CVs to supply roles and achievements
+to the outreach writer. Seniority: 2 of 30 headlines contain keywords of two
+levels ("Assistant Manager"); the guideline did not define precedence — reported
+separately instead of changing the gold labels.
+
+**Limitations.** Silver labels come from one LLM annotator, not humans; skill
+F1 is computed only over the shared vocabulary (C2b's free-form skills outside it
+are ignored); n = 30.
+
 ## C3 Hybrid retriever
 **Script:** `eval/eval_retrieval.py` · **Data:** fit benchmark (`eval/gold/README.md`)
 · **Encoder:** `BAAI/bge-small-en-v1.5`, 200-word chunks, max-pool · **Fusion:** RRF (k=60).
@@ -79,32 +124,33 @@ The knock-out rule is evaluated separately as a classifier (rejection rate per c
 | Random | 0.575 | 0.223 | 0.00 |
 | C3 hybrid retrieval (baseline) | 0.748 | 0.266 | 0.34 |
 | Dense retrieval only | 0.755 | 0.266 | 0.36 |
-| Scorecard v1 (original business weights) | 0.754 | 0.285 | 0.36 |
-| Scorecard v1 + knock-out (< 50 % must-haves) | 0.751 | 0.275 | 0.36 |
-| **Scorecard v2 (revised weights, default)** | **0.814** | **0.292** | **0.43** |
-| Weights auto-tuned, 2-fold CV (held-out) | 0.786 | — | — |
+| Scorecard v1 (original business weights) | 0.747 | 0.285 | 0.34 |
+| Scorecard v1 + knock-out (< 50 % must-haves) | 0.745 | 0.275 | 0.34 |
+| **Scorecard v2 (revised weights, default)** | **0.808** | **0.295** | **0.40** |
+| Weights auto-tuned, 2-fold CV (held-out) | 0.800 | — | — |
 
-Scorecard v2 vs C3 baseline: NDCG@10 **+0.065**, 95 % CI [+0.017, +0.114]
-(paired bootstrap over JDs). v1 vs C3: +0.006, CI [−0.048, +0.058] — not significant.
+Scorecard v2 vs C3 baseline: NDCG@10 **+0.060**, 95 % CI [+0.012, +0.107]
+(paired bootstrap over JDs). v1 vs C3: −0.001, CI [−0.054, +0.050] — not significant.
+_Numbers after the C2a date-parsing fix (see C2 section); before the fix v2 was 0.814 and CV 0.786._
 
 **Honest estimate.** v2 weights were chosen *after* seeing v1 results on the same
-61 JDs, so 0.814 is optimistic. The unbiased estimate is the 2-fold
+61 JDs, so 0.808 is optimistic. The unbiased estimate is the 2-fold
 cross-validation: weights tuned on one half of the JDs and tested on the other
-give **0.786** — still clearly above the 0.748 baseline. The tuned weights are
-unstable between folds (experience 0.4–0.6, semantic 0.3 in both), a sign that
+give **0.800** — still clearly above the 0.748 baseline. The tuned weights are
+unstable between folds (experience 0.4–0.6, semantic 0.3–0.4), a sign that
 61 JDs are few; the hand-set v2 is a business-readable compromise between them.
 
 **Ablation (v2, drop one criterion, weights renormalised):**
 
 | Without | NDCG@10 | Δ | Interpretation |
 |---|---|---|---|
-| experience | 0.752 | −0.062 | strongest signal: labels track years of relevant work |
-| semantic | 0.782 | −0.032 | catches skills described in other words |
-| title | 0.803 | −0.011 | |
-| domain | 0.806 | −0.008 | |
-| seniority | 0.811 | −0.003 | regex-derived level is coarse |
-| must_have | 0.814 | 0.000 | no NDCG effect, but P@5 drops 0.292 → 0.272; kept for P@5 and explainability |
-| nice_to_have | 0.819 | +0.005 | slightly noisy; candidate for removal |
+| experience | 0.752 | −0.056 | strongest signal: labels track years of relevant work |
+| semantic | 0.778 | −0.030 | catches skills described in other words |
+| title | 0.800 | −0.008 | |
+| domain | 0.798 | −0.010 | |
+| seniority | 0.806 | −0.002 | regex-derived level is coarse |
+| must_have | 0.805 | −0.003 | small NDCG effect, but P@5 drops 0.295 → 0.272; kept for P@5 and explainability |
+| nice_to_have | 0.814 | +0.006 | slightly noisy; candidate for removal |
 
 **Knock-out rule — failed, disabled by default.** At the 50 % threshold it
 rejects 87 % of Good Fit, 90 % of Potential and 90 % of No Fit candidates. Even
@@ -125,19 +171,20 @@ top-10 of scorecard v2 (shuffled with a fixed seed against position bias);
 
 | Ordering of the top-10 | NDCG@10 | P@5 |
 |---|---|---|
-| **Scorecard v2** | **0.814** | **0.292** |
-| LLM `overall` | 0.805 | 0.289 |
-| Blend 50/50 (scorecard position + LLM) | 0.812 | 0.289 |
+| **Scorecard v2** | **0.808** | **0.295** |
+| LLM `overall` | 0.801 | 0.289 |
+| Blend 50/50 (scorecard position + LLM) | 0.806 | 0.292 |
 
-LLM vs scorecard: −0.009, 95 % CI [−0.027, +0.006] (12 wins / 21 ties / 28 losses) —
-**no improvement**.
+LLM vs scorecard: −0.007, 95 % CI [−0.025, +0.008] — **no improvement**.
+_Ratings were collected on the top-10 before the C2a fix; after it 98 % of the
+new top-10 members are rated (unrated ones sort last in the LLM order)._
 
 | Quality of the ratings themselves | Value |
 |---|---|
 | Mean `overall` by label (No / Potential / Good) | 1.85 / 2.52 / 2.85 — monotone |
 | Spearman(`overall`, label) | 0.37 |
 | Evidence quote verbatim in CV | 93 % |
-| Candidates rated (coverage) | 100 % |
+| Candidates rated (coverage of current top-10) | 98 % |
 
 **Interpretation.** The LLM's judgement is sensible (monotone in the label,
 grounded quotes) but adds no ranking signal beyond the scorecard: within an

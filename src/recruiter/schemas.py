@@ -85,3 +85,23 @@ class LLMCandidateRating(BaseModel):
 
 class LLMRerankResult(BaseModel):
     ratings: list[LLMCandidateRating]
+
+
+class Role(BaseModel):
+    title: str
+    period: str | None = Field(default=None, description="as written in the CV, e.g. '01/2015 to Current'")
+
+
+class CandidateProfile(BaseModel):
+    """Rich facts for shortlisted CVs, extracted by the LLM profiler (C2b)."""
+
+    headline: str
+    years_experience: float
+    seniority: Seniority
+    skills: list[str]
+    recent_roles: list[Role] = Field(default_factory=list, description="max 3, most recent first")
+    achievements: list[str] = Field(
+        default_factory=list, description="max 4 concrete results, close to the CV wording"
+    )
+    education: str | None = None
+    domains: list[str] = Field(default_factory=list)

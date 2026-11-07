@@ -86,3 +86,18 @@
   JD must-haves literally, so labels reflect holistic role fit.
 - **Next step:** C2 gold set (user verification), C1 dialog collector, C5/C6
   outreach writer + grounding checker, pipeline + Streamlit app.
+
+### 2026-11-07 — Phase 5 (loop-back to 4): C2a/C2b profiler evaluation
+- **What was done:** 30-CV silver standard built by an independent LLM annotator
+  (Claude subagent, no access to code/prompts); C2b LLM profiler (prompt
+  `cv_profiler` v1); `eval/eval_profiler.py`; C4/C4b evals re-run after C2a fix.
+- **Decision & why:** C2a fixed (unicode dashes, education dates excluded).
+  Ranking keeps rule profiles; C2b only for shortlisted CVs (achievements, roles)
+  because rules beat the LLM on skills recall, years and seniority.
+- **Evidence:** C2a years MAE 1.69 → 0.39, skills F1 0.71, seniority 0.90;
+  C2b skills F1 0.52 (P 0.86), years MAE 1.32, achievements supported 100 %.
+  DB-wide: 1 205 CVs use the unparsed dashes; 0-year CVs 2.5 % → 1.3 %.
+  C4 after fix: v2 NDCG@10 0.808 (vs C3 +0.060, CI [+0.012, +0.107]); CV 0.800.
+  30 LLM calls.
+- **Loop-back:** Modeling (C2a parser), then Evaluation of C4/C4b re-run.
+- **Next step:** Streamlit app (pipeline already wired), C1 dialog, C5/C6.

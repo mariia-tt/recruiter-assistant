@@ -1,0 +1,81 @@
+{
+  "component": "C2a rule profiler / C2b LLM profiler",
+  "timestamp": "2026-11-07T18:32:25.390996+00:00",
+  "gold": "silver standard, 30 CVs, independent LLM annotator (Claude)",
+  "config": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt_version": "1",
+    "c2b_n": 30,
+    "stopped": null
+  },
+  "metrics": {
+    "C2a rules": {
+      "headline_exact": 0.8666666666666667,
+      "years_mae": 0.38666666666666666,
+      "years_within_1y": 0.9666666666666667,
+      "seniority_accuracy": 0.9,
+      "seniority_accuracy_unambiguous": 0.9642857142857143,
+      "n_unambiguous": 28,
+      "skills": {
+        "precision": 0.6446540880503144,
+        "recall": 0.7824427480916031,
+        "f1": 0.7068965517241379
+      }
+    },
+    "C2b LLM": {
+      "headline_exact": 0.9666666666666667,
+      "years_mae": 1.3233333333333333,
+      "years_within_1y": 0.6,
+      "seniority_accuracy": 0.7,
+      "seniority_accuracy_unambiguous": 0.75,
+      "n_unambiguous": 28,
+      "skills": {
+        "precision": 0.8584070796460177,
+        "recall": 0.3702290076335878,
+        "f1": 0.5173333333333333
+      },
+      "achievements_supported": 1.0,
+      "n_achievements": 120
+    },
+    "C2a rules (same CVs)": {
+      "headline_exact": 0.8666666666666667,
+      "years_mae": 0.38666666666666666,
+      "years_within_1y": 0.9666666666666667,
+      "seniority_accuracy": 0.9,
+      "seniority_accuracy_unambiguous": 0.9642857142857143,
+      "n_unambiguous": 28,
+      "skills": {
+        "precision": 0.6446540880503144,
+        "recall": 0.7824427480916031,
+        "f1": 0.7068965517241379
+      }
+    }
+  },
+  "worst_years_c2a": [
+    {
+      "id": "81310245",
+      "pred": 24.0,
+      "gold": 13.0
+    },
+    {
+      "id": "16103783",
+      "pred": 15.4,
+      "gold": 14.8
+    },
+    {
+      "id": "20345168",
+      "pred": 17.7,
+      "gold": 17.7
+    },
+    {
+      "id": "18569929",
+      "pred": 26.5,
+      "gold": 26.5
+    },
+    {
+      "id": "22259475",
+      "pred": 13.7,
+      "gold": 13.7
+    }
+  ]
+}

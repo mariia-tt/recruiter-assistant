@@ -37,3 +37,10 @@ def test_profile_end_to_end():
     p = profile("1", "IT DIRECTOR Summary Led a team. 03/2012 to Current. Skills: SQL, Agile, AWS")
     assert p.seniority == "lead" and p.years_experience == 7.8
     assert {"sql", "agile", "aws", "team leadership"} <= set(p.skills)
+
+
+def test_unicode_dashes_and_education_excluded():
+    assert years_of_experience("Analyst , 05/2009 \uff0d 05/2011 Company Name") == 2.0
+    assert years_of_experience("Consultant (March 2008 \u00ad March 2010)") == 2.0
+    text = "Experience 01/2015 to 01/2017 Analyst Education BSc 2010 - 2014 University Skills Excel"
+    assert years_of_experience(text) == 2.0

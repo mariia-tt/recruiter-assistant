@@ -1,0 +1,115 @@
+.net
+accounting
+active directory
+adobe creative suite
+agile
+agriculture
+angular
+auditing
+autocad
+automotive
+aviation
+aws
+azure
+banking
+benefits administration
+budgeting
+business analysis
+c#
+c++
+ci/cd
+communication
+construction management
+content writing
+cpa
+crm
+customer service
+cybersecurity
+data analysis
+digital marketing
+docker
+electrical engineering
+employee relations
+etl
+event planning
+excel
+financial analysis
+fitness training
+food preparation
+french
+gcp
+german
+git
+go
+graphic design
+hadoop
+hris
+html/css
+illustrator
+indesign
+java
+javascript
+jira
+kubernetes
+lead generation
+legal research
+linux
+machine learning
+maintenance
+manufacturing
+marketing
+matlab
+mechanical engineering
+medical records
+microservices
+negotiation
+networking
+nlp
+node.js
+nosql
+onboarding
+oop
+patient care
+payroll
+photography
+photoshop
+php
+power bi
+process improvement
+product management
+project management
+public relations
+python
+quality assurance
+quickbooks
+r
+react
+recruiting
+rest api
+retail
+risk management
+ruby
+safety compliance
+sales
+salesforce
+sap
+sas
+sharepoint
+social media
+spanish
+spark
+sql
+stakeholder management
+statistics
+supply chain
+tableau
+tax
+teaching
+team leadership
+technical support
+training
+typescript
+ui/ux
+vendor management
+video editing
+windows server

@@ -11,6 +11,12 @@ MONTH_NUM = {m: i for i, m in enumerate(
     ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"], 1)}
 _MONTH = r"(?:jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\.?"
 _END = r"(?P<now>current|present|now|date)"
+# hyphen, en/em dashes, minus, fullwidth hyphen and soft hyphen all occur in the CVs
+_DASH = "[-\u2010-\u2015\u2212\uff0d\u00ad]"
+EDUCATION_RE = re.compile(
+    rf"\bEducation(?: and Training)?\b.*?(?=\b(?:{SECTIONS.replace('Education|', '')})\b|$)",
+    re.DOTALL,
+)
 
 
 def _date(p: str) -> str:
@@ -19,7 +25,7 @@ def _date(p: str) -> str:
 
 
 RANGE_RE = re.compile(
-    _date("s") + r"\s*(?:to|-|–|—|until)\s*(?:" + _END + "|" + _date("e") + ")",
+    _date("s") + rf"\s*(?:to|until|{_DASH})\s*(?:" + _END + "|" + _date("e") + ")",
     re.IGNORECASE,
 )
 
@@ -39,9 +45,12 @@ def _month(num: str | None, name: str | None) -> int:
 
 
 def parse_ranges(text: str) -> list[tuple[float, float]]:
-    """Employment-like date ranges as (start, end) in fractional years."""
+    """Employment-like date ranges as (start, end) in fractional years.
+
+    The Education section is removed first so study periods are not counted as work.
+    """
     ranges = []
-    for m in RANGE_RE.finditer(text):
+    for m in RANGE_RE.finditer(EDUCATION_RE.sub(" ", text)):
         start = int(m["sy"]) + (_month(m["sm"], m["smn"]) - 1) / 12
         if m["now"]:
             end = float(config.DATA_REFERENCE_YEAR)

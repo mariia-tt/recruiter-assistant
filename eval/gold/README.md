@@ -13,3 +13,17 @@
   as non-relevant, so corpus-level Recall@k is a *lower bound*. The pool-level
   NDCG (ranking only the labelled resumes of each JD) does not have this bias.
 - Not copied into this folder: it is downloaded by `scripts/download_data.py`.
+
+## CV profiles — silver standard (C2a, C2b)
+- **Files:** `cv_profiles_sample.jsonl` (input: 30 cleaned CVs from the candidate DB,
+  15 randomly chosen categories × 2 CVs, seed 42), `cv_profiles.jsonl` (labels),
+  `cv_profiles_guideline.md` (annotation rules), `skill_vocabulary.txt`.
+- **Annotator:** an independent LLM agent (Claude) — a different model family from
+  the system's Gemini model — instructed not to open the project's code or prompts.
+  It read every CV fully; a helper script only merged the date ranges it entered.
+- **Checks:** 30 valid records; all skills in vocabulary; every evidence fragment is a
+  verbatim substring of its CV; every years value lists the ranges used (auditable).
+- **Known ambiguity:** the guideline did not define precedence when a headline holds
+  two seniority keywords ("Assistant Manager"); the annotator applied list order.
+- **Status:** silver, not human-verified. A human spot-check of a few records is
+  welcome but was not required for the reported numbers.
