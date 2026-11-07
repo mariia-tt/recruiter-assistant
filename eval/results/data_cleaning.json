@@ -1,0 +1,42 @@
+{
+  "candidate_db": {
+    "input_rows": 2484,
+    "dropped_too_short": 1,
+    "dropped_duplicates": 2,
+    "output_rows": 2481,
+    "before": {
+      "emails": 19,
+      "phones": 60,
+      "glued_section_or_month": 27,
+      "multi_space": 2484,
+      "exact_duplicates": 2,
+      "under_min_words": 1
+    },
+    "after": {
+      "emails": 0,
+      "phones": 2,
+      "glued_section_or_month": 0,
+      "multi_space": 0,
+      "exact_duplicates": 0,
+      "under_min_words": 0
+    }
+  },
+  "benchmark_resumes": {
+    "before": {
+      "emails": 2,
+      "phones": 4,
+      "glued_section_or_month": 476,
+      "multi_space": 208,
+      "exact_duplicates": 0,
+      "under_min_words": 0
+    },
+    "after": {
+      "emails": 0,
+      "phones": 0,
+      "glued_section_or_month": 0,
+      "multi_space": 0,
+      "exact_duplicates": 0,
+      "under_min_words": 0
+    }
+  }
+}
