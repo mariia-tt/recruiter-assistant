@@ -37,6 +37,21 @@
   whose requirements are all "preferred" (empty must-haves), unmapped levels ("Staff",
   "V") resolved by years.
 
+## Benchmark JobSpecs — LLM-generated eval input (C3, C4, C4b, C5)
+- **File:** `eval/results/benchmark_jobspecs.json` — not a gold set, but data made by an LLM
+  that the evals depend on, so it is committed and described here.
+- **How it was made:** `scripts/extract_benchmark_jobspecs.py` ran the system's own JobSpec
+  extractor on each of the 71 benchmark JDs (full JD text): prompt
+  `prompts/jobspec_extractor.md` **v1**, `gemini-3.5-flash-lite`, temperature 0, 71 calls
+  (2026-11-07). Re-running the script skips existing entries; `--force` re-extracts.
+- **Read by:** `eval_retrieval.py` (structured queries), `eval_ranker.py`,
+  `eval_reranker_llm.py`, `eval_outreach.py`.
+- **Quality:** scored against `jobspec_gold.jsonl` (15 of these JDs) by
+  `eval/eval_benchmark_jobspecs.py` → `eval/results/benchmark_jobspecs_quality.json`:
+  title 0.93, seniority 0.87, min years 0.93, must-have F1 0.65 lexical / 0.70 semantic.
+  The current prompt v2 on the same JDs (C1 eval, "full JD" column) gives must-have F1
+  0.64 / 0.71, so the file was not re-extracted with v2 (saves 71 calls).
+
 ## Outreach claims gold (validates the C6 grounding checker)
 - **Files:** `claims_sample.jsonl` (61 candidate claims extracted by C6 from the 20
   outreach messages of `eval/eval_outreach.py`, all attempts), `claims_gold.jsonl`

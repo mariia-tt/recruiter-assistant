@@ -146,3 +146,27 @@
 - **Evidence:** notebook executes with 0 errors; 39 tests pass.
 - **Loop-back:** none
 - **Next step:** live run of the app with the real LLM before recording (quota reset).
+
+### 2026-11-08 — Phase 5/6: Evaluation & Deployment — reproducible evals on a fresh clone
+- **What was done:** cloned the repo into an empty folder and followed the README
+  (`uv sync`, ruff, pytest, `download_data.py`, `prepare_data.py`, first search, the
+  0-LLM evals). Found that `benchmark_jobspecs.json` (input of the C3/C4/C4b/C5 evals)
+  lived only in uncommitted `data/processed/`: on a fresh clone `eval_ranker`,
+  `eval_reranker_llm` and `eval_outreach` failed with FileNotFoundError and
+  `eval_retrieval` silently dropped the JobSpec queries and overwrote `retrieval.json`
+  with different numbers. Moved the file to `eval/results/` (committed, path in
+  `config.BENCHMARK_JOBSPECS`); the extractor now skips JDs that already have a spec
+  (`--force` to re-extract); `eval_retrieval` / `eval_ranker` fail with a clear message
+  when the file is missing or incomplete; new `eval/eval_benchmark_jobspecs.py` scores
+  the stored specs against `jobspec_gold.jsonl`; README and `eval/gold/README.md` updated.
+- **Decision & why:** commit the LLM-generated eval input instead of regenerating it —
+  regeneration costs 71 calls of the free daily quota and is not bit-for-bit
+  reproducible (model drift), while the file is small (25 KB) and holds only fields
+  extracted from public JDs, no candidate data.
+- **Evidence:** on the fresh clone `data_cleaning.json`, `retrieval.json`, `ranker.json`
+  and `grounding_judge.json` were reproduced exactly (only timestamps differ);
+  39 tests pass; extractor re-run made 0 LLM calls. Stored v1 specs vs gold: must-have F1
+  0.65 / 0.70 (lexical / semantic), on par with prompt v2 (0.64 / 0.71). First app start
+  on a fresh clone took ~15 min (model download + index), README now says 7–15 min.
+- **Loop-back:** Deployment → Evaluation (eval inputs made reproducible).
+- **Next step:** slides and video recording.

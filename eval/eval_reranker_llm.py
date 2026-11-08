@@ -52,7 +52,7 @@ def main() -> None:
     df = pd.read_csv(config.EVAL_DIR / "results" / "ranker_features.csv")
     fit = pd.read_parquet(config.DATA_PROCESSED / "fit_test.parquet")
     texts = dict(zip(fit.resume_id, fit.resume_text, strict=False))
-    specs = json.loads((config.DATA_PROCESSED / "benchmark_jobspecs.json").read_text())
+    specs = json.loads(config.BENCHMARK_JOBSPECS.read_text())
     ratings = collect(df, specs, texts, args.limit)
 
     per = {"scorecard v2": [], "llm overall": [], "blend 50/50": []}

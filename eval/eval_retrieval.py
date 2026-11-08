@@ -6,7 +6,7 @@ Two views:
 - pool ranking: rerank only the labelled resumes of each JD -> NDCG@10 with graded
   labels (0/1/2), over JDs with >= 1 non-zero label. Baseline for the C4 ranker.
 Queries: raw JD text vs a query built from the LLM-extracted JobSpec
-(data/processed/benchmark_jobspecs.json, made by scripts/extract_benchmark_jobspecs.py).
+(eval/results/benchmark_jobspecs.json, made by scripts/extract_benchmark_jobspecs.py).
 """
 
 import json
@@ -65,12 +65,14 @@ def main() -> None:
     jds = fit.drop_duplicates("jd_id").set_index("jd_id").jd_text
 
     queries: dict[str, Mapping[str, str]] = {"raw_jd": jds}
-    specs_file = config.DATA_PROCESSED / "benchmark_jobspecs.json"
-    if specs_file.exists():
-        specs = json.loads(specs_file.read_text())
-        queries["jobspec"] = {k: query_from_spec(JobSpec(**v)) for k, v in specs.items()}
-        # Evaluate both query types on the same JDs so numbers are comparable.
-        fit = fit[fit.jd_id.isin(specs)]
+    specs_file = config.BENCHMARK_JOBSPECS
+    if not specs_file.exists():
+        raise SystemExit(f"{specs_file} is missing (it is committed; restore it with git, or "
+                         "regenerate with scripts/extract_benchmark_jobspecs.py — 71 LLM calls)")
+    specs = json.loads(specs_file.read_text())
+    queries["jobspec"] = {k: query_from_spec(JobSpec(**v)) for k, v in specs.items()}
+    # Evaluate both query types on the same JDs so numbers are comparable.
+    fit = fit[fit.jd_id.isin(specs)]
 
     results, per_jd = {}, []
     for qname, qtext in queries.items():

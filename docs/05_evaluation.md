@@ -45,7 +45,9 @@ Both are reported because the choice changes F1 by 0.04–0.07.
    once "Any other must-have skills, and any nice-to-haves?" when < 3 must-haves.
 3. A slot already asked and still empty is treated as "no requirement" and never re-asked.
 Benchmark JobSpecs used by C3/C4 were extracted with v1; in full JDs years are written
-explicitly, so v2 would not change them materially (not re-run to save quota).
+explicitly, so v2 would not change them materially (not re-run to save quota). Checked
+on the 15 gold JDs (`eval/eval_benchmark_jobspecs.py`, 0 calls): stored v1 specs score
+must-have F1 0.65 lexical / 0.70 semantic, min years 0.93 — on par with v2 (0.64 / 0.71, 1.00).
 
 **Error analysis.** Scalar slots are nearly solved. The gap is skill *recall*: in a chat
 the recruiter mentions far fewer requirements than the JD lists (e.g. the BI analyst

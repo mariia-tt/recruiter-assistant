@@ -43,7 +43,8 @@ caches every response in `data/cache/` and logs every call to `traces/YYYY-MM-DD
 uv run streamlit run app.py
 ```
 
-The first start builds the embedding index for 2 481 CVs (~7 min on a laptop, then cached).
+The first start downloads the embedding model and builds the index for 2 481 CVs
+(7–15 min on a laptop, then cached in `data/processed/`; later starts take seconds).
 LLM tracing: every call is logged to `traces/YYYY-MM-DD.jsonl`; view the latest with
 `uv run python scripts/show_traces.py --n 10 [--full]`.
 Each recruiter message costs 1 LLM call; "Explain top-10" costs 1 call; a LinkedIn
@@ -59,13 +60,26 @@ uv run ruff check . && uv run pytest -q          # fast, no network
 |---|---|---|---|
 | C0 cleaning | `scripts/prepare_data.py` | 0 | `eval/results/data_cleaning.json` |
 | C2a / C2b profilers | `eval/eval_profiler.py` | 30 (cached) | `eval/results/profiler.json` |
-| JobSpec for benchmark JDs | `scripts/extract_benchmark_jobspecs.py` | 71 (cached) | `data/processed/benchmark_jobspecs.json` |
+| JobSpec for benchmark JDs | `scripts/extract_benchmark_jobspecs.py` | 0 (71 with `--force`) | `eval/results/benchmark_jobspecs.json` |
+| Quality of those JobSpecs | `eval/eval_benchmark_jobspecs.py` | 0 | `eval/results/benchmark_jobspecs_quality.json` |
 | C3 retriever | `eval/eval_retrieval.py` | 0 | `eval/results/retrieval.json` |
 | C4 ranker | `eval/eval_ranker.py` | 0 | `eval/results/ranker.json` |
 | C4b LLM re-ranker | `eval/eval_reranker_llm.py` | 61 (cached) | `eval/results/reranker_llm.json` |
 | C1 collector (simulated dialogs) | `eval/eval_collector.py` | ~90 (cached) | `eval/results/collector.json` |
 | C5 + C6 outreach | `eval/eval_outreach.py` | ~70 (cached) | `eval/results/outreach.json` |
 | C6 judge validation | `eval/eval_grounding_judge.py` | 0 | `eval/results/grounding_judge.json` |
+
+All result files are committed, including `eval/results/benchmark_jobspecs.json` (the
+LLM-extracted JobSpecs that C3/C4/C4b/C5 evals read). On a fresh clone:
+- C0 cleaning is `prepare_data.py` itself — running it regenerates `data_cleaning.json`.
+- After `download_data.py` and `prepare_data.py`, the evals with 0 LLM calls — C3, C4,
+  C6 judge validation and `eval/eval_benchmark_jobspecs.py` — re-run without an API key.
+  They are not fully offline: C3/C4 download the embedding model (bge-small) from Hugging
+  Face on first use.
+- `extract_benchmark_jobspecs.py` skips JDs that already have a spec (0 calls); `--force`
+  re-extracts them.
+- The LLM cache (`data/cache/`) is not committed, so re-running an LLM eval makes the
+  listed number of real calls — check the daily budget first.
 
 Benchmarks and gold sets are described in [`eval/gold/README.md`](eval/gold/README.md).
 

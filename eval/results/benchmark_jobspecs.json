@@ -1,0 +1,1357 @@
+{
+ "j0109ae6c95": {
+  "title": "Business Analyst",
+  "seniority": "lead",
+  "must_have_skills": [
+   "healthcare",
+   "pbm",
+   "sql",
+   "visio",
+   "agile",
+   "waterfall",
+   "business analysis"
+  ],
+  "nice_to_have_skills": [
+   "event-based systems",
+   "messaging"
+  ],
+  "min_years": 10.0,
+  "domain": "healthcare",
+  "location": null
+ },
+ "j0e494b4c06": {
+  "title": "Senior Software Engineer",
+  "seniority": "senior",
+  "must_have_skills": [
+   "java",
+   "c#",
+   "c++",
+   "nosql",
+   "elasticsearch",
+   "spark",
+   "cloud environments",
+   "oop"
+  ],
+  "nice_to_have_skills": [
+   ".net",
+   "sql",
+   "saas",
+   "agile",
+   "test-driven development",
+   "microsoft technology stack"
+  ],
+  "min_years": 8.0,
+  "domain": null,
+  "location": "hybrid"
+ },
+ "j0ecf6a4401": {
+  "title": "Software Engineer Senior",
+  "seniority": "senior",
+  "must_have_skills": [
+   "java",
+   "oop",
+   "microservices",
+   "rest api",
+   "kubernetes",
+   "kafka",
+   "sql",
+   "relational database"
+  ],
+  "nice_to_have_skills": [
+   "aws",
+   "openshift",
+   "ansible",
+   "maven",
+   "ci/cd",
+   "junit"
+  ],
+  "min_years": 5.0,
+  "domain": "fintech",
+  "location": null
+ },
+ "j12a4c74916": {
+  "title": "Staff Accountant",
+  "seniority": "mid",
+  "must_have_skills": [
+   "accounting",
+   "journal entries",
+   "financial analysis",
+   "month end reconciliations"
+  ],
+  "nice_to_have_skills": [
+   "excel",
+   "adobe",
+   "quickbooks online"
+  ],
+  "min_years": 1.0,
+  "domain": null,
+  "location": "Salem, Oregon"
+ },
+ "j1a465bd243": {
+  "title": "Sr. Data Engineer",
+  "seniority": "senior",
+  "must_have_skills": [
+   "sql",
+   "python",
+   "etl",
+   "snowflake",
+   "aws"
+  ],
+  "nice_to_have_skills": [],
+  "min_years": 4.0,
+  "domain": null,
+  "location": "Austin, Tx"
+ },
+ "j203d2c3d86": {
+  "title": "Business Analyst",
+  "seniority": "senior",
+  "must_have_skills": [
+   "business analysis",
+   "requirements analysis",
+   "system requirements",
+   "technical documentation"
+  ],
+  "nice_to_have_skills": [
+   "case management",
+   "claims processing",
+   "mainframe modernization",
+   "business process analysis",
+   "blueprint storyteller"
+  ],
+  "min_years": 2.0,
+  "domain": "IT consulting",
+  "location": "Albany, NY"
+ },
+ "j21399292f2": {
+  "title": "Software Engineer II",
+  "seniority": "mid",
+  "must_have_skills": [
+   "java",
+   "system design",
+   "application development",
+   "testing",
+   "sdlc"
+  ],
+  "nice_to_have_skills": [
+   "aws",
+   "front-end technologies",
+   "cloud technologies"
+  ],
+  "min_years": 2.0,
+  "domain": "fintech",
+  "location": "New York, NY"
+ },
+ "j2400afad4e": {
+  "title": "Staff Accountant",
+  "seniority": "mid",
+  "must_have_skills": [
+   "accounting",
+   "bookkeeping",
+   "tax return preparation",
+   "chart of accounts",
+   "microsoft office",
+   "problem solving"
+  ],
+  "nice_to_have_skills": [
+   "apple computers"
+  ],
+  "min_years": 2.0,
+  "domain": "accounting",
+  "location": "Dyersville, IA"
+ },
+ "j24bd40155c": {
+  "title": "Staff Accountant",
+  "seniority": "mid",
+  "must_have_skills": [
+   "accounting",
+   "fixed assets",
+   "sarbanes oxley"
+  ],
+  "nice_to_have_skills": [
+   "public company",
+   "netsuite",
+   "erp"
+  ],
+  "min_years": 1.0,
+  "domain": "biotechnology",
+  "location": "Watertown"
+ },
+ "j256405cf04": {
+  "title": "Business Analyst",
+  "seniority": "lead",
+  "must_have_skills": [
+   "systems analysis",
+   "business analysis",
+   "technical requirements"
+  ],
+  "nice_to_have_skills": [],
+  "min_years": 10.0,
+  "domain": "information technology",
+  "location": "St. Louis, MO"
+ },
+ "j26a56fcf76": {
+  "title": "Business Analyst",
+  "seniority": "junior",
+  "must_have_skills": [
+   "business analysis",
+   "functional design",
+   "system configuration",
+   "enterprise applications"
+  ],
+  "nice_to_have_skills": [
+   "ai ml",
+   "data analysis",
+   "contract management",
+   "supply chain"
+  ],
+  "min_years": null,
+  "domain": "ai ml",
+  "location": "remote"
+ },
+ "j275571d46c": {
+  "title": "Senior Software Engineer",
+  "seniority": "senior",
+  "must_have_skills": [
+   "c#",
+   ".net core",
+   "angular",
+   "typescript",
+   "rest api",
+   "azure"
+  ],
+  "nice_to_have_skills": [
+   "microsoft azure certification"
+  ],
+  "min_years": 4.0,
+  "domain": null,
+  "location": null
+ },
+ "j2865e733ae": {
+  "title": "Senior Data Engineer",
+  "seniority": "senior",
+  "must_have_skills": [
+   "sql",
+   "etl",
+   "data modeling",
+   "ssrs",
+   "power bi",
+   "tableau"
+  ],
+  "nice_to_have_skills": [
+   "agile"
+  ],
+  "min_years": 5.0,
+  "domain": "real estate",
+  "location": "Dallas, TX"
+ },
+ "j2e245f2456": {
+  "title": "Software Developer",
+  "seniority": "mid",
+  "must_have_skills": [
+   "ansible",
+   "git",
+   "ci/cd",
+   "devops",
+   "shell scripting"
+  ],
+  "nice_to_have_skills": [
+   "python",
+   "kubernetes",
+   "openshift",
+   "agile",
+   "rest api",
+   "oracle"
+  ],
+  "min_years": null,
+  "domain": null,
+  "location": "Cleveland, OH"
+ },
+ "j31b356641d": {
+  "title": "Electrical Engineer",
+  "seniority": "senior",
+  "must_have_skills": [
+   "electrical engineering",
+   "plc programming",
+   "hmi programming",
+   "rockwell",
+   "allen-bradley",
+   "project management"
+  ],
+  "nice_to_have_skills": [
+   "sql",
+   "networked system design",
+   "480 vac power distribution",
+   "4160v motors",
+   "autocad",
+   "wonderware"
+  ],
+  "min_years": 5.0,
+  "domain": "manufacturing",
+  "location": "Macon, Georgia"
+ },
+ "j31e0450484": {
+  "title": "Lead Data Engineer",
+  "seniority": "lead",
+  "must_have_skills": [
+   "python",
+   "sql",
+   "aws",
+   "airflow",
+   "data modeling",
+   "dimensional modeling",
+   "etl"
+  ],
+  "nice_to_have_skills": [
+   "dbt",
+   "nosql"
+  ],
+  "min_years": 8.0,
+  "domain": "business intelligence",
+  "location": "remote"
+ },
+ "j32478442dc": {
+  "title": "Software Development Engineer",
+  "seniority": "mid",
+  "must_have_skills": [
+   "software development",
+   "system design",
+   "programming"
+  ],
+  "nice_to_have_skills": [
+   "sdlc",
+   "code reviews",
+   "source control",
+   "build processes",
+   "testing"
+  ],
+  "min_years": 3.0,
+  "domain": "healthcare",
+  "location": "Boston, MA, USA"
+ },
+ "j325915d97e": {
+  "title": "Application Software Engineer",
+  "seniority": "lead",
+  "must_have_skills": [
+   "java",
+   "cloud technologies",
+   "software design",
+   "microservices",
+   "event driven architecture",
+   "kubernetes",
+   "software development lifecycle"
+  ],
+  "nice_to_have_skills": [
+   "quarkus",
+   "red hat sso",
+   "rhel",
+   "kafka",
+   "jira",
+   "rally"
+  ],
+  "min_years": 15.0,
+  "domain": null,
+  "location": "Melbourne, Florida"
+ },
+ "j36a274fadf": {
+  "title": "Senior Property Accountant",
+  "seniority": "senior",
+  "must_have_skills": [
+   "real estate accounting",
+   "public accounting"
+  ],
+  "nice_to_have_skills": [
+   "cpa"
+  ],
+  "min_years": 3.0,
+  "domain": "real estate",
+  "location": "Baltimore Peninsula"
+ },
+ "j3a8902cc93": {
+  "title": "Electrical Engineer",
+  "seniority": "mid",
+  "must_have_skills": [
+   "electrical engineering",
+   "autocad",
+   "mathcad",
+   "microsoft platforms"
+  ],
+  "nice_to_have_skills": [
+   "protection system design",
+   "control system programming",
+   "substation design",
+   "commissioning",
+   "relay settings"
+  ],
+  "min_years": 3.0,
+  "domain": "energy",
+  "location": "remote"
+ },
+ "j3d2c5b8d9b": {
+  "title": "Software Engineer - Intern",
+  "seniority": "junior",
+  "must_have_skills": [
+   "html/css",
+   "javascript",
+   "angular",
+   "node",
+   "java",
+   "sql"
+  ],
+  "nice_to_have_skills": [
+   "php",
+   "scala"
+  ],
+  "min_years": 0.0,
+  "domain": "SaaS",
+  "location": null
+ },
+ "j3d67e4f8c4": {
+  "title": "SAP Analyst",
+  "seniority": "senior",
+  "must_have_skills": [
+   "sap",
+   "sap fico",
+   "ecc",
+   "s4 hana",
+   "img configuration"
+  ],
+  "nice_to_have_skills": [
+   "abap"
+  ],
+  "min_years": 5.0,
+  "domain": null,
+  "location": null
+ },
+ "j4341f588ce": {
+  "title": "Senior Accountant",
+  "seniority": "senior",
+  "must_have_skills": [
+   "accounting",
+   "financial analysis",
+   "journal entries",
+   "account reconciliation",
+   "variance analysis",
+   "audit schedules"
+  ],
+  "nice_to_have_skills": [
+   "cpa"
+  ],
+  "min_years": 3.0,
+  "domain": "healthcare",
+  "location": "remote"
+ },
+ "j51b2967b98": {
+  "title": "Engineering Data Analyst",
+  "seniority": "mid",
+  "must_have_skills": [
+   "analytical skills",
+   "customer focus",
+   "design concepts",
+   "data configuration mgmt",
+   "engineering knowledge",
+   "industry standards",
+   "research methods"
+  ],
+  "nice_to_have_skills": [
+   "information technology fluency"
+  ],
+  "min_years": 2.0,
+  "domain": "engineering",
+  "location": null
+ },
+ "j53f4b169e7": {
+  "title": "Senior Tax Accountant",
+  "seniority": "senior",
+  "must_have_skills": [
+   "tax preparation",
+   "tax research",
+   "tax planning",
+   "accounting",
+   "cpa",
+   "word",
+   "excel"
+  ],
+  "nice_to_have_skills": [],
+  "min_years": 3.0,
+  "domain": "accounting",
+  "location": null
+ },
+ "j549068f98e": {
+  "title": "Software Engineer",
+  "seniority": "mid",
+  "must_have_skills": [
+   "heroku",
+   "salesforce",
+   "java",
+   "sql",
+   "soql"
+  ],
+  "nice_to_have_skills": [
+   "heroku certification"
+  ],
+  "min_years": 3.0,
+  "domain": null,
+  "location": null
+ },
+ "j57014089ad": {
+  "title": "Applied Machine Learning Software Engineer",
+  "seniority": null,
+  "must_have_skills": [
+   "python",
+   "c++",
+   "data structures",
+   "algorithms",
+   "distributed systems",
+   "cloud services",
+   "ml platforms"
+  ],
+  "nice_to_have_skills": [
+   "go",
+   "tensorflow",
+   "pytorch",
+   "sql",
+   "apache beam",
+   "computer vision"
+  ],
+  "min_years": null,
+  "domain": "climate tech",
+  "location": null
+ },
+ "j57944b8e65": {
+  "title": "Business Analyst",
+  "seniority": "lead",
+  "must_have_skills": [
+   "business analysis",
+   "requirements analysis",
+   "project management",
+   "process optimization",
+   "user acceptance testing",
+   "stakeholder management",
+   "microsoft office"
+  ],
+  "nice_to_have_skills": [],
+  "min_years": 10.0,
+  "domain": null,
+  "location": null
+ },
+ "j607c49860d": {
+  "title": "Staff Accountant",
+  "seniority": "mid",
+  "must_have_skills": [
+   "accounting",
+   "excel",
+   "bank reconciliations",
+   "journal entries",
+   "auditing"
+  ],
+  "nice_to_have_skills": [
+   "applied epic system"
+  ],
+  "min_years": 2.0,
+  "domain": "insurance",
+  "location": "Irvine"
+ },
+ "j636488fee1": {
+  "title": "Fund Accounting Manager",
+  "seniority": "senior",
+  "must_have_skills": [
+   "accounting degree",
+   "cpa",
+   "supervisory experience",
+   "financial analysis",
+   "client-facing"
+  ],
+  "nice_to_have_skills": [
+   "public accounting"
+  ],
+  "min_years": 4.0,
+  "domain": "fund accounting",
+  "location": null
+ },
+ "j63f6a8ea32": {
+  "title": "Embedded Hardware and FPGA Design Engineer",
+  "seniority": "senior",
+  "must_have_skills": [
+   "digital electronics",
+   "microprocessor design",
+   "fpga design",
+   "embedded software",
+   "circuit design",
+   "electrical engineering"
+  ],
+  "nice_to_have_skills": [
+   "xilinx",
+   "vivado",
+   "altium",
+   "matlab simulink",
+   "micro-cap",
+   "ltspice"
+  ],
+  "min_years": 6.0,
+  "domain": "electronics",
+  "location": null
+ },
+ "j64167269fb": {
+  "title": "Sr C++ Software Engineer",
+  "seniority": "senior",
+  "must_have_skills": [
+   "c++",
+   "stl",
+   "linux",
+   "memory management",
+   "networking",
+   "high-performance computing"
+  ],
+  "nice_to_have_skills": [
+   "python",
+   "compilers"
+  ],
+  "min_years": null,
+  "domain": "prop trading",
+  "location": "hybrid"
+ },
+ "j670ab9f66c": {
+  "title": "Accountant",
+  "seniority": "mid",
+  "must_have_skills": [
+   "netsuite",
+   "excel",
+   "general ledger reconciliation",
+   "financial analysis",
+   "journal entries"
+  ],
+  "nice_to_have_skills": [
+   "cpa",
+   "non-profit accounting"
+  ],
+  "min_years": 2.0,
+  "domain": "finance",
+  "location": "hybrid"
+ },
+ "j6776858677": {
+  "title": "Angular Developer",
+  "seniority": "senior",
+  "must_have_skills": [
+   "angular 10",
+   "javascript",
+   "html/css",
+   "typescript",
+   "node.js"
+  ],
+  "nice_to_have_skills": [
+   "primeng",
+   "aggrid",
+   "vscode",
+   "git"
+  ],
+  "min_years": 7.0,
+  "domain": null,
+  "location": "Tampa, FL"
+ },
+ "j6a51d79412": {
+  "title": "Business Analyst",
+  "seniority": "mid",
+  "must_have_skills": [
+   "sap hana",
+   "excel",
+   "microsoft powerpoint",
+   "data analysis",
+   "chinese"
+  ],
+  "nice_to_have_skills": [
+   "project management",
+   "ac nielsen",
+   "sap"
+  ],
+  "min_years": 2.0,
+  "domain": "food and beverage",
+  "location": "Southern California"
+ },
+ "j74fd52df8f": {
+  "title": "Electrical Technician",
+  "seniority": "senior",
+  "must_have_skills": [
+   "high-voltage safety",
+   "nfpa 70e",
+   "wire schematics",
+   "electrical troubleshooting",
+   "mechanical troubleshooting",
+   "electrical fabrication"
+  ],
+  "nice_to_have_skills": [
+   "electrical engineering"
+  ],
+  "min_years": 5.0,
+  "domain": "agricultural technology",
+  "location": null
+ },
+ "j79ab29338d": {
+  "title": "Software Engineer",
+  "seniority": "senior",
+  "must_have_skills": [
+   "embedded control",
+   "real-time software",
+   "c++",
+   "c#",
+   ".net",
+   "io processing",
+   "can",
+   "rs-485"
+  ],
+  "nice_to_have_skills": [
+   "power conversion",
+   "motor control",
+   "dspic processors",
+   "sharc processors",
+   "fpga programming",
+   "vhdl"
+  ],
+  "min_years": 5.0,
+  "domain": null,
+  "location": null
+ },
+ "j79f8900893": {
+  "title": "Business Analyst",
+  "seniority": "senior",
+  "must_have_skills": [
+   "pega",
+   "rule engine",
+   "business analysis",
+   "system analysis"
+  ],
+  "nice_to_have_skills": [],
+  "min_years": 5.0,
+  "domain": null,
+  "location": "St. Louis, MO"
+ },
+ "j7a5f3ce975": {
+  "title": "Business Analyst, Property",
+  "seniority": "mid",
+  "must_have_skills": [
+   "excel",
+   "property insurance",
+   "data analysis",
+   "tableau",
+   "power bi",
+   "claims analysis"
+  ],
+  "nice_to_have_skills": [],
+  "min_years": 3.0,
+  "domain": "insurance",
+  "location": null
+ },
+ "j7c5bc1878d": {
+  "title": "Java Developer",
+  "seniority": null,
+  "must_have_skills": [
+   "java",
+   "javascript",
+   "angular",
+   "html/css",
+   "jquery",
+   "ajax"
+  ],
+  "nice_to_have_skills": [
+   "bootstrap",
+   "jsp",
+   "json",
+   "xml"
+  ],
+  "min_years": null,
+  "domain": null,
+  "location": null
+ },
+ "j7c71d1f769": {
+  "title": "Data Engineer",
+  "seniority": "senior",
+  "must_have_skills": [
+   "python",
+   "sql",
+   "nosql",
+   "aws",
+   "git",
+   "docker",
+   "ci"
+  ],
+  "nice_to_have_skills": [
+   "gis",
+   "agile"
+  ],
+  "min_years": 5.0,
+  "domain": "oil & gas",
+  "location": null
+ },
+ "j809bc6c80f": {
+  "title": "Finance Operations Analyst",
+  "seniority": "junior",
+  "must_have_skills": [
+   "sap",
+   "purchase orders",
+   "invoices",
+   "excel",
+   "data analysis"
+  ],
+  "nice_to_have_skills": [
+   "coupa",
+   "aravo",
+   "akritiv"
+  ],
+  "min_years": 1.0,
+  "domain": "consumer goods",
+  "location": "hybrid"
+ },
+ "j81c4585636": {
+  "title": "Software Developer",
+  "seniority": null,
+  "must_have_skills": [
+   "sql",
+   "relational database",
+   "software development"
+  ],
+  "nice_to_have_skills": [],
+  "min_years": null,
+  "domain": null,
+  "location": null
+ },
+ "j8257ac5e34": {
+  "title": "Senior Property Accountant",
+  "seniority": "senior",
+  "must_have_skills": [
+   "yardi voyager",
+   "accounting",
+   "ms office",
+   "bank reconciliations"
+  ],
+  "nice_to_have_skills": [
+   "property management"
+  ],
+  "min_years": 2.0,
+  "domain": "real estate",
+  "location": null
+ },
+ "j8ddfc98318": {
+  "title": "Data Analyst",
+  "seniority": "mid",
+  "must_have_skills": [
+   "sql",
+   "tableau",
+   "business analysis",
+   "testing",
+   "reporting"
+  ],
+  "nice_to_have_skills": [],
+  "min_years": 4.0,
+  "domain": "healthcare",
+  "location": "Plano, TX"
+ },
+ "j915a85b702": {
+  "title": "Senior Data Engineer",
+  "seniority": "senior",
+  "must_have_skills": [
+   "python",
+   "sql",
+   "spark",
+   "airflow",
+   "aws",
+   "docker",
+   "kubernetes",
+   "microservices"
+  ],
+  "nice_to_have_skills": [
+   "feature engineering",
+   "digital marketing",
+   "api development"
+  ],
+  "min_years": 5.0,
+  "domain": "digital marketing",
+  "location": null
+ },
+ "j97ab8bab65": {
+  "title": "Business Analyst",
+  "seniority": null,
+  "must_have_skills": [
+   "sql",
+   "tableau",
+   "python",
+   "java",
+   "c++",
+   "data analysis"
+  ],
+  "nice_to_have_skills": [
+   "machine learning",
+   "big data infrastructure",
+   "communication",
+   "presentation"
+  ],
+  "min_years": null,
+  "domain": "smart home",
+  "location": null
+ },
+ "j9f63681758": {
+  "title": "Sr Data Engineer",
+  "seniority": "senior",
+  "must_have_skills": [
+   "ms sql",
+   "soql",
+   "etl",
+   "salesforce"
+  ],
+  "nice_to_have_skills": [
+   "oracle",
+   "sql",
+   "talend",
+   "matillion"
+  ],
+  "min_years": 7.0,
+  "domain": "telecom",
+  "location": "remote"
+ },
+ "j9fa38d8795": {
+  "title": "Senior Accountant",
+  "seniority": "senior",
+  "must_have_skills": [
+   "sap s4",
+   "accounting",
+   "financial analysis",
+   "excel",
+   "month-end close"
+  ],
+  "nice_to_have_skills": [
+   "cpa",
+   "big 4",
+   "masters degree"
+  ],
+  "min_years": 3.0,
+  "domain": "finance",
+  "location": "hybrid"
+ },
+ "jadc72a8b5e": {
+  "title": "CAD Designer",
+  "seniority": "senior",
+  "must_have_skills": [
+   "pcb design",
+   "circuit design",
+   "firmware development",
+   "analog electronics",
+   "digital electronics",
+   "embedded hardware",
+   "soldering",
+   "electrical engineering"
+  ],
+  "nice_to_have_skills": [
+   "linux rtos",
+   "labview",
+   "python",
+   "c++",
+   "app development"
+  ],
+  "min_years": 5.0,
+  "domain": "robotics",
+  "location": "Oklahoma City"
+ },
+ "jaffdccbb0d": {
+  "title": "Engineering Business Analyst",
+  "seniority": "senior",
+  "must_have_skills": [
+   "business analysis",
+   "user stories",
+   "technical documentation",
+   "agile"
+  ],
+  "nice_to_have_skills": [],
+  "min_years": 5.0,
+  "domain": "distribution",
+  "location": null
+ },
+ "jb19dcd6acb": {
+  "title": "Accountant",
+  "seniority": "mid",
+  "must_have_skills": [
+   "accounting",
+   "excel",
+   "erp systems"
+  ],
+  "nice_to_have_skills": [
+   "microsoft business central"
+  ],
+  "min_years": 4.0,
+  "domain": "travel",
+  "location": "hybrid"
+ },
+ "jb35a7e7935": {
+  "title": "Senior Accountant",
+  "seniority": "senior",
+  "must_have_skills": [
+   "accounting",
+   "financial analysis",
+   "ifrs",
+   "balance sheet reconciliation"
+  ],
+  "nice_to_have_skills": [
+   "prosystems",
+   "public accounting"
+  ],
+  "min_years": 0.0,
+  "domain": "renewable energy",
+  "location": "remote"
+ },
+ "jb54e25043c": {
+  "title": "Gaming Business Analyst",
+  "seniority": "senior",
+  "must_have_skills": [
+   "sql",
+   "excel",
+   "tsql",
+   "power bi",
+   "power apps",
+   "data analysis",
+   "etl"
+  ],
+  "nice_to_have_skills": [
+   "python"
+  ],
+  "min_years": 5.0,
+  "domain": "gaming",
+  "location": "Bellevue, USA"
+ },
+ "jb6bdf0d5b1": {
+  "title": "Software Engineer",
+  "seniority": "mid",
+  "must_have_skills": [
+   "web development",
+   "cloud tools",
+   "web frameworks",
+   "cross-functional collaboration"
+  ],
+  "nice_to_have_skills": [
+   "ai ml",
+   "proptech",
+   "fintech",
+   "vertical saas",
+   "investment management"
+  ],
+  "min_years": 2.0,
+  "domain": "fintech",
+  "location": null
+ },
+ "jb769b44ff9": {
+  "title": "Accounting Analyst",
+  "seniority": "junior",
+  "must_have_skills": [
+   "accounting",
+   "bookkeeping",
+   "month-end close",
+   "journal entries",
+   "analytical skills"
+  ],
+  "nice_to_have_skills": [
+   "automation",
+   "data analysis",
+   "process improvement"
+  ],
+  "min_years": 1.0,
+  "domain": "insurance",
+  "location": "hybrid"
+ },
+ "jba23ab1d98": {
+  "title": "Staff Accountant",
+  "seniority": "mid",
+  "must_have_skills": [
+   "accounting",
+   "financial reports",
+   "internal controls",
+   "erp system",
+   "communication"
+  ],
+  "nice_to_have_skills": [],
+  "min_years": 2.0,
+  "domain": null,
+  "location": "Brickell"
+ },
+ "jbd1f94111d": {
+  "title": "Financial Reporting Analyst",
+  "seniority": "mid",
+  "must_have_skills": [
+   "python",
+   "sql",
+   "bi platform",
+   "sdlc",
+   "uat",
+   "variance analysis"
+  ],
+  "nice_to_have_skills": [
+   "awe"
+  ],
+  "min_years": 4.0,
+  "domain": "healthcare",
+  "location": "Suffolk County"
+ },
+ "jbf60dc6936": {
+  "title": "Software Engineer",
+  "seniority": "mid",
+  "must_have_skills": [
+   "c#",
+   ".net",
+   "javascript",
+   "sql",
+   "angular",
+   "typescript",
+   "git",
+   "agile"
+  ],
+  "nice_to_have_skills": [
+   ".net core",
+   "azure",
+   "redis",
+   "tdd",
+   "bdd",
+   "mobile development"
+  ],
+  "min_years": 2.0,
+  "domain": "saas",
+  "location": "remote"
+ },
+ "jc9cb39f3b7": {
+  "title": "Software Engineer",
+  "seniority": "mid",
+  "must_have_skills": [
+   "javascript",
+   "node.js",
+   "html/css",
+   ".net framework",
+   "sql",
+   "oop",
+   "rest api"
+  ],
+  "nice_to_have_skills": [
+   "agile",
+   "test-driven development",
+   "unit testing",
+   "saas"
+  ],
+  "min_years": 2.0,
+  "domain": "asset management",
+  "location": null
+ },
+ "jc9fb002526": {
+  "title": "Staff Engineer",
+  "seniority": "senior",
+  "must_have_skills": [
+   "computer vision",
+   "c++",
+   "python",
+   "opencv",
+   "machine learning",
+   "docker",
+   "kubernetes",
+   "pytorch"
+  ],
+  "nice_to_have_skills": [
+   "cuda",
+   "tensorrt",
+   "tensorflow",
+   "slam"
+  ],
+  "min_years": 7.0,
+  "domain": "autonomous logistics",
+  "location": "Mountain View, CA"
+ },
+ "jd2c3517f34": {
+  "title": "Staff Software Engineer",
+  "seniority": "senior",
+  "must_have_skills": [
+   "c++",
+   "cmake",
+   "bazel",
+   "conan",
+   "system integration",
+   "software architecture",
+   "linear algebra",
+   "statistics"
+  ],
+  "nice_to_have_skills": [
+   "jira",
+   "confluence"
+  ],
+  "min_years": 7.0,
+  "domain": "autonomous vehicles",
+  "location": "Mountain View"
+ },
+ "je1c28623aa": {
+  "title": "Electrical Resident Engineer",
+  "seniority": "senior",
+  "must_have_skills": [
+   "mechatronic design",
+   "electrification",
+   "dfmea",
+   "pfmea",
+   "gd&t",
+   "root cause analysis",
+   "statistical data analysis"
+  ],
+  "nice_to_have_skills": [],
+  "min_years": 5.0,
+  "domain": null,
+  "location": "remote"
+ },
+ "je4168b9d21": {
+  "title": "Senior Staff Accountant",
+  "seniority": "senior",
+  "must_have_skills": [
+   "corporate accounting",
+   "public accounting",
+   "excel",
+   "erp systems",
+   "financial analysis",
+   "accounting",
+   "journal entries",
+   "month-end close"
+  ],
+  "nice_to_have_skills": [],
+  "min_years": 4.0,
+  "domain": "corporate finance",
+  "location": "remote"
+ },
+ "je450375972": {
+  "title": "ServiceNow Business Analyst",
+  "seniority": "senior",
+  "must_have_skills": [
+   "servicenow",
+   "itsm",
+   "requirement gathering",
+   "process mapping",
+   "change management",
+   "incident management",
+   "problem management",
+   "business analysis"
+  ],
+  "nice_to_have_skills": [
+   "scrum master",
+   "csa",
+   "safe",
+   "aws",
+   "azure"
+  ],
+  "min_years": 8.0,
+  "domain": "it service management",
+  "location": null
+ },
+ "jebf5516088": {
+  "title": "Staff Accountant",
+  "seniority": "mid",
+  "must_have_skills": [
+   "excel",
+   "accounting",
+   "bank reconciliation",
+   "financial analysis"
+  ],
+  "nice_to_have_skills": [
+   "yardi",
+   "appfolio",
+   "entrata",
+   "onesite",
+   "cpa"
+  ],
+  "min_years": 1.0,
+  "domain": "real estate",
+  "location": "Norwood, MA"
+ },
+ "jec09be5a33": {
+  "title": "Staff Electrical Engineer",
+  "seniority": "senior",
+  "must_have_skills": [
+   "electrical engineering",
+   "root cause analysis",
+   "technical analysis",
+   "change control",
+   "technical writing"
+  ],
+  "nice_to_have_skills": [
+   "orcad",
+   "altium",
+   "digital and analog circuits",
+   "emiemc testing",
+   "optical systems",
+   "stepper motor driver circuits"
+  ],
+  "min_years": 7.0,
+  "domain": "in vitro diagnostics",
+  "location": "Rochester, NY"
+ },
+ "jef1cf852d0": {
+  "title": "Data Architect Data Analyst",
+  "seniority": null,
+  "must_have_skills": [
+   "database",
+   "etl",
+   "relational database",
+   "integration services",
+   "analysis services",
+   "reporting services",
+   "oracle rdbms",
+   "ssis sssassrs"
+  ],
+  "nice_to_have_skills": [],
+  "min_years": null,
+  "domain": null,
+  "location": "Juno Beach, FL"
+ },
+ "jf9ddf265f2": {
+  "title": "Business Analyst",
+  "seniority": "mid",
+  "must_have_skills": [
+   "business analysis",
+   "data analysis",
+   "excel",
+   "powerpoint",
+   "reporting",
+   "problem solving"
+  ],
+  "nice_to_have_skills": [],
+  "min_years": 2.0,
+  "domain": "telecommunications",
+  "location": null
+ },
+ "jface874c7a": {
+  "title": "Accounting Professional",
+  "seniority": "senior",
+  "must_have_skills": [
+   "accounting",
+   "excel",
+   "month end close",
+   "financial analysis",
+   "bank reconciliation",
+   "inventory accounting"
+  ],
+  "nice_to_have_skills": [
+   "cpg industry",
+   "auditing",
+   "sox compliance",
+   "policies and procedures"
+  ],
+  "min_years": 5.0,
+  "domain": "cpg",
+  "location": "los angeles"
+ },
+ "jfce9576462": {
+  "title": "Data Engineer",
+  "seniority": null,
+  "must_have_skills": [
+   "elt",
+   "big data",
+   "kafka",
+   "flink",
+   "spark",
+   "airflow",
+   "dbt",
+   "python"
+  ],
+  "nice_to_have_skills": [
+   "sql",
+   "snowflake"
+  ],
+  "min_years": null,
+  "domain": "analytics",
+  "location": null
+ }
+}

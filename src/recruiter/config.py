@@ -14,6 +14,9 @@ CACHE_DIR = ROOT / "data" / "cache"
 TRACES_DIR = ROOT / "traces"
 PROMPTS_DIR = ROOT / "prompts"
 EVAL_DIR = ROOT / "eval"
+# JobSpecs extracted by the LLM from the benchmark JDs (71 calls). Committed so that the
+# retrieval/ranker evals run on a fresh clone without spending LLM quota.
+BENCHMARK_JOBSPECS = EVAL_DIR / "results" / "benchmark_jobspecs.json"
 
 LLM_API_KEY = os.getenv("GEMINI_API_KEY", "")
 LLM_BASE_URL = os.getenv("LLM_BASE_URL", "https://generativelanguage.googleapis.com/v1beta/openai/")

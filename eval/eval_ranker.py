@@ -112,7 +112,11 @@ def knockout_report(df: pd.DataFrame) -> dict:
 
 def main() -> None:
     fit = pd.read_parquet(config.DATA_PROCESSED / "fit_test.parquet")
-    specs = json.loads((config.DATA_PROCESSED / "benchmark_jobspecs.json").read_text())
+    specs = json.loads(config.BENCHMARK_JOBSPECS.read_text())
+    needed = set(fit[fit.relevance > 0].jd_id)
+    if missing := needed - specs.keys():
+        raise SystemExit(f"{len(missing)} JDs have no JobSpec in {config.BENCHMARK_JOBSPECS.name}; "
+                         "run scripts/extract_benchmark_jobspecs.py")
     docs = fit.drop_duplicates("resume_id")
     index = build_index(docs.resume_id.tolist(), docs.resume_text.tolist())
     df = build_features(fit, specs, index)

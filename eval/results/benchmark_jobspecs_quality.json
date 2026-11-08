@@ -1,0 +1,31 @@
+{
+ "component": "benchmark JobSpecs (jobspec_extractor v1 on full JDs)",
+ "timestamp": "2026-11-08T15:47:43.959786+00:00",
+ "n": 15,
+ "gold": "eval/gold/jobspec_gold.jsonl",
+ "metrics": {
+  "title_acc": 0.9333333333333333,
+  "seniority_acc": 0.8666666666666667,
+  "min_years_acc": 0.9333333333333333,
+  "must_have_lexical": {
+   "precision": 0.6804123711340206,
+   "recall": 0.6226415094339622,
+   "f1": 0.6502463054187193
+  },
+  "nice_to_have_lexical": {
+   "precision": 0.5918367346938775,
+   "recall": 0.6304347826086957,
+   "f1": 0.6105263157894736
+  },
+  "must_have_semantic": {
+   "precision": 0.7319587628865979,
+   "recall": 0.6698113207547169,
+   "f1": 0.6995073891625616
+  },
+  "nice_to_have_semantic": {
+   "precision": 0.5918367346938775,
+   "recall": 0.6304347826086957,
+   "f1": 0.6105263157894736
+  }
+ }
+}

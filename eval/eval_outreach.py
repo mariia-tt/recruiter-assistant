@@ -31,7 +31,7 @@ FABRICATIONS = [
 
 
 def pairs() -> list[tuple[str, JobSpec, str]]:
-    specs = json.loads((config.DATA_PROCESSED / "benchmark_jobspecs.json").read_text())
+    specs = json.loads(config.BENCHMARK_JOBSPECS.read_text())
     jd_ids = random.Random(SEED).sample(sorted(specs), N_JDS)
     out = []
     for jd_id in jd_ids:
