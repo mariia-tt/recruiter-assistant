@@ -8,3 +8,6 @@ data/raw/
 data/processed/
 data/cache/
 traces/
+
+# Personal video script (Ukrainian), kept locally only
+docs/video_plan_uk.md

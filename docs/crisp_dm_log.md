@@ -139,7 +139,7 @@
 - **What was done:** `report.ipynb` / `report.html` built by `scripts/build_report.py`
   (all numbers read from `eval/results`), SVG data-flow diagram
   (`scripts/make_diagram.py`), trace viewer `scripts/show_traces.py`, video plan in
-  Ukrainian (`docs/video_plan_uk.md`).
+  Ukrainian (kept locally, not in the repository).
 - **Decision & why:** notebook report so every table is regenerated from the eval
   outputs; ranking chart drawn as a dot plot (axis does not start at 0, bars would
   exaggerate differences).
