@@ -16,6 +16,11 @@ from recruiter.jobspec import extract_jobspec
 OUT = config.BENCHMARK_JOBSPECS
 
 
+def pending(jd_ids: list[str], specs: dict, force: bool = False) -> list[str]:
+    """JD ids that still need an LLM call: skip existing specs unless forced (saves quota)."""
+    return list(jd_ids) if force else [j for j in jd_ids if j not in specs]
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--limit", type=int, default=None, help="process only the first N JDs")
@@ -29,11 +34,11 @@ def main() -> None:
         jds = jds.head(args.limit)
 
     specs = json.loads(OUT.read_text()) if OUT.exists() else {}
-    for row in jds.itertuples():
-        if row.jd_id in specs and not args.force:
-            continue
+    todo = pending(jds.jd_id.tolist(), specs, args.force)
+    texts = dict(zip(jds.jd_id, jds.jd_text, strict=True))
+    for jd_id in todo:
         try:
-            specs[row.jd_id] = extract_jobspec(row.jd_text).model_dump()
+            specs[jd_id] = extract_jobspec(texts[jd_id]).model_dump()
         except llm.QuotaExhaustedError as e:
             print(f"STOP: {e}")
             break

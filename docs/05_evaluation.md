@@ -44,10 +44,21 @@ Both are reported because the choice changes F1 by 0.04–0.07.
 2. Recruiters named only 1–2 skills and were never asked for more → collector now asks
    once "Any other must-have skills, and any nice-to-haves?" when < 3 must-haves.
 3. A slot already asked and still empty is treated as "no requirement" and never re-asked.
-Benchmark JobSpecs used by C3/C4 were extracted with v1; in full JDs years are written
-explicitly, so v2 would not change them materially (not re-run to save quota). Checked
-on the 15 gold JDs (`eval/eval_benchmark_jobspecs.py`, 0 calls): stored v1 specs score
-must-have F1 0.65 lexical / 0.70 semantic, min years 0.93 — on par with v2 (0.64 / 0.71, 1.00).
+Benchmark JobSpecs used by C3/C4 were extracted with v1 and not re-extracted. Checked on
+the 15 gold JDs (`eval/eval_benchmark_jobspecs.py`, 0 calls):
+
+| Slot | v1 (stored file) | v2 (C1 full-JD column) |
+|---|---|---|
+| Must-have F1, lexical / semantic | 0.65 / 0.70 | 0.64 / 0.71 |
+| Title | 0.93 | 1.00 |
+| Seniority | 0.87 | 0.93 |
+| Min years | 0.93 | 1.00 |
+| Nice-to-have F1 (semantic) | 0.61 | 0.71 |
+
+So must-haves are on par; v1 is 1 JD of 15 worse on title, seniority and min years (within noise at n = 15, but min years is exactly what v2 fixed) and 0.10 lower on nice-to-have F1. C3/C4 are therefore measured on slightly noisier input (the C4
+experience, seniority and nice-to-have criteria and the C3 query read these fields).
+Not re-extracted because it would cost ≈ 200 LLM calls: 71 for extraction, plus the C4b
+(61) and C5 (~70) caches would be invalidated.
 
 **Error analysis.** Scalar slots are nearly solved. The gap is skill *recall*: in a chat
 the recruiter mentions far fewer requirements than the JD lists (e.g. the BI analyst

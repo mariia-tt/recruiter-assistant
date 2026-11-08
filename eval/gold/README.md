@@ -49,8 +49,9 @@
 - **Quality:** scored against `jobspec_gold.jsonl` (15 of these JDs) by
   `eval/eval_benchmark_jobspecs.py` → `eval/results/benchmark_jobspecs_quality.json`:
   title 0.93, seniority 0.87, min years 0.93, must-have F1 0.65 lexical / 0.70 semantic.
-  The current prompt v2 on the same JDs (C1 eval, "full JD" column) gives must-have F1
-  0.64 / 0.71, so the file was not re-extracted with v2 (saves 71 calls).
+  Prompt v2 on the same JDs (C1 eval, "full JD" column): title 1.00, seniority 0.93,
+  min years 1.00, must-have F1 0.64 / 0.71, nice-to-have F1 0.71. So must-haves are on par; v1 is 1 JD of 15 worse on title, seniority and min years (within noise at n = 15, but min years is exactly what v2 fixed) and 0.10 lower on nice-to-have F1.
+  Not re-extracted with v2: ≈ 200 LLM calls (71 + invalidated C4b and C5 caches).
 
 ## Outreach claims gold (validates the C6 grounding checker)
 - **Files:** `claims_sample.jsonl` (61 candidate claims extracted by C6 from the 20

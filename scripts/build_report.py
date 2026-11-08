@@ -44,7 +44,8 @@ from IPython.display import SVG, Markdown, display
 R = Path("eval/results")
 load = lambda name: json.loads((R / f"{name}.json").read_text())
 res = {n: load(n) for n in ["data_cleaning", "collector", "profiler", "retrieval", "ranker",
-                            "reranker_llm", "outreach", "outreach_v1", "grounding_judge"]}
+                            "reranker_llm", "outreach", "outreach_v1", "grounding_judge",
+                            "benchmark_jobspecs_quality"]}
 pd.set_option("display.precision", 3)"""),
 
 md("""## 1. Task, scope and business logic
@@ -193,14 +194,20 @@ because the choice moves F1 by ~0.05), resolved mandatory slots, turns."""),
 
 code("""pd.DataFrame({"dialog (C1)": {k: (v["f1"] if isinstance(v, dict) else v) for k, v in d.items()},
               "full JD (upper bound)": {k: (v["f1"] if isinstance(v, dict) else v)
-                                        for k, v in col["full_jd_extraction_upper_bound"].items()}})"""),
+                                        for k, v in col["full_jd_extraction_upper_bound"].items()},
+              "benchmark specs (v1, C3/C4 input)": {
+                  k: (v["f1"] if isinstance(v, dict) else v)
+                  for k, v in res["benchmark_jobspecs_quality"]["metrics"].items()}})"""),
 
 md("""**Reading.** Scalar slots are essentially solved (title and level 100 %, years 93 %) in 2.3 turns.
 The gap is **skill recall**: a recruiter in a chat names fewer requirements than the JD lists.
 Evaluation found a real bug — the extractor *invented* "5 years" from the word "Senior", so the
 question was never asked; prompt v2 forbids deriving years from the level. The collector now
 also asks once for more skills when fewer than three are given. Next fix: propose typical skills
-for the role for the recruiter to confirm."""),
+for the role for the recruiter to confirm.
+**Input of the C3/C4 evals.** The benchmark JobSpecs were extracted with prompt v1 (last column):
+must-haves on par with v2, but 1 JD of 15 worse on title, seniority and years and nice-to-have F1
+0.10 lower — so C3/C4 are measured on slightly noisier input. Not re-extracted: ≈ 200 LLM calls."""),
 
 md("""### 4.2 C2a rule profiler vs C2b LLM profiler
 30 CVs (15 categories × 2), silver labels with an auditable list of date ranges per CV."""),

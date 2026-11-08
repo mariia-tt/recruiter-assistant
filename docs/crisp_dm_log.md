@@ -165,8 +165,10 @@
   extracted from public JDs, no candidate data.
 - **Evidence:** on the fresh clone `data_cleaning.json`, `retrieval.json`, `ranker.json`
   and `grounding_judge.json` were reproduced exactly (only timestamps differ);
-  39 tests pass; extractor re-run made 0 LLM calls. Stored v1 specs vs gold: must-have F1
-  0.65 / 0.70 (lexical / semantic), on par with prompt v2 (0.64 / 0.71). First app start
+  39 tests pass; extractor re-run made 0 LLM calls. Stored v1 specs vs gold (v2 in
+  brackets): must-have F1 0.65 / 0.70 (0.64 / 0.71), title 0.93 (1.00), seniority 0.87
+  (0.93), min years 0.93 (1.00), nice-to-have F1 0.61 (0.71) — C3/C4 run on slightly
+  noisier input; kept because re-extraction costs ≈ 200 calls. First app start
   on a fresh clone took ~15 min (model download + index), README now says 7–15 min.
 - **Loop-back:** Deployment → Evaluation (eval inputs made reproducible).
 - **Next step:** slides and video recording.
